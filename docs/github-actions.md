@@ -1,7 +1,7 @@
-Github Actions 备忘清单
+Github Actions 速查表
 ====
 
-本备忘单总结了 [Github Actions](https://github.com/actions) 常用的配置说明，以供快速参考。
+本速查表总结了 [Github Actions](https://github.com/actions) 常用的配置说明，以供快速参考。
 
 入门
 ---

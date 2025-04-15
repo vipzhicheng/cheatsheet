@@ -1,7 +1,7 @@
-iptables 备忘清单
+iptables 速查表
 ====
 
-iptables 是一个配置 Linux 内核防火墙的命令行工具，是 [netfilter](https://en.wikipedia.org/wiki/Netfilter) 项目的一部分。这个快速参考备忘单显示了它的常用命令使用清单
+iptables 是一个配置 Linux 内核防火墙的命令行工具，是 [netfilter](https://en.wikipedia.org/wiki/Netfilter) 项目的一部分。这个快速参考速查表显示了它的常用命令使用清单
 
 入门
 ---
@@ -207,9 +207,9 @@ $ iptables -P OUTPUT ACCEPT
 
 ```shell
 # 允许机房内网机器可以访问
-$ iptables -A INPUT -p all -s 192.168.1.0/24 -j ACCEPT 
+$ iptables -A INPUT -p all -s 192.168.1.0/24 -j ACCEPT
 # 允许机房内网机器可以访问
-$ iptables -A INPUT -p all -s 192.168.140.0/24 -j ACCEPT 
+$ iptables -A INPUT -p all -s 192.168.140.0/24 -j ACCEPT
 # 允许 183.121.3.7 访问本机的3380端口
 $ iptables -A INPUT -p tcp -s 183.121.3.7 --dport 3380 -j ACCEPT
 ```
@@ -249,7 +249,7 @@ $ iptables -L [-t 表名][链名]
 
 ```shell
 # 列出 nat 上面的所有规则
-$ iptables -L -t nat                
+$ iptables -L -t nat
 #            ^ -t 参数指定，必须是 raw， nat，filter，mangle 中的一个
 # 规则带编号
 $ iptables -L -t nat  --line-numbers

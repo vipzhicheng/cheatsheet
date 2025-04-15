@@ -1,4 +1,4 @@
-CMake 备忘清单
+CMake 速查表
 ===
 
 本清单提供了对 CMake 的入门简要概述，以及 CMake 常用示例

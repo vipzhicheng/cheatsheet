@@ -1,7 +1,7 @@
-SQLite 备忘清单
+SQLite 速查表
 ===
 
-本备忘单旨在快速理解 [SQLite](https://sqlite.com/) 所涉及的主要概念，提供了最常用的SQL语句，供您参考。
+本速查表旨在快速理解 [SQLite](https://sqlite.com/) 所涉及的主要概念，提供了最常用的SQL语句，供您参考。
 
 入门
 ---
@@ -59,7 +59,7 @@ sqlite> .backup back
 <!--rehype:wrap-class=row-span-3-->
 
 ```shell
-sqlite> .show 
+sqlite> .show
         echo: off
          eqp: off
      explain: auto

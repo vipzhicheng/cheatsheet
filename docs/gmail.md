@@ -1,7 +1,7 @@
-Gmail 备忘清单
+Gmail 速查表
 ===
 
-本备忘单总结了常用的 [Gmail](https://gmail.com/) 快捷键，以供快速参考。
+本速查表总结了常用的 [Gmail](https://gmail.com/) 快捷键，以供快速参考。
 
 Gmail 快捷键
 ---

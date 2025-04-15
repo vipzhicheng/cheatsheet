@@ -1,4 +1,4 @@
-Elasticsearch 备忘清单
+Elasticsearch 速查表
 ===
 
 这是 [Elasticsearch](https://www.elastic.co/guide/index.html) 的官方文档。 你可以在这里找到 elasticsearch 的所有文档。
@@ -29,7 +29,7 @@ $ wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${VERS
 
 $ wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${VERSION}-linux-x86_64.tar.gz.sha512
 
-$ shasum -a 512 -c elasticsearch-${VERSION}-linux-x86_64.tar.gz.sha512 
+$ shasum -a 512 -c elasticsearch-${VERSION}-linux-x86_64.tar.gz.sha512
 
 $ tar -xzf elasticsearch-${VERSION}-linux-x86_64.tar.gz
 
@@ -42,11 +42,11 @@ $ cd elasticsearch-${VERSION}/
 ```shell
 $ curl -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${VERSION}-darwin-x86_64.tar.gz
 
-$ curl https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${VERSION}-darwin-x86_64.tar.gz.sha512 | shasum -a 512 -c - 
+$ curl https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${VERSION}-darwin-x86_64.tar.gz.sha512 | shasum -a 512 -c -
 
 $ tar -xzf elasticsearch-${VERSION}-darwin-x86_64.tar.gz
 
-$ cd elasticsearch-${VERSION}/ 
+$ cd elasticsearch-${VERSION}/
 ```
 <!--rehype:className=wrap-text-->
 
@@ -60,7 +60,7 @@ $ cd elasticsearch-${VERSION}/
     ```
 
 - 设置密码
-  
+
     ```shell
     export ELASTIC_PASSWORD="your_password"
     ```
@@ -68,7 +68,7 @@ $ cd elasticsearch-${VERSION}/
 - 测试是否启动成功
 
     ```shell
-    curl --cacert $ES_HOME/config/certs/http_ca.crt -u elastic:$ELASTIC_PASSWORD https://localhost:9200 
+    curl --cacert $ES_HOME/config/certs/http_ca.crt -u elastic:$ELASTIC_PASSWORD https://localhost:9200
     ```
     <!--rehype:className=wrap-text-->
 
@@ -397,7 +397,7 @@ GET /user_info/_search
 <!--rehype:wrap-class=col-span-2-->
 
 类似数据库中的 `select * from user_info where username = 'username';`
-  
+
 #### 通过条件查询 - DSL语法
 
 ```json
@@ -453,14 +453,14 @@ curl -XGET "http://localhost:9200/user_info/_search" -H 'Content-Type: applicati
 #### DSL语法
 
 ```json
-GET /user_info/_search  
-{  
+GET /user_info/_search
+{
   "query": {
     "bool": {
       "must": [
         { "range": { "age": { "gt": 18 } } },
         { "term": { "sex": "男" } }
-      ]   
+      ]
     }
   }
 }
@@ -480,11 +480,11 @@ curl -XGET "http://localhost:9200/user_info/_search" -H 'Content-Type: applicati
 #### DSL语法
 
 ```json
-GET /user_info/_search  
-{  
-    "size": 10,  
-    "query": {  
-        "match_all": {}     
+GET /user_info/_search
+{
+    "size": 10,
+    "query": {
+        "match_all": {}
     }
 }
 ```
@@ -503,13 +503,13 @@ curl -XGET "http://localhost:9200/user_info/_search" -H 'Content-Type: applicati
 #### DSL语法
 
 ```http
-GET /user_info/_search  
-{  
-    "size": 2,  
-    "from": 1,  
-    "query": {  
-        "match_all": {}  
-    }  
+GET /user_info/_search
+{
+    "size": 2,
+    "from": 1,
+    "query": {
+        "match_all": {}
+    }
 }
 ```
 
@@ -521,7 +521,7 @@ curl -XGET "http://localhost:9200/user_info/_search" -H 'Content-Type: applicati
 <!--rehype:className=wrap-text-->
 
 #### 参数说明
-  
+
 - `size`: 10 表示我们想要返回的结果数量是10条
 - `from`: 20 表示我们想要从结果集中的第21条记录开始返回（因为偏移是从0开始的）
 - `query`: `{"match_all": {}}` 是一个匹配所有文档的查询，因为我们没有特定的查询条件，只是想要分页结果
@@ -586,7 +586,7 @@ curl -XDELETE "http://localhost:9200/user_info/_doc/3"
 <!--rehype:wrap-class=col-span-2-->
 
 类似数据库中的 delete 查询 `delete from user_info where age > 18;`
-  
+
 #### DSL语法
 
 ```json

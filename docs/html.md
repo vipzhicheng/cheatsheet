@@ -1,7 +1,7 @@
-HTML 备忘清单
+HTML 速查表
 ===
 
-此 HTML 快速参考备忘单以可读布局列出了常见的 `HTML` 和 `HTML5` 标记。
+此 HTML 快速参考速查表以可读布局列出了常见的 `HTML` 和 `HTML5` 标记。
 
 入门
 ------------
@@ -19,7 +19,7 @@ HTML 备忘清单
     <title>HTML5 Boilerplate</title>
 </head>
 <body>
-    <h1>Hello world, hello 备忘清单!</h1>
+    <h1>Hello world, hello 速查表!</h1>
 </body>
 </html>
 ```
@@ -41,7 +41,7 @@ HTML 备忘清单
 
 ```html
 <p>我来自快速参考</p>
-<p>分享快速参考备忘单。</p>
+<p>分享快速参考速查表。</p>
 ```
 
 请参阅：[段落元素](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/p)
@@ -358,10 +358,10 @@ HTML5 标签
 ### HTML5 mark
 
 ```html
-<p>我爱<mark>备忘清单</mark></p>
+<p>我爱<mark>速查表</mark></p>
 ```
 
-<p>我爱<mark>备忘清单</mark></p>
+<p>我爱<mark>速查表</mark></p>
 
 HTML 表格
 --------------
@@ -521,7 +521,7 @@ HTML `<form>` 元素用于收集信息并将其发送到外部源。
 
 ```html
 <!-- 嵌套标签 -->
-<label>Click me 
+<label>Click me
 <input type="text" id="user" name="name"/>
 </label>
 ```
@@ -959,21 +959,21 @@ Facebook、Instagram、Pinterest、LinkedIn 等使用。
 ┆  ┆  <nav>                        ┆  ┆
 ┆  ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯  ┆
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯
-╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮ 
-┆  <main>                             ┆ 
-┆ ╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮ ╭┈┈┈┈┈┈┈┈┈┈┈╮  ┆ 
-┆ ┆  <article>       ┆ ┆  <aside>  ┆  ┆ 
-┆ ┆ ╭┈┈┈┈┈┈┈┈┈┈┈╮    ┆ ┆           ┆  ┆ 
-┆ ┆ ┆ <header>  ┆    ┆ ┆           ┆  ┆ 
-┆ ┆ ╰┈┈┈┈┈┈┈┈┈┈┈╯    ┆ ┆           ┆  ┆ 
-┆ ┆ ╭┈┈┈┈┈┈┈┈┈┈┈╮    ┆ ┆           ┆  ┆ 
-┆ ┆ ┆ <section> ┆    ┆ ┆           ┆  ┆ 
-┆ ┆ ╰┈┈┈┈┈┈┈┈┈┈┈╯    ┆ ┆           ┆  ┆ 
-┆ ┆ ╭┈┈┈┈┈┈┈┈┈┈┈╮    ┆ ┆           ┆  ┆ 
-┆ ┆ ┆ <footer>  ┆    ┆ ┆           ┆  ┆ 
-┆ ┆ ╰┈┈┈┈┈┈┈┈┈┈┈╯    ┆ ┆           ┆  ┆ 
-┆ ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯ ╰┈┈┈┈┈┈┈┈┈┈┈╯  ┆ 
-╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯ 
+╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮
+┆  <main>                             ┆
+┆ ╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮ ╭┈┈┈┈┈┈┈┈┈┈┈╮  ┆
+┆ ┆  <article>       ┆ ┆  <aside>  ┆  ┆
+┆ ┆ ╭┈┈┈┈┈┈┈┈┈┈┈╮    ┆ ┆           ┆  ┆
+┆ ┆ ┆ <header>  ┆    ┆ ┆           ┆  ┆
+┆ ┆ ╰┈┈┈┈┈┈┈┈┈┈┈╯    ┆ ┆           ┆  ┆
+┆ ┆ ╭┈┈┈┈┈┈┈┈┈┈┈╮    ┆ ┆           ┆  ┆
+┆ ┆ ┆ <section> ┆    ┆ ┆           ┆  ┆
+┆ ┆ ╰┈┈┈┈┈┈┈┈┈┈┈╯    ┆ ┆           ┆  ┆
+┆ ┆ ╭┈┈┈┈┈┈┈┈┈┈┈╮    ┆ ┆           ┆  ┆
+┆ ┆ ┆ <footer>  ┆    ┆ ┆           ┆  ┆
+┆ ┆ ╰┈┈┈┈┈┈┈┈┈┈┈╯    ┆ ┆           ┆  ┆
+┆ ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯ ╰┈┈┈┈┈┈┈┈┈┈┈╯  ┆
+╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯
 ╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮
 ┆  <footer>                           ┆
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯
@@ -1018,4 +1018,4 @@ Facebook、Instagram、Pinterest、LinkedIn 等使用。
 
 - [HTML 4.01 Specification](https://www.w3.org/TR/REC-html40/cover.html#minitoc) _(w3.org)_
 - [HTML Tutorial](https://wangchujiang.com/html-tutorial/) _(jaywcjlove.github.io)_
-- [Emmet 备忘清单，提升 HTML 和 CSS 代码编写的工具包](./emmet.md) _(jaywcjlove.github.io)_
+- [Emmet 速查表，提升 HTML 和 CSS 代码编写的工具包](./emmet.md) _(jaywcjlove.github.io)_

@@ -1,7 +1,7 @@
-tauri 备忘清单
+tauri 速查表
 ===
 
-这个 [tauri](https://tauri.app/) 快速参考备忘单显示了它的常用命令使用清单
+这个 [tauri](https://tauri.app/) 快速参考速查表显示了它的常用命令使用清单
 
 入门
 ---
@@ -112,7 +112,7 @@ RUST_BACKTRACE=1 tauri dev
 Window 上这样开启
 
 ```bash
-set RUST_BACKTRACE=1 
+set RUST_BACKTRACE=1
 tauri dev
 ```
 
@@ -294,7 +294,7 @@ $ apksigner sign --ks android.keystore release.apk
 #### 隔离模式。建议出于安全目的
 
 ```json
-{ 
+{
   "use": "isolation",
   "options": { "dir": string }
 }

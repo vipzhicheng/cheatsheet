@@ -1,7 +1,7 @@
-Glances 备忘清单
+Glances 速查表
 ===
 
-这是开始使用 [Glances](https://glances.readthedocs.io/en/latest/) 系统监控工具的快速参考备忘单，可以帮助用户监视系统的各种性能指标
+这是开始使用 [Glances](https://glances.readthedocs.io/en/latest/) 系统监控工具的快速参考速查表，可以帮助用户监视系统的各种性能指标
 
 入门
 ----
@@ -386,7 +386,7 @@ prefix=localhost
 
 ```ini
 [amp_nginx]
-# 应启用 Nginx 状态页面 
+# 应启用 Nginx 状态页面
 # https://easyengine.io/tutorials/nginx/status-page/
 
 enable=true

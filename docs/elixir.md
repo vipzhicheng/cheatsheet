@@ -1,7 +1,7 @@
-Elixir 备忘清单
+Elixir 速查表
 ===
 
-提供基本语法和方法的 Elixir 快速参考备忘单。
+提供基本语法和方法的 Elixir 快速参考速查表。
 
 入门
 ------
@@ -41,21 +41,21 @@ Elixir 支持多种基本类型：整数、浮点、布尔值、原子和字符�
 
 ```elixir
 # integer 整数
-iex> 1          
+iex> 1
 # integer（支持2进制、8进制和16进制的整数）
-iex> 0x1F       
+iex> 0x1F
 # float
-iex> 1.0        
+iex> 1.0
 # boolean
-iex> true       
+iex> true
 # atom / symbol
-iex> :atom      
+iex> :atom
 # string
-iex> "elixir"   
+iex> "elixir"
 # list
-iex> [1, 2, 3]  
+iex> [1, 2, 3]
 # tuple
-iex> {1, 2, 3}  
+iex> {1, 2, 3}
 ```
 
 ### 注释
@@ -177,7 +177,7 @@ iex> div(10, 2)
 允许在调用需要一个或多个参数的函数时删除括号
 
 ```elixir
-iex> div 10, 2 
+iex> div 10, 2
 5
 iex> rem 10, 3
 1
@@ -738,7 +738,7 @@ end
 defmodule Greeter do
   def hello(name), do: phrase <> name
   # 使用defp来定义私有函数
-  defp phrase, do: "Hello, " 
+  defp phrase, do: "Hello, "
 end
 ```
 

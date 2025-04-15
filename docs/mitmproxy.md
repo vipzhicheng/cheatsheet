@@ -1,7 +1,7 @@
-Mitmproxy 备忘清单
+Mitmproxy 速查表
 ====
 
-[Mitmproxy](https://mitmproxy.org/) 是一个免费开源的交互式 HTTPS 代理。这是 mitmproxy 的快速参考备忘单。
+[Mitmproxy](https://mitmproxy.org/) 是一个免费开源的交互式 HTTPS 代理。这是 mitmproxy 的快速参考速查表。
 
 入门
 -----
@@ -29,7 +29,7 @@ Mitmproxy 备忘清单
 h ◀ ─── + ─── ▶ l           ││ page
         │                   ││
         ▼                   ▼▼
-        j             Ctrl f / Space 
+        j             Ctrl f / Space
 ```
 
 ---
@@ -198,7 +198,7 @@ Mitmproxy 过滤器
 
 ---
 
-- [RegEX 备忘清单](./regex.md) _(jaywcjlove.github.io)_
+- [RegEX 速查表](./regex.md) _(jaywcjlove.github.io)_
 
 正则表达式是 Python 风格的，可以指定为带引号的字符串
 
@@ -322,4 +322,4 @@ addons = [
 - [mitmproxy addons](https://github.com/mitmproxy/mitmproxy/tree/master/examples/addons) _(github.com)_
 - [mitmproxy 文档](https://docs.mitmproxy.org/stable/) _(mitmproxy.org)_
 - [mitmproxy 开源仓库](https://github.com/mitmproxy/mitmproxy) _(github.com)_
-- [mitmproxy 备忘清单](https://www.stut-it.net/blog/2017/mitmproxy-cheatsheet.html) _(stut-it.net)_
+- [mitmproxy 速查表](https://www.stut-it.net/blog/2017/mitmproxy-cheatsheet.html) _(stut-it.net)_

@@ -1,4 +1,4 @@
-RxJS 备忘清单
+RxJS 速查表
 ===
 
 [RxJS](https://rxjs.dev/)（Reactive Extensions for JavaScript）是一个强大的库，用于处理异步事件和数据流。以下是 RxJS 的一些关键概念、操作符和方法的总结。
@@ -96,8 +96,8 @@ fromEvent(document, 'click')
 ```javascript
 import { Observable, of, from, interval, fromEvent } from 'rxjs';
 
-import { map, filter, switchMap, mergeMap, catchError, debounceTime, 
-  distinctUntilChanged, take, tap, concatMap, delay, retryWhen, scan, 
+import { map, filter, switchMap, mergeMap, catchError, debounceTime,
+  distinctUntilChanged, take, tap, concatMap, delay, retryWhen, scan,
   combineLatest, concat, merge, forkJoin, withLatestFrom, startWith, reduce
 } from 'rxjs/operators';
 ```
@@ -338,7 +338,7 @@ const obs = of(1, 2, 3).pipe(
   tap(x => console.log(`After: ${x}`))
 );
 obs.subscribe();
-// 输出: Before: 1, After: 2, Before: 2, 
+// 输出: Before: 1, After: 2, Before: 2,
 //      After: 4, Before: 3, After: 6
 ```
 

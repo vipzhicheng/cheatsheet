@@ -1,7 +1,7 @@
-Sublime Text 备忘清单
+Sublime Text 速查表
 ===
 
-这个 [Sublime Text](https://www.sublimetext.com/) 快速参考备忘单显示了它的键盘快捷键和命令。
+这个 [Sublime Text](https://www.sublimetext.com/) 快速参考速查表显示了它的键盘快捷键和命令。
 
 ## 快捷键
 
@@ -54,12 +54,12 @@ Sublime Text 备忘清单
 
 快捷键 | 说明
 :- | -
-`⌘`  | Command()  
-`⌃`  | Control  
-`⌥`  | Option(alt)  
-`⇧`  | Shift  
+`⌘`  | Command()
+`⌃`  | Control
+`⌥`  | Option(alt)
+`⇧`  | Shift
 `⇪`  | Caps Lock(大写)
-`fn` | 功能键就是fn  
+`fn` | 功能键就是fn
 `↩︎`  | return/Enter
 <!--rehype:className=shortcuts-->
 
@@ -89,9 +89,9 @@ Sublime Text 备忘清单
 
 ### 选择(Selecting)
 
-- `⌘ + D`  
+- `⌘ + D`
       选择光标所在的单词，并高亮该词出现的所有位置
-- `⌘ + D`  
+- `⌘ + D`
     择该词出现的下一个位置
 - `⌘ + U` 进行回退，使用Esc退
 <!--rehype:className=style-timeline shortcuts-->

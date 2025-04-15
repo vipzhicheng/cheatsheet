@@ -1,4 +1,4 @@
-Cron 备忘清单
+Cron 速查表
 ===
 
 [Cron](https://en.wikipedia.org/wiki/Cron) 最适合安排重复性任务。 可以使用关联的 at 实用程序来完成一次性任务的调度。

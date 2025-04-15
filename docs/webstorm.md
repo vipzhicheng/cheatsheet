@@ -1,7 +1,7 @@
-WebStorm 备忘清单
+WebStorm 速查表
 ===
 
-此快速参考备忘单列出了在 Windows/Linux 或 Mac 上运行的 [WebStorm](https://www.jetbrains.com/webstorm/) 的默认键盘快捷键
+此快速参考速查表列出了在 Windows/Linux 或 Mac 上运行的 [WebStorm](https://www.jetbrains.com/webstorm/) 的默认键盘快捷键
 
 Webstorm Windows & Linux 键盘映射
 --------

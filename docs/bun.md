@@ -1,7 +1,7 @@
-Bun 备忘清单
+Bun 速查表
 ===
 
-这是一份 [`Bun`](https://bun.sh/) 软件包管理器备忘单，其中列出了 `Bun` 常用命令使用清单
+这是一份 [`Bun`](https://bun.sh/) 软件包管理器速查表，其中列出了 `Bun` 常用命令使用清单
 
 入门
 ---
@@ -26,7 +26,7 @@ npm | Yarn | Bun | 说明
 `npm cache clean` | `yarn cache clean` | `bun cache clean` | 清理缓存目录
 <!--rehype:className=left-align-->
 
-参考备忘清单： [npm](./npm.md)、[yarn](./yaml.md)、[pnpm](./pnpm.md)
+参考速查表： [npm](./npm.md)、[yarn](./yaml.md)、[pnpm](./pnpm.md)
 
 ### 创建项目
 

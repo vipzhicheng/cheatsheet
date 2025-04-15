@@ -1,7 +1,7 @@
-Ansible 备忘清单
+Ansible 速查表
 ====
 
-此快速参考备忘单提供了使用 [Ansible](https://ansible.com) 的各种方法。
+此快速参考速查表提供了使用 [Ansible](https://ansible.com) 的各种方法。
 
 入门
 ---
@@ -350,7 +350,7 @@ $ ansible-playbook playbook.yml
 <!--rehype:wrap-class=row-span-2-->
 
 ```bash
-$ ansible-pull 
+$ ansible-pull
 $ ansible-pull -U <repository> [options]
 ```
 
@@ -447,7 +447,7 @@ $  ansible <host-pattern> [options] # 标准使用方式
 另见
 ---
 
-- [Getting started with Ansible](https://docs.ansible.com/ansible/latest/getting_started/index.html)  
+- [Getting started with Ansible](https://docs.ansible.com/ansible/latest/getting_started/index.html)
 - [Introduction to ad hoc commands](https://docs.ansible.com/ansible/latest/user_guide/intro_adhoc.html)
 - [Ansible cheatsheet](https://github.com/luckylittle/ansible-cheatsheet/blob/master/ansible-cheatsheet.txt)
 - [Ansible Tutorial for Beginners: Ultimate Playbook & Examples](https://spacelift.io/blog/ansible-tutorial)

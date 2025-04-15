@@ -1,7 +1,7 @@
-MySQL 备忘清单
+MySQL 速查表
 ===
 
-本备忘单旨在快速理解 [MySQL](https://mysql.com) 所涉及的主要概念，提供了最常用的SQL语句，供您参考。
+本速查表旨在快速理解 [MySQL](https://mysql.com) 所涉及的主要概念，提供了最常用的SQL语句，供您参考。
 
 入门
 ---
@@ -81,7 +81,7 @@ mysql -h <host> -u <user> -p [db_name]
 # 显示当前mysql的version的各种信息
 mysql> status;
 # 显示当前mysql的version信息
-mysql> select version(); 
+mysql> select version();
 # 查看 MySQL 端口号
 mysql> show global variables like 'port';
 ```
@@ -89,7 +89,7 @@ mysql> show global variables like 'port';
 ### 退出MySQL会话
 
 ```bash
-mysql> exit 
+mysql> exit
 ```
 
 退出 `quit;` 或 `\q;` 一样的效果
@@ -236,7 +236,7 @@ ORDER BY c1 ASC [DESC]
 
 ```sql
 SELECT c1, c2 FROM t
-ORDER BY c1 
+ORDER BY c1
 LIMIT n OFFSET offset
 ```
 
@@ -263,7 +263,7 @@ HAVING condition
 内部连接 t1 和 t2
 
 ```sql
-SELECT c1, c2 
+SELECT c1, c2
 FROM t1
 INNER JOIN t2 ON condition
 ```
@@ -271,7 +271,7 @@ INNER JOIN t2 ON condition
 左连接t1和t1
 
 ```sql
-SELECT c1, c2 
+SELECT c1, c2
 FROM t1
 LEFT JOIN t2 ON condition
 ```
@@ -279,7 +279,7 @@ LEFT JOIN t2 ON condition
 右连接t1和t2
 
 ```sql
-SELECT c1, c2 
+SELECT c1, c2
 FROM t1
 RIGHT JOIN t2 ON condition
 ```
@@ -287,7 +287,7 @@ RIGHT JOIN t2 ON condition
 执行完全外部连接
 
 ```sql
-SELECT c1, c2 
+SELECT c1, c2
 FROM t1
 FULL OUTER JOIN t2 ON condition
 ```
@@ -295,7 +295,7 @@ FULL OUTER JOIN t2 ON condition
 生成表中行的笛卡尔积
 
 ```sql
-SELECT c1, c2 
+SELECT c1, c2
 FROM t1
 CROSS JOIN t2
 ```
@@ -303,7 +303,7 @@ CROSS JOIN t2
 执行交叉连接的另一种方法
 
 ```sql
-SELECT c1, c2 
+SELECT c1, c2
 FROM t1, t2
 ```
 
@@ -382,7 +382,7 @@ CREATE TABLE t(
 
 ```sql
 CREATE TABLE t1(
-    c1 INT PRIMARY KEY,  
+    c1 INT PRIMARY KEY,
     c2 INT,
     FOREIGN KEY (c2) REFERENCES t2(c2)
 );
@@ -428,7 +428,7 @@ VALUES(value_list);
 
 ```sql
 INSERT INTO t(column_list)
-VALUES (value_list), 
+VALUES (value_list),
        (value_list), …;
 ```
 
@@ -451,7 +451,7 @@ SET c1 = new_value;
 
 ```sql
 UPDATE t
-SET c1 = new_value, 
+SET c1 = new_value,
         c2 = new_value
 WHERE condition;
 ```
@@ -475,7 +475,7 @@ WHERE condition;
 创建由c1和c2组成的新视图
 
 ```sql
-CREATE VIEW v(c1,c2) 
+CREATE VIEW v(c1,c2)
 AS
 SELECT c1, c2
 FROM t;
@@ -484,7 +484,7 @@ FROM t;
 使用选中选项创建新视图
 
 ```sql
-CREATE VIEW v(c1,c2) 
+CREATE VIEW v(c1,c2)
 AS
 SELECT c1, c2
 FROM t;
@@ -494,7 +494,7 @@ WITH [CASCADED | LOCAL] CHECK OPTION;
 创建递归视图
 
 ```sql
-CREATE RECURSIVE VIEW v 
+CREATE RECURSIVE VIEW v
 AS
 select-statement -- anchor part
 UNION [ALL]
@@ -504,7 +504,7 @@ select-statement; -- recursive part
 创建临时视图
 
 ```sql
-CREATE TEMPORARY VIEW v 
+CREATE TEMPORARY VIEW v
 AS
 SELECT c1, c2
 FROM t;
@@ -554,7 +554,7 @@ EXECUTE stored_procedure;
 在t表的c1和c2上创建索引
 
 ```sql
-CREATE INDEX idx_name 
+CREATE INDEX idx_name
 ON t(c1,c2);
 ```
 

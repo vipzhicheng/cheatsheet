@@ -1,7 +1,7 @@
-Bash 备忘清单
+Bash 速查表
 ===
 
-这是开始使用 linux bash shell 脚本的快速参考备忘单。
+这是开始使用 linux bash shell 脚本的快速参考速查表。
 
 入门
 -----
@@ -200,7 +200,7 @@ SRC="/path/to/foo.cpp"
 ---
 
 ```bash
-BASEPATH=${SRC##*/}   
+BASEPATH=${SRC##*/}
 echo $BASEPATH  # => "foo.cpp"
 ```
 
@@ -654,13 +654,13 @@ set -o noclobber
 用于出错时退出，避免级联错误
 
 ```bash
-set -o errexit   
+set -o errexit
 ```
 
 揭示隐藏的失败
 
 ```bash
-set -o pipefail  
+set -o pipefail
 ```
 
 公开未设置的变量
@@ -680,13 +680,13 @@ shopt -s nullglob   # ('*.foo' => '')
 不匹配的 glob 抛出错误
 
 ```bash
-shopt -s failglob  
+shopt -s failglob
 ```
 
 不区分大小写的球体
 
 ```bash
-shopt -s nocaseglob 
+shopt -s nocaseglob
 ```
 
 通配符匹配点文件
@@ -921,8 +921,8 @@ EOF
 
 ```bash
 cat > file <<EOF
-export ORACLE_SID=yqpt 
-export PATH=\$PATH:\$ORACLE_HOME/bin  
+export ORACLE_SID=yqpt
+export PATH=\$PATH:\$ORACLE_HOME/bin
 EOF
 ```
 

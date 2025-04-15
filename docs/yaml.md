@@ -1,7 +1,7 @@
-YAML 备忘清单
+YAML 速查表
 ====
 
-这是理解和编写 YAML 格式配置文件的快速参考备忘单。
+这是理解和编写 YAML 格式配置文件的快速参考速查表。
 
 入门
 -----------
@@ -121,7 +121,7 @@ child:
 values: &ref
   - Will be
   - reused below
-  
+
 other_values:
   i_am_ref: *ref
 ```
@@ -256,11 +256,11 @@ children:
 my_sequences:
   - [1, 2, 3]
   - [4, 5, 6]
-  -  
+  -
     - 7
     - 8
     - 9
-    - 0 
+    - 0
 ```
 
 #### ↓ 等效的 JSON
@@ -495,7 +495,7 @@ YAML 参考
 - `\L` (LS)
 - `\P` (PS)
 <!--rehype:className=cols-3 style-none-->
-  
+
 ### 更多类型
 
 |          |                             |
@@ -522,5 +522,5 @@ YAML 参考
 - [YAML Reference Card](https://yaml.org/refcard.html) _(yaml.org)_
 - [Learn X in Y minutes](https://learnxinyminutes.com/docs/zh-cn/yaml-cn/) _(learnxinyminutes.com)_
 - [YAML lint online](http://www.yamllint.com/) _(yamllint.com)_
-- [INI 格式配置文件备忘清单](./ini.md) _(jaywcjlove.github.io)_
-- [TOML 格式配置文件备忘清单](./toml.md) _(jaywcjlove.github.io)_
+- [INI 格式配置文件速查表](./ini.md) _(jaywcjlove.github.io)_
+- [TOML 格式配置文件速查表](./toml.md) _(jaywcjlove.github.io)_

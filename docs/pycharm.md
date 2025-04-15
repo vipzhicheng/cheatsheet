@@ -1,7 +1,7 @@
-PyCharm 键盘快捷键备忘清单
+PyCharm 键盘快捷键速查表
 ===
 
-这个 [PyCharm](https://resources.jetbrains.com/storage/products/pycharm/docs/PyCharm_ReferenceCard.pdf) 快速参考备忘单显示了它的键盘快捷键和命令
+这个 [PyCharm](https://resources.jetbrains.com/storage/products/pycharm/docs/PyCharm_ReferenceCard.pdf) 快速参考速查表显示了它的键盘快捷键和命令
 
 快捷键
 ---

@@ -1,7 +1,7 @@
-Yarn 备忘清单
+Yarn 速查表
 ===
 
-这是一份 [`Yarn`](https://yarnpkg.com/) 软件包管理器备忘单，其中列出了 `Yarn` 常用命令使用清单
+这是一份 [`Yarn`](https://yarnpkg.com/) 软件包管理器速查表，其中列出了 `Yarn` 常用命令使用清单
 
 入门
 ---
@@ -21,7 +21,7 @@ npm(v5) | yarn | 说明
 `./node_modules/.bin/gulp` | `yarn run gulp`
 <!--rehype:className=show-header left-align-->
 
-npm _([备忘清单](./npm.md))_ 和 Yarn 有很多相似之处
+npm _([速查表](./npm.md))_ 和 Yarn 有很多相似之处
 
 ### yarn install
 
@@ -187,7 +187,7 @@ $ yarn cache clean
 另见
 ---
 
-- [npm 备忘清单](./npm.md)
+- [npm 速查表](./npm.md)
 - [Yarn 官方文档网站](https://yarnpkg.com/)
 - [Yarn 2 中文文档网站](https://www.yarnpkg.cn/)
 - [Yarn 1 中文文档网站](https://yarn.bootcss.com/) _(bootcss.com)_

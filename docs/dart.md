@@ -1,7 +1,7 @@
-Dart 备忘清单
+Dart 速查表
 ===
 
-包含最重要概念、功能、方法等的 [Dart](https://dart.dev/) 备忘单。初学者的完整快速参考
+包含最重要概念、功能、方法等的 [Dart](https://dart.dev/) 速查表。初学者的完整快速参考
 
 入门
 -----
@@ -488,7 +488,7 @@ class Money {
   Money({required this.amount});
 }
 
-// 利用扩展函数特性 
+// 利用扩展函数特性
 extension MoneyOperatorExtension<T> on Money {
   // operator 重载运算符
   Money operator +(Money elements) {
@@ -695,7 +695,7 @@ enum PlanetType { terrestrial, gas, ice }
 enum Planet {
   mercury(planetType: PlanetType.terrestrial, moons: 0, hasRings: false),
   venus(planetType: PlanetType.terrestrial, moons: 0, hasRings: false),
-  
+
   uranus(planetType: PlanetType.ice, moons: 27, hasRings: true),
   neptune(planetType: PlanetType.ice, moons: 14, hasRings: true);
 

@@ -1,19 +1,19 @@
-package.json 备忘清单
+package.json 速查表
 ===
 
-这个快速参考备忘清单，显示了关于 package.json 文件中所需内容的全部内容。
+这个快速参考速查表，显示了关于 package.json 文件中所需内容的全部内容。
 
 重要字段
 ----
 
 ### 介绍
 
-本快速参考备忘清单是您需要了解的关于 package.json 文件中所需内容的全部内容。 它必须是实际的 JSON，而不仅仅是 JavaScript 对象字面量。
+本快速参考速查表是您需要了解的关于 package.json 文件中所需内容的全部内容。 它必须是实际的 JSON，而不仅仅是 JavaScript 对象字面量。
 
 - [npm 文档](https://docs.npmjs.com/files/package.json) _(npmjs.com)_
 - [yarnpkg 文档](https://classic.yarnpkg.com/en/docs/package-json) _(yarnpkg.com)_
 - [packages 文档](https://nodejs.org/api/packages.html) _(nodejs.org)_
-- [npm 备忘清单(速查表)](./npm.md) _(jaywcjlove.github.io)_
+- [npm 速查表(速查表)](./npm.md) _(jaywcjlove.github.io)_
 
 ### `name`
 
@@ -411,7 +411,7 @@ import sub from "mod/sub"
 {
   "main": "./index.js",
   "exports": "./index.js"
-} 
+}
 ```
 
 如果同时出现 <red>~~`main`~~</red> 和 `exports` 字段，只会读取 `exports` 字段
@@ -751,4 +751,4 @@ Yarn
 - [npm 文档](https://docs.npmjs.com/files/package.json) _(npmjs.com)_
 - [yarnpkg 文档](https://classic.yarnpkg.com/en/docs/package-json) _(yarnpkg.com)_
 - [packages 文档](https://nodejs.org/api/packages.html) _(nodejs.org)_
-- [npm 备忘清单(速查表)](./npm.md) _(jaywcjlove.github.io)_
+- [npm 速查表(速查表)](./npm.md) _(jaywcjlove.github.io)_

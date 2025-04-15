@@ -1,7 +1,7 @@
-MATLAB 备忘清单
+MATLAB 速查表
 ===
 
-这个快速参考备忘单提供了使用 [MATLAB](https://mathworks.cn/) 科学计算语言快速入门的示例介绍
+这个快速参考速查表提供了使用 [MATLAB](https://mathworks.cn/) 科学计算语言快速入门的示例介绍
 
 入门
 ---

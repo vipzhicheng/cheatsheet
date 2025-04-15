@@ -1,7 +1,7 @@
-Jupyter 备忘清单
+Jupyter 速查表
 ===
 
-Jupyter 备忘清单是 [Jupyter](http://jupyter.org) 编程工具的单页参考表
+Jupyter 速查表是 [Jupyter](http://jupyter.org) 编程工具的单页参考表
 
 入门
 ----

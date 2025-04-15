@@ -1,4 +1,4 @@
-Lerna 备忘清单
+Lerna 速查表
 ===
 
 [![NPM version](https://img.shields.io/npm/v/lerna.svg?style=flat)](https://www.npmjs.com/package/lerna)
@@ -6,7 +6,7 @@ Lerna 备忘清单
 [![Repo Dependents](https://badgen.net/github/dependents-repo/lerna/lerna/nest)](https://github.com/lerna/lerna/nest/network/dependents)
 [![Github repo](https://badgen.net/badge/icon/Github?icon=github&label)](https://github.com/lerna/lerna/nest)
 
-本备忘单旨在快速理解 [Lerna v6](https://github.com/lerna/lerna) 所涉及的主要概念，显示了它的常用命令使用清单
+本速查表旨在快速理解 [Lerna v6](https://github.com/lerna/lerna) 所涉及的主要概念，显示了它的常用命令使用清单
 <!--rehype:style=padding-top: 12px;-->
 
 入门
@@ -142,9 +142,9 @@ $ lerna exec -- protractor conf.js
 
 ```bash
 # 发布自上次发布以来已更改的软件包
-$ lerna publish              
+$ lerna publish
 # 显式发布在当前提交中标记的包
-$ lerna publish from-git     
+$ lerna publish from-git
 # 显式发布注册表中不存在最新版本的软件包
 $ lerna publish from-package
 # 使用下一个语义预发布版本，例如

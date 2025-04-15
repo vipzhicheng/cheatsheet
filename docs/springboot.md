@@ -1,7 +1,7 @@
-Spring Boot 备忘清单
+Spring Boot 速查表
 ===
 
-此快速参考备忘单提供了使用 Spring Boot 的用法
+此快速参考速查表提供了使用 Spring Boot 的用法
 
 注：开发 springboot 需要要基本的 java 基础和 maven 基础。
 
@@ -10,7 +10,7 @@ Spring Boot 备忘清单
 
 ### 介绍
 
-Spring Boot 是一个用于简化 Spring 应用程序开发的框架。它提供了一种简单的方式来创建、运行和部署 Spring 应用程序，并简化了配置和依赖管理。  
+Spring Boot 是一个用于简化 Spring 应用程序开发的框架。它提供了一种简单的方式来创建、运行和部署 Spring 应用程序，并简化了配置和依赖管理。
 
 ### 项目创建与配置
 <!--rehype:wrap-class=col-span-2-->
@@ -65,7 +65,7 @@ spring:
     url: jdbc:mysql://localhost:3306/mydatabase
     username: root
     password: password
-    driver-class-name: com.mysql.cj.jdbc.Driver # 这里是 MySQL8.0 版本配置，5.0 则是 com.mysql.jdbc.Driver 
+    driver-class-name: com.mysql.cj.jdbc.Driver # 这里是 MySQL8.0 版本配置，5.0 则是 com.mysql.jdbc.Driver
 ```
 
 #### 说明
@@ -257,12 +257,12 @@ Spring Boot根据类路径中的依赖项自动配置应用程序上下文。这
 @RestController
 public class MyContr {
   private final MyService myService;
-  
+
   @Autowired
   public MyContr(MyService myService) {
       this.myService = myService;
   }
-  
+
   // Controller methods
 }
 ```
@@ -289,12 +289,12 @@ Spring Boot支持根据条件选择性地注入Bean。例如，可以使用 `@Co
 @Aspect
 @Component
 public class LoggingAspect {
-    
+
     @Before("execution(* com.example.service.*.*(..))")
     public void beforeServiceMethods(JoinPoint joinPoint) {
         // Advice logic before service method execution
     }
-    
+
     // Other advices (e.g., @After, @Around) can be defined similarly
 }
 ```
@@ -448,7 +448,7 @@ public class UserController {
         return null;
     }
 
-    // DELETE 删除用户 
+    // DELETE 删除用户
     @DeleteMapping("/{id}")
     public void deleteUser(@PathVariable("id") Long id) {
         userRepository.deleteById(id);
@@ -499,13 +499,13 @@ public class User {
 
 - **GET** `http://localhost:8080/users/`
   获取所有用户
-- **GET** `http://localhost:8080/users/{id}`  
+- **GET** `http://localhost:8080/users/{id}`
   根据用户ID获取用户信息
-- **POST** `http://localhost:8080/users/`  
+- **POST** `http://localhost:8080/users/`
   添加新用户（Body 中包含 JSON 数据）
-- **PUT** `http://localhost:8080/users/{id}`  
+- **PUT** `http://localhost:8080/users/{id}`
   更新用户信息（Body 中包含 JSON 数据）
-- **DELETE** `http://localhost:8080/users/{id}`  
+- **DELETE** `http://localhost:8080/users/{id}`
   删除用户
 
 测试

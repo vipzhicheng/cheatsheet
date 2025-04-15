@@ -1,4 +1,4 @@
-Ejs 备忘清单
+Ejs 速查表
 ====
 
 [![NPM version](https://img.shields.io/npm/v/ejs.svg?style=flat)](https://www.npmjs.com/package/ejs)

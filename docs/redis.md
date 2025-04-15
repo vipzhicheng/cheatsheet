@@ -1,7 +1,7 @@
-Redis 备忘清单
+Redis 速查表
 ===
 
-本备忘单旨在快速理解 [redis](https://redis.io/) 所涉及的主要概念，提供了最常用的SQL语句，供您参考。
+本速查表旨在快速理解 [redis](https://redis.io/) 所涉及的主要概念，提供了最常用的SQL语句，供您参考。
 
 入门
 ---
@@ -769,7 +769,7 @@ redis> BITCOUNT mykey 1 1
 ### BITFIELD
 
 ```shell
-BITFIELD key [GET type offset] [SET type offset value] 
+BITFIELD key [GET type offset] [SET type offset value]
 [INCRBY type offset increment] [OVERFLOW WRAP|SAT|FAIL]
 ```
 
@@ -1093,7 +1093,7 @@ redis> GET mykey
 ### SET
 
 ```shell
-SET key value [EX seconds|PX milliseconds|KEEPTTL] [NX|XX] 
+SET key value [EX seconds|PX milliseconds|KEEPTTL] [NX|XX]
 [GET]
 ```
 
@@ -1208,7 +1208,7 @@ redis> STRLEN nonexisting
 ### STRALGO
 
 ```shell
-STRALGO LCS algo-specific-argument [algo-specific-argument 
+STRALGO LCS algo-specific-argument [algo-specific-argument
 ...]
 ```
 
@@ -2389,7 +2389,7 @@ redis> BZPOPMAX zset1 zset2 0
 <!--rehype:wrap-class=row-span-2-->
 
 ```
-ZADD key [NX|XX] [GT|LT] [CH] [INCR] score member [score 
+ZADD key [NX|XX] [GT|LT] [CH] [INCR] score member [score
 member ...]
 ```
 
@@ -2557,7 +2557,7 @@ redis> ZRANGE myzset 0 -1 WITHSCORES
 ### ZINTER
 
 ```
-ZINTER numkeys key [key ...] [WEIGHTS weight [weight ...]] 
+ZINTER numkeys key [key ...] [WEIGHTS weight [weight ...]]
 [AGGREGATE SUM|MIN|MAX] [WITHSCORES]
 ```
 
@@ -2589,7 +2589,7 @@ redis> ZINTER 2 zset1 zset2 WITHSCORES
 ### ZINTERSTORE
 
 ```
-ZINTERSTORE destination numkeys key [key ...] [WEIGHTS weight 
+ZINTERSTORE destination numkeys key [key ...] [WEIGHTS weight
 [weight ...]] [AGGREGATE SUM|MIN|MAX]
 ```
 
@@ -3014,7 +3014,7 @@ redis> ZREVRANK myzset "four"
 ### ZUNION
 
 ```
-ZUNION numkeys key [key ...] [WEIGHTS weight [weight ...]] 
+ZUNION numkeys key [key ...] [WEIGHTS weight [weight ...]]
 [AGGREGATE SUM|MIN|MAX] [WITHSCORES]
 ```
 
@@ -3070,7 +3070,7 @@ redis> ZMSCORE myzset "one" "two" "nofield"
 ### ZUNIONSTORE
 
 ```
-ZUNIONSTORE destination numkeys key [key ...] [WEIGHTS weight 
+ZUNIONSTORE destination numkeys key [key ...] [WEIGHTS weight
 [weight ...]] [AGGREGATE SUM|MIN|MAX]
 ```
 
@@ -3192,7 +3192,7 @@ redis> GEODIST Sicily Foo Bar
 <!--rehype:wrap-class=row-span-3-->
 
 ```
-GEORADIUS key longitude latitude radius m|km|ft|mi [WITHCOORD] [WITHDIST] [WITHHASH] [COUNT 
+GEORADIUS key longitude latitude radius m|km|ft|mi [WITHCOORD] [WITHDIST] [WITHHASH] [COUNT
 count] [ASC|DESC] [STORE key] [STOREDIST key]
 ```
 
@@ -3229,7 +3229,7 @@ redis> GEORADIUS Sicily 15 37 200 km WITHDIST WITHCOORD
 ### GEORADIUSBYMEMBER
 
 ```
-GEORADIUSBYMEMBER key member radius m|km|ft|mi [WITHCOORD] [WITHDIST] [WITHHASH] [COUNT count] 
+GEORADIUSBYMEMBER key member radius m|km|ft|mi [WITHCOORD] [WITHDIST] [WITHHASH] [COUNT count]
 [ASC|DESC] [STORE key] [STOREDIST key]
 ```
 
@@ -3250,7 +3250,7 @@ redis> GEORADIUSBYMEMBER Sicily Agrigento 100 km
 ### GEOSEARCH
 
 ```
-GEOSEARCH key [FROMMEMBER member] [FROMLONLAT longitude latitude] [BYRADIUS radius m|km|ft|mi] 
+GEOSEARCH key [FROMMEMBER member] [FROMLONLAT longitude latitude] [BYRADIUS radius m|km|ft|mi]
 [BYBOX width height m|km|ft|mi] [ASC|DESC] [COUNT count] [WITHCOORD] [WITHDIST] [WITHHASH]
 ```
 

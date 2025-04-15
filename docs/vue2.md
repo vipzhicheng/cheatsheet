@@ -1,7 +1,7 @@
-Vue 2 备忘清单
+Vue 2 速查表
 ===
 
-渐进式 JavaScript 框架 [Vue 2](https://v2.cn.vuejs.org/) 备忘清单的快速参考列表，包含常用 API 和示例。
+渐进式 JavaScript 框架 [Vue 2](https://v2.cn.vuejs.org/) 速查表的快速参考列表，包含常用 API 和示例。
 
 入门
 ---
@@ -12,7 +12,7 @@ Vue 是一套用于构建用户界面的渐进式框架
 
 - [Vue 2.x 官方文档](https://v2.cn.vuejs.org/) _(v2.cn.vuejs.org)_
 - [Vue Router 3.x 官方文档](https://v3.router.vuejs.org/) _(v3.router.vuejs.org)_
-- [Vue 3 备忘清单](./vue.md)
+- [Vue 3 速查表](./vue.md)
 <!--rehype:className=style-round-->
 
 注意：Vue 2.x 版本对应 Vue Router 3.x 路由版本
@@ -219,7 +219,7 @@ var app6 = new Vue({
 ```html
 <p>解释为普通文本: {{ rawHtml }}</p>
 <p>
-  使用 v-html 指令: 
+  使用 v-html 指令:
   <span v-html="rawHtml"></span>
 </p>
 ```
@@ -906,7 +906,7 @@ var vm = new Vue({
   },
   watch: {
     firstName: function (val) {
-      this.fullName = 
+      this.fullName =
           val + ' ' + this.lastName
     },
     lastName: function (val) {
@@ -928,7 +928,7 @@ var vm = new Vue({
   },
   computed: {
     fullName: function () {
-      return this.firstName 
+      return this.firstName
         + ' ' + this.lastName
     }
   }
@@ -1614,7 +1614,7 @@ Vue.component('alert-box', {
   .slide-fade-leave-active {
     transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
   }
-  /* .slide-fade-leave-active 用于 2.1.8 以下版本 */ 
+  /* .slide-fade-leave-active 用于 2.1.8 以下版本 */
   .slide-fade-enter, .slide-fade-leave-to {
     transform: translateX(10px);
     opacity: 0;

@@ -1,7 +1,7 @@
-Python 3 备忘清单
+Python 3 速查表
 ===
 
-Python 备忘单是 [Python 3](https://www.python.org/) 编程语言的单页参考表
+Python 速查表是 [Python 3](https://www.python.org/) 编程语言的单页参考表
 
 入门
 -----
@@ -141,7 +141,7 @@ counter = 0
 counter = counter + 10  # => 10
 message = "Part 1."
 # => Part 1.Part 2.
-message += "Part 2."   
+message += "Part 2."
 ```
 
 ### f-字符串 (Python 3.6+)
@@ -187,7 +187,7 @@ z = 1j   # 复数
 ### 布尔值
 
 ```python
-my_bool = True 
+my_bool = True
 my_bool = False
 bool(0)     # => False
 bool(1)     # => True
@@ -218,7 +218,7 @@ my_tuple = tuple((1, 2, 3))
 ### 集合
 
 ```python
-set1 = {"a", "b", "c"}   
+set1 = {"a", "b", "c"}
 set2 = set(("a", "b", "c"))
 ```
 
@@ -756,7 +756,7 @@ IndexError: list index out of range
 ```
 
 ### 搜索
-  
+
 ```python
 >>> nums = [40, 36, 89, 2, 36, 100, 7, -20.5, -999]
 >>> nums.index(2)
@@ -765,10 +765,10 @@ IndexError: list index out of range
 5
 >>> nums.index(7, 4) # 搜索4之后的元素
 6
-```  
+```
 
 当寻找一个不存在的值时，抛出`ValueError`。
-  
+
 Python 判断
 ------------
 
@@ -848,7 +848,7 @@ for index in range(10):
 ### 跳过一轮循环
 
 ```python
-for index in range(3, 8): 
+for index in range(3, 8):
     x = index * 10
     if index == 5:
         continue
@@ -880,7 +880,7 @@ for n, a in zip(name, age):
 
 ```python
 result = [x**2 for x in range(10) if x % 2 == 0]
- 
+
 print(result)
 # [0, 4, 16, 36, 64]
 ```
@@ -891,7 +891,7 @@ Python 函数
 ### 基础
 
 ```python
-def hello_world():  
+def hello_world():
     print('Hello, World!')
 ```
 
@@ -1264,11 +1264,11 @@ my = MyNewClass()
 class Animal:
     def __init__(self, voice):
         self.voice = voice
- 
+
 cat = Animal('Meow')
 print(cat.voice)    # => Meow
- 
-dog = Animal('Woof') 
+
+dog = Animal('Woof')
 print(dog.voice)    # => Woof
 ```
 
@@ -1279,7 +1279,7 @@ class Dog:
     # 类的方法
     def bark(self):
         print("Ham-Ham")
- 
+
 charlie = Dog()
 charlie.bark()   # => "Ham-Ham"
 ```
@@ -1293,7 +1293,7 @@ class MyClass:
 # => 一个类变量！
 print(MyClass.class_variable)
 x = MyClass()
- 
+
 # => 一个类变量！
 print(x.class_variable)
 ```
@@ -1305,12 +1305,12 @@ print(x.class_variable)
 class ParentClass:
     def print_test(self):
         print("Parent Method")
- 
+
 class ChildClass(ParentClass):
     def print_test(self):
         print("Child Method")
         # 调用父级的 print_test()
-        super().print_test() 
+        super().print_test()
 ```
 
 ---
@@ -1328,10 +1328,10 @@ Parent Method
 class Employee:
     def __init__(self, name):
         self.name = name
- 
+
     def __repr__(self):
         return self.name
- 
+
 john = Employee('John')
 print(john)  # => John
 ```
@@ -1349,14 +1349,14 @@ class CustomError(Exception):
 class ParentClass:
     def print_self(self):
         print('A')
- 
+
 class ChildClass(ParentClass):
     def print_self(self):
         print('B')
- 
+
 obj_A = ParentClass()
 obj_B = ChildClass()
- 
+
 obj_A.print_self() # => A
 obj_B.print_self() # => B
 ```
@@ -1367,11 +1367,11 @@ obj_B.print_self() # => B
 class ParentClass:
     def print_self(self):
         print("Parent")
- 
+
 class ChildClass(ParentClass):
     def print_self(self):
         print("Child")
- 
+
 child_instance = ChildClass()
 child_instance.print_self() # => Child
 ```
@@ -1379,15 +1379,15 @@ child_instance.print_self() # => Child
 ### 继承
 
 ```python
-class Animal: 
+class Animal:
     def __init__(self, name, legs):
         self.name = name
         self.legs = legs
-        
+
 class Dog(Animal):
     def sound(self):
         print("Woof!")
- 
+
 Yoki = Dog("Yoki", 4)
 print(Yoki.name) # => YOKI
 print(Yoki.legs) # => 4
@@ -1457,9 +1457,9 @@ with obj as alias:
 
 ### 特殊方法
 <!--rehype:wrap-class=col-span-3-->
-下表使用 `-> *` 代表返回值类型是任意的，或者需要视情况而定，实际上并不存在这种写法。  
-诸如 `-> str` 仅表示绝大多数情况下应当返回 `str` 类型，或者推荐返回 `str` 类型。  
-没有 `->` 的方法一般没有返回值。  
+下表使用 `-> *` 代表返回值类型是任意的，或者需要视情况而定，实际上并不存在这种写法。
+诸如 `-> str` 仅表示绝大多数情况下应当返回 `str` 类型，或者推荐返回 `str` 类型。
+没有 `->` 的方法一般没有返回值。
 参见 <https://docs.python.org/zh-cn/3/reference/datamodel.html>
 
 | 语句                  | 特殊方法                               | 备注                                                                                                                                                                                                                                                 |     |
@@ -1843,7 +1843,7 @@ pyenv versions
 # 设置 python 版本
 pyenv global 3.10.14 # 全局设置
 pyenv shell  3.10.14 # 针对当前 shell session
-pyenv local  3.10.14 # 针对当前目录 
+pyenv local  3.10.14 # 针对当前目录
 ```
 
 #### pipenv

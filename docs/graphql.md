@@ -1,7 +1,7 @@
-GraphQL 备忘清单
+GraphQL 速查表
 ===
 
-这份快速参考备忘单提供了 [GraphQL](https://graphql.org/) 的简要概述
+这份快速参考速查表提供了 [GraphQL](https://graphql.org/) 的简要概述
 
 入门
 ---

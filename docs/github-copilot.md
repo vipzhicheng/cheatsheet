@@ -1,4 +1,4 @@
-Github Copilot 备忘清单
+Github Copilot 速查表
 ===
 
 这是开始使用 [Github Copilot](https://code.visualstudio.com/docs/editor/github-copilot) 的快速参考指南
@@ -48,7 +48,7 @@ Copilot Enterprise| 39美元/人/月 | Business 特性 + 私有代码库的个�
 `Completions Panel` | 在编辑器中展示完整的建议列表
 `Inline Chat` | 在编辑器中紧邻光标所在位置发起对话
 `Editor Chat` | 在编辑器中打开完整的对话界面
-`Silde Chat` | 在编辑器的侧边栏打开对话界面  
+`Silde Chat` | 在编辑器的侧边栏打开对话界面
 `Quick Chat` | 在顶部唤起对话界面
 <!--rehype:className=left-align-->
 
@@ -58,7 +58,7 @@ Copilot Enterprise| 39美元/人/月 | Business 特性 + 私有代码库的个�
 ### 提示之禅
 <!--rehype:wrap-class=col-span-1 row-span-1-->
 
-- 你的关系与 `copilot` 的关系，就像作家与插画师的关系。  
+- 你的关系与 `copilot` 的关系，就像作家与插画师的关系。
 - 为了让 `copilot` 能够绘制出精美的插画（即代码），你需要尽可能全面、干练、清晰地描述你的故事（即上下文）。
 <!--rehype:className=style-round-->
 
@@ -103,7 +103,7 @@ Copilot会查看编辑器中当前和紧邻打开的文件，以分析上下文�
 
 ```python
 # Download file from an URL and analyze its content
-# Details: 
+# Details:
 # * Download the file from an URL
 # * Save the downloaded files into `./download` folder
 # * Use `filetype` of the file to specify how to parse
@@ -215,7 +215,7 @@ class Email:
 
 ### 上下文: 代码: 代码示例
 
-> 提供片段代码示例，以帮助 Copilot 更好地开始新的开发任务。  
+> 提供片段代码示例，以帮助 Copilot 更好地开始新的开发任务。
 >
 > - 使用的框架与库
 > - 代码风格
@@ -251,7 +251,7 @@ class User(Base):
 
 ### 上下文: 代码: 数据示例
 
-> 提供片段数据示例，以帮助 Copilot 更好地开始新的开发任务。  
+> 提供片段数据示例，以帮助 Copilot 更好地开始新的开发任务。
 >
 > - 数据结构与类型
 > - 命名
@@ -437,7 +437,7 @@ Copilot Chat 的 Slash Commands 使用技巧
 
 ---
 
-> 当然也可以直接选中区域，然后在inline chat中输入指令执行 copilot会对选中区域进行指令操作  
+> 当然也可以直接选中区域，然后在inline chat中输入指令执行 copilot会对选中区域进行指令操作
 
 #### 常用指令
 
@@ -448,20 +448,20 @@ Copilot Chat 的 Slash Commands 使用技巧
 ### Silde Chat 的 Slash Commands
 <!--rehype:wrap-class=col-span-1 row-span-2-->
 
-- 通过命令 `workbench.action.chat.openInSidebar` 触发 `chat` 后使用  
-- 或点击侧边栏上的Copilot聊天按钮  
-- 在Chat输入框中还允许指定Agent(即环境)  
+- 通过命令 `workbench.action.chat.openInSidebar` 触发 `chat` 后使用
+- 或点击侧边栏上的Copilot聊天按钮
+- 在Chat输入框中还允许指定Agent(即环境)
 <!--rehype:className=style-round-->
 
 #### Slash Commands
 
 |命令         |说明 |
 |-           |:-|
-`/api`         |回答vscode扩展插件开发的问题  
+`/api`         |回答vscode扩展插件开发的问题
 `/explain`     |对选中的代码进行解释
 `/fix`         |修复此选中的代码
 `/new`         |创建新项目workspace
-`/newNotebook` |创建新的Jupyter Notebook  
+`/newNotebook` |创建新的Jupyter Notebook
 `/terminal`    |解释命令行里的命令
 `/tests`       |为选中的代码生成单元测试
 `/help`        |帮助说明
@@ -493,7 +493,7 @@ Copilot Chat 的 Slash Commands 使用技巧
 
 ```json
 // settings.json
-{   
+{
     // ...
     "github.copilot.chat.welcomeMessage": "always",
     "github.copilot.chat.localeOverride": "zh-CN",
@@ -604,11 +604,11 @@ END... ENJOY YOURSELF
 参考来源
 ----
 
-\[1\]: [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/editor/github-copilot)  
-\[2\]: [How to use GitHub Copilot: Prompts, tips, and use cases](https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/)  
-\[3\]: [GitHub Copilot Official Website](https://github.com/features/copilot)  
-\[4\]: [GitHub Copilot Series (Youtube)](https://www.youtube.com/playlist?list=PLj6YeMhvp2S5_hvBl2SE-7YCHYlLQ0bPt)  
-\[5\]: [Pragmatic techniques to get the most out of GitHub Copilot  (Youtube)](https://www.youtube.com/watch?v=CwAzIpc4AnA)  
-\[6\]: [How I used GitHub Copilot to build a browser extension](https://github.blog/2023-05-12-how-i-used-github-copilot-to-build-a-browser-extension)  
-\[7\]: [Visual Studio Code, Where are extensions installed?](https://code.visualstudio.com/docs/editor/extension-marketplace#_where-are-extensions-installed)  
-\[8\]: [Visual Studio Code, Language Identifiers](https://code.visualstudio.com/docs/languages/identifiers)  
+\[1\]: [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/editor/github-copilot)
+\[2\]: [How to use GitHub Copilot: Prompts, tips, and use cases](https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/)
+\[3\]: [GitHub Copilot Official Website](https://github.com/features/copilot)
+\[4\]: [GitHub Copilot Series (Youtube)](https://www.youtube.com/playlist?list=PLj6YeMhvp2S5_hvBl2SE-7YCHYlLQ0bPt)
+\[5\]: [Pragmatic techniques to get the most out of GitHub Copilot  (Youtube)](https://www.youtube.com/watch?v=CwAzIpc4AnA)
+\[6\]: [How I used GitHub Copilot to build a browser extension](https://github.blog/2023-05-12-how-i-used-github-copilot-to-build-a-browser-extension)
+\[7\]: [Visual Studio Code, Where are extensions installed?](https://code.visualstudio.com/docs/editor/extension-marketplace#_where-are-extensions-installed)
+\[8\]: [Visual Studio Code, Language Identifiers](https://code.visualstudio.com/docs/languages/identifiers)

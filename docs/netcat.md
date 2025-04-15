@@ -1,7 +1,7 @@
-Netcat 备忘清单
+Netcat 速查表
 ===
 
-该备忘单提供了在 Linux 和 Unix 上使用 Netcat 的各种方法。
+该速查表提供了在 Linux 和 Unix 上使用 Netcat 的各种方法。
 
 入门
 ------

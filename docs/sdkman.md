@@ -1,4 +1,4 @@
-SDKMAN 备忘清单
+SDKMAN 速查表
 ====
 
 [SDKMAN](http://sdkman.io) 是一款管理 java 体系中的各类 SDK 版本的工具，可以用于大多数基于 Uinx 的系统
@@ -312,16 +312,16 @@ $ sdk offline disable
 ```shell
 $ sdk list groovy
 # ---------------------------
-# 
+#
 # 离线模式：仅显示已安装的groovy版本
 # --------------------------
 # >
 # > 2.4.4
-# 
+#
 # - 2.4.3
-# 
+#
 # --------------------------
-# 
+#
 # - - installed
 # >
 # > - currently in use

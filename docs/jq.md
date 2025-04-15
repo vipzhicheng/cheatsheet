@@ -1,7 +1,7 @@
-jq 备忘清单
+jq 速查表
 ===
 
-这个快速参考备忘单提供了使用 [jq](https://stedolan.github.io/jq/) 命令的各种方法。
+这个快速参考速查表提供了使用 [jq](https://stedolan.github.io/jq/) 命令的各种方法。
 
 入门
 ----
@@ -17,7 +17,7 @@ jq 就像用于 JSON 数据的 [sed](./sed.md) - 您可以使用它来切片、�
 
 ```bash
 $ sudo apt-get install jq # Debian& Ubuntu
-$ sudo dnf install jq     # Fedora 
+$ sudo dnf install jq     # Fedora
 $ sudo zypper install jq  # openSUSE
 $ sudo pacman -S jq    # Arch
 $ brew install jq      # macOS & Homebrew
@@ -111,7 +111,7 @@ $ echo '{"user":"stedolan","titles":["JQ Primer", "More JQ"]}' | jq '{user, titl
 ### 计算一个值的长度
 
 ```bash
-$ echo '[[1,2], "string", {"a":2}, null]' | jq '.[] | length'              
+$ echo '[[1,2], "string", {"a":2}, null]' | jq '.[] | length'
 ```
 <!--rehype:className=wrap-text -->
 
@@ -127,7 +127,7 @@ $ echo '[[1,2], "string", {"a":2}, null]' | jq '.[] | length'
 ### 取出数组中的键
 
 ```bash
-$ echo '{"abc": 1, "abcd": 2, "Foo": 3}' | jq 'keys'              
+$ echo '{"abc": 1, "abcd": 2, "Foo": 3}' | jq 'keys'
 ```
 <!--rehype:className=wrap-text -->
 
@@ -144,7 +144,7 @@ $ echo '{"abc": 1, "abcd": 2, "Foo": 3}' | jq 'keys'
 ### 使用多个过滤器
 
 ```bash
-$ echo '{ "foo": 42, "bar": "something else", "baz": true}' | jq '.foo, .bar' 
+$ echo '{ "foo": 42, "bar": "something else", "baz": true}' | jq '.foo, .bar'
 ```
 <!--rehype:className=wrap-text -->
 
@@ -158,7 +158,7 @@ $ echo '{ "foo": 42, "bar": "something else", "baz": true}' | jq '.foo, .bar'
 ### 管道传递给下一个过滤器
 
 ```bash
-$ echo '[{"name":"JSON", "good":true}, {"name":"XML", "good":false}]' | jq '.[] | .name'     
+$ echo '[{"name":"JSON", "good":true}, {"name":"XML", "good":false}]' | jq '.[] | .name'
 ```
 <!--rehype:className=wrap-text -->
 
@@ -172,7 +172,7 @@ $ echo '[{"name":"JSON", "good":true}, {"name":"XML", "good":false}]' | jq '.[] 
 ### 条件语句判断
 
 ```bash
-$ echo '[1,5,3,0,7]' | jq 'map(select(. >= 2))'        
+$ echo '[1,5,3,0,7]' | jq 'map(select(. >= 2))'
 ```
 <!--rehype:className=wrap-text -->
 

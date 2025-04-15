@@ -1,4 +1,4 @@
-\</> htmx 备忘清单
+\</> htmx 速查表
 ===
 
 [![NPM version](https://img.shields.io/npm/v/htmx.org.svg?style=flat)](https://npmjs.org/package/htmx.org)
@@ -6,7 +6,7 @@
 [![Repo Dependents](https://badgen.net/github/dependents-repo/bigskysoftware/htmx)](https://github.com/bigskysoftware/htmx/network/dependents)
 [![Github repo](https://badgen.net/badge/icon/Github?icon=github&label)](https://github.com/bigskysoftware/htmx)
 
-适合初学者的综合 [htmx](https://htmx.org/) 备忘清单
+适合初学者的综合 [htmx](https://htmx.org/) 速查表
 <!--rehype:style=padding-top: 12px;-->
 
 入门
@@ -79,7 +79,7 @@ import 'htmx.org';
   </div>
   <button class="btn">提交</button>
   <button class="btn" hx-get="/contact/1">取消</button>
-</form> 
+</form>
 ```
 
 表单按照通常的 `REST-ful` 模式将 `PUT` 发回 `/contacts/1`

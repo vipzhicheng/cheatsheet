@@ -1,7 +1,7 @@
 Android Studio 键盘快捷键
 ====
 
-Android Studio 软件中 130 个键盘快捷键的可视化备忘单
+Android Studio 软件中 130 个键盘快捷键的可视化速查表
 
 键盘快捷键
 --------

@@ -1,7 +1,7 @@
-Pinia 备忘清单
+Pinia 速查表
 ===
 
-这是一份 [`Pinia`](https://pinia.vuejs.org/) 状态管理库的备忘单，列出了 Pinia 的常用命令和操作。
+这是一份 [`Pinia`](https://pinia.vuejs.org/) 状态管理库的速查表，列出了 Pinia 的常用命令和操作。
 
 入门
 ---
@@ -287,7 +287,7 @@ import { useUserStore } from '@/stores/userStore'
 export default {
   setup() {
     const userStore = useUserStore()
-    
+
     return { userStore }
   }
 }
@@ -310,7 +310,7 @@ export function createApp() {
 }
 ```
 
-明白了，让我们来结合 `pinia-plugin-persist` 插件完善 Pinia 备忘清单。
+明白了，让我们来结合 `pinia-plugin-persist` 插件完善 Pinia 速查表。
 
 ### 使用 Vue Devtools
 

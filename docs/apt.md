@@ -1,7 +1,7 @@
-APT 备忘清单
+APT 速查表
 ===
 
-这个 APT 快速参考备忘单显示了它的常用命令使用清单。
+这个 APT 快速参考速查表显示了它的常用命令使用清单。
 
 APT 清单查询
 ---
@@ -33,7 +33,7 @@ $ apt [ OPTIONS ] COMMAND
 ```bash
 $ apt -h or --help
 # 或
-$ apt 
+$ apt
 ```
 
 查看指令用法

@@ -1,7 +1,7 @@
-Find 备忘清单
+Find 速查表
 ===
 
-这是 Linux find 命令备忘清单的快速参考列表，包含常用选项和示例。
+这是 Linux find 命令速查表的快速参考列表，包含常用选项和示例。
 
 入门
 ----
@@ -22,7 +22,7 @@ $ find . -name "json_*"
 
 ----
 
-- [Find 备忘清单](https://gist.github.com/gr1ev0us/3a9b9d9dbdd38f6379288eb2686fc538) _(gist.github.com)_
+- [Find 速查表](https://gist.github.com/gr1ev0us/3a9b9d9dbdd38f6379288eb2686fc538) _(gist.github.com)_
 
 ### 参数示例
 <!--rehype:wrap-class=col-span-2-->

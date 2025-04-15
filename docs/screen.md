@@ -1,7 +1,7 @@
-Screen 备忘清单
+Screen 速查表
 ====
 
-这是 screen 命令的快速参考指南备忘单。
+这是 screen 命令的快速参考指南速查表。
 
 入门
 ----
@@ -9,7 +9,7 @@ Screen 备忘清单
 ### 快速开始
 
 ```shell
-$ screen 
+$ screen
 ```
 
 ---

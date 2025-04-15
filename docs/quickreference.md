@@ -1,7 +1,7 @@
-Quick Reference 备忘清单
+Quick Reference 速查表
 ===
 
-这是您可以在 Quick Reference 备忘单上使用的样式参考，快速参与[贡献](https://github.com/jaywcjlove/reference/blob/main/CONTRIBUTING.md)！
+这是您可以在 Quick Reference 速查表上使用的样式参考，快速参与[贡献](https://github.com/jaywcjlove/reference/blob/main/CONTRIBUTING.md)！
 
 入门
 ---
@@ -48,15 +48,15 @@ npm run start # 监听 md 文件编译输出 HTML
 └── assets  # LOGO 图标文件资源
 ```
 
-### 添加一个备忘清单
+### 添加一个速查表
 
-一个简单的备忘清单包含 `页面大标题<h1>`，放在大标题下面的 `介绍` 文本，`<h2>` 分类标题，`<h3>` 内容为 `卡片`
+一个简单的速查表包含 `页面大标题<h1>`，放在大标题下面的 `介绍` 文本，`<h2>` 分类标题，`<h3>` 内容为 `卡片`
 
 ```markdown
-备忘清单 (页面大标题)
+速查表 (页面大标题)
 ===
 
-这是您可以在当前清单上使用的样式参考！备忘清单介绍
+这是您可以在当前清单上使用的样式参考！速查表介绍
 
 入门 (分类标题)
 ---
@@ -80,7 +80,7 @@ npm run start # 监听 md 文件编译输出 HTML
 <!--rehype:class=home-card-->
 ```
 
-首页导航图标存放在 `/assets` 目录中，如果你的备忘清单定义为 `docs/cron.md`，那么你的图标就定义为 `cron.svg` 存放到 `/assets` 目录中，重新编译首页当行菜单就拥有了图标。
+首页导航图标存放在 `/assets` 目录中，如果你的速查表定义为 `docs/cron.md`，那么你的图标就定义为 `cron.svg` 存放到 `/assets` 目录中，重新编译首页当行菜单就拥有了图标。
 
 - 图标存放在 [`/assets`](https://github.com/jaywcjlove/reference/tree/main/assets) 目录中
 - 图片名称与清单名称保持一致 `cron.md` -> `cron.svg` (注意大小写)
@@ -147,7 +147,7 @@ refs-cli@v0.0.1
   "data-info": "👆 需要你的参与",
   "search": {
     "label": "搜索",
-    "placeholder": "搜索备忘清单",
+    "placeholder": "搜索速查表",
     "cancel": "取消"
   },
   "editor": {
@@ -179,7 +179,7 @@ data-info = "👆 需要你的参与"
 
 [search]
   label = "搜索"
-  placeholder = "搜索备忘清单"
+  placeholder = "搜索速查表"
   cancel = "取消"
 
 [editor]
@@ -258,7 +258,7 @@ Markdown 语法注释
 ### 介绍
 <!--rehype:wrap-class=row-span-2-->
 
-在备忘清单采用 `HTML 注释语法`，标识网站布局和一些样式，目的是为了在 `GitHub` 中也是正常毫无瑕疵的预览 [`Markdown`](./markdown.md)。
+在速查表采用 `HTML 注释语法`，标识网站布局和一些样式，目的是为了在 `GitHub` 中也是正常毫无瑕疵的预览 [`Markdown`](./markdown.md)。
 
 ```markdown
 ### 卡片标题
@@ -269,7 +269,7 @@ Markdown 语法注释
 ```
 <!--rehype:className=wrap-text-->
 
-上面基础示例，使用 `col-span-2` 类标识，卡片占 `2` 列位置，参考现有备忘清单的源代码是一个好习惯！
+上面基础示例，使用 `col-span-2` 类标识，卡片占 `2` 列位置，参考现有速查表的源代码是一个好习惯！
 
 ### 注释语法介绍
 <!--rehype:wrap-class=row-span-4&style=color:black;background-color: #d7a100;-->
@@ -280,7 +280,7 @@ Markdown 语法注释
 
 #### 语法
 
-`<!--rehype:` _+_ `key=value` _+_ **`&`** _+_ `key=value` _+_ `-->`  
+`<!--rehype:` _+_ `key=value` _+_ **`&`** _+_ `key=value` _+_ `-->`
 `标识开始` + `参数` + `分隔符(&)` + `参数`  + `标识结束`
 
 #### 示例
@@ -343,7 +343,7 @@ function () {}
 ### 展示表格表头
 
 ```markdown
-| Key | value | 
+| Key | value |
 | ---- | ---- |
 | `键` | 值    |
 <!--rehype:className=show-header-->
@@ -700,7 +700,7 @@ H2 部分
 ```shell
 ╭┈┈┈╮ ╭┈┈┈╮ ╭┈┈┈╮
 ┆ 1 ┆ ┆ 2 ┆ ┆ 3 ┆
-╰┈┈┈╯ ╰┈┈┈╯ ╰┈┈┈╯ 
+╰┈┈┈╯ ╰┈┈┈╯ ╰┈┈┈╯
 ╭┈┈┈╮ ╭┈┈┈┈┈┈┈┈┈╮
 ┆ 4 ┆ ┆ 5       ┆
 ╰┈┈┈╯ ╰┈┈┈┈┈┈┈┈┈╯

@@ -1,7 +1,7 @@
 Linux 命令速查表
 ===
 
-这个快速参考备忘单提供了使用 Linux 常用命令的使用清单
+这个快速参考速查表提供了使用 Linux 常用命令的使用清单
 
 命令速查表
 ---
@@ -349,7 +349,7 @@ Linux 命令速查表
  **`ssh -NfR remote_port:localhost:local_port user@remote_server`**    | ssh代理
  **`find . -wholename "*.sh" -exec dos2unix {} \;`**     | 修复脚本格式错误
  **`rsync -avz /source/ user@remote:/destination/`**     | 同步文件和目录到远程服务器，支持压缩和增量传输
- <!--rehype:className=left-align shortcuts-->  
+ <!--rehype:className=left-align shortcuts-->
 
 另见
 ---

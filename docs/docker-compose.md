@@ -1,7 +1,7 @@
-Docker Compose 备忘清单
+Docker Compose 速查表
 ===
 
-这是 [docker-compose](https://docs.docker.com/compose/) 的快速参考备忘单。你可以在这里找到最常见的 Docker Compose 使用方式。
+这是 [docker-compose](https://docs.docker.com/compose/) 的快速参考速查表。你可以在这里找到最常见的 Docker Compose 使用方式。
 
 入门
 ---
@@ -174,7 +174,7 @@ services:  # 定义一个或多个服务
       context: ./path/to/Dockerfile  # Dockerfile 所在的目录
       dockerfile: Dockerfile-alternative  # 可选的 Dockerfile 名称，默认是 Dockerfile
     # 容器启动时执行的命令，覆盖默认的命令
-    command: 
+    command:
       - "nginx"
       - "-g"
       - "daemon off;"  # 以数组形式指定，防止 shell 解析
@@ -182,7 +182,7 @@ services:  # 定义一个或多个服务
       - "80:80"  # 主机 80 端口映射到容器的 80 端口
 
     volumes:  # 数据卷挂载
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro  # 将主机上的 nginx.conf 
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro  # 将主机上的 nginx.conf
                                               # 挂载到容器的 /etc/nginx/nginx.conf，只读
       - ./logs:/var/log/nginx  # 将 logs 目录挂载到容器的 /var/log/nginx
     environment:  # 设置环境变量

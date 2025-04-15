@@ -1,7 +1,7 @@
-jQuery 备忘清单
+jQuery 速查表
 ===
 
-[jQuery](https://jquery.com/) 备忘单对于初学者和有经验的开发人员都是很好的参考
+[jQuery](https://jquery.com/) 速查表对于初学者和有经验的开发人员都是很好的参考
 
 入门
 -----
@@ -30,7 +30,7 @@ $(selector).methodOrFunction();
 
 ```js
 $('#menu').on('click', () =>{
-  $(this).hide();  
+  $(this).hide();
 });
 $("body").css("background", "red");
 ```
@@ -166,7 +166,7 @@ $('h2').css({
 #### jQuery 添加类
 
 ```js
-$('.button').addClass('active'); 
+$('.button').addClass('active');
 ```
 
 #### jQuery 移除类

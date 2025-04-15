@@ -1,7 +1,7 @@
 Adobe Lightroom 键盘快捷键
 ===
 
-Adobe Lightroom CC 中 251 个键盘快捷键的可视化备忘单
+Adobe Lightroom CC 中 251 个键盘快捷键的可视化速查表
 
 键盘快捷键
 --------

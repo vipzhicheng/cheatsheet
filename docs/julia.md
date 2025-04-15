@@ -1,7 +1,7 @@
-Julia 备忘清单
+Julia 速查表
 ===
 
-本备忘清单旨在快速理解 [Julia](https://julialang.org/) 一份简单而粗略的语言概览，供您参考。
+本速查表旨在快速理解 [Julia](https://julialang.org/) 一份简单而粗略的语言概览，供您参考。
 
 入门
 ---
@@ -617,9 +617,9 @@ using ModuleName: x, y
 # 仅导出 x, y
 using ModuleName.x, ModuleName.y:
 # 仅导出 ModuleName
-import ModuleName 
+import ModuleName
 # 仅导出 x, y
-import ModuleName: x, y 
+import ModuleName: x, y
 # 仅导出 x, y
 import ModuleName.x, ModuleName.y
 ```

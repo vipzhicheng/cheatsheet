@@ -1,7 +1,7 @@
-Adobe Photoshop 键盘快捷键 备忘清单
+Adobe Photoshop 键盘快捷键 速查表
 ===
 
-Adobe Photoshop 中 283 个[键盘快捷键](https://helpx.adobe.com/photoshop/using/default-keyboard-shortcuts.html)的可视化备忘单
+Adobe Photoshop 中 283 个[键盘快捷键](https://helpx.adobe.com/photoshop/using/default-keyboard-shortcuts.html)的可视化速查表
 
 键盘快捷键
 ---------

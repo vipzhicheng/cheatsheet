@@ -1,7 +1,7 @@
-CSS 备忘清单
+CSS 速查表
 ===
 
-这是一份关于 CSS 优点的快速参考备忘单，列出了选择器语法、属性、单位和其他有用的信息
+这是一份关于 CSS 优点的快速参考速查表，列出了选择器语法、属性、单位和其他有用的信息
 
 入门
 ------------
@@ -66,7 +66,7 @@ CSS 功能丰富，不仅仅是布局页面
 ### 选择器
 
 ```css
-h1 { } 
+h1 { }
 #job-title { }
 div.hero { }
 div > p { }
@@ -285,13 +285,13 @@ p:first-child {
 
 ```css
 /* 未访问链接 */
-a:link { color: blue; }        
+a:link { color: blue; }
 /* 已访问链接 */
-a:visited { color: purple; }   
+a:visited { color: purple; }
 /* 用户鼠标悬停 */
 a:hover { background: yellow; }
 /* 激活链接 */
-a:active { color: red; }       
+a:active { color: red; }
 ```
 
 ### 伪类
@@ -594,7 +594,7 @@ CSS 动画
 <!--rehype:wrap-class=col-span-5&style=background:#ffeb3bcf;color:#333;-->
 
 ```css
-animation:  bounce   300ms      linear     100ms    infinite   alternate-reverse  both                   reverse  
+animation:  bounce   300ms      linear     100ms    infinite   alternate-reverse  both                   reverse
             ┈┬┈┈     ┈┬┈┈┈      ┈┬┈┈┈┈     ┈┈┬┈┈    ┈┈┈┬┈┈┈┈   ┈┈┬┈┈┈┈┈┈┈┈┈┈┈┈┈┈  ┈┈┬┈┈┈                 ┈┈┬┈┈┈
             动画名    动画时间     缓动函数    延迟     运行的次数   动画是否反向播放      如何将样式应用于其目标    是否运行或者暂停
 ```
@@ -666,20 +666,20 @@ CSS Flexbox
 .container {
   display: flex;
   display: inline-flex;
-  
+
   flex-direction: row;            /* ltr - 行(左向右) ▶ */
   flex-direction: row-reverse;    /* rtl - 行(右向左) ◀ */
   flex-direction: column;         /* top-bottom ▼ */
   flex-direction: column-reverse; /* bottom-top ▲ */
-  
+
   flex-wrap: nowrap;       /* 摆放到一行 */
   flex-wrap: wrap;         /* 被打断到多个行中 */
-  
+
   align-items: flex-start; /* 垂直对齐 - 顶部 */
   align-items: flex-end;   /* 垂直对齐 - 底部 */
   align-items: center;     /* 垂直对齐 - 中间 */
   align-items: stretch;    /* 所有人都一样的高度 (默认) */
-  
+
   justify-content: flex-start;    /* [◀◀◀        ] */
   justify-content: center;        /* [    ■■■    ] */
   justify-content: flex-end;      /* [        ▶▶▶] */
@@ -810,7 +810,7 @@ flex-direction: row | row-reverse | column | column-reverse;
 ╰┈┈╯  ┆         ╰┈┈╯  ┆     ┈┈┈┈┈┈┈┈┈┈┈▶    ◀┈┈┈┈┈┈┈┈┈┈┈
 ╭┈┈╮  ┆         ╭┈┈╮  ┆    ╭┈┈╮ ╭┈┈╮ ╭┈┈╮  ╭┈┈╮ ╭┈┈╮ ╭┈┈╮
 ╰┈┈╯  ┆         ╰┈┈╯  ▼    ╰┈┈╯ ╰┈┈╯ ╰┈┈╯  ╰┈┈╯ ╰┈┈╯ ╰┈┈╯
-┈┬┈┈┈┈┈┈        ┈┬┈┈┈┈┈┈    ┈┬┈┈┈┈┈┈┈┈┈┈┈   ┈┬┈┈┈┈┈┈┈┈┈┈┈ 
+┈┬┈┈┈┈┈┈        ┈┬┈┈┈┈┈┈    ┈┬┈┈┈┈┈┈┈┈┈┈┈   ┈┬┈┈┈┈┈┈┈┈┈┈┈
 column-reverse  column       row             row-reverse
 ```
 
@@ -881,15 +881,15 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
 ┆                      ┆  ┆ ╰┈┈┈╯╰╯╰┈╯           ┆
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯  ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯
  ▶ space-between(两端对齐)  ▶ space-around(均匀分布项目)
-╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮  ╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮ 
-┆ ╭┈┈╮╭┈┈╮╭┈┈╮╭┈┈╮╭┈┈╮ ┆  ┆                      ┆ 
-┆ ╰┈┈╯╰┈┈╯╰┈┈╯╰┈┈╯╰┈┈╯ ┆  ┆ ╭┈┈╮╭┈┈╮╭┈┈╮╭┈┈╮╭┈┈╮ ┆ 
-┆                      ┆  ┆ ╰┈┈╯╰┈┈╯╰┈┈╯╰┈┈╯╰┈┈╯ ┆ 
-┆                      ┆  ┆                      ┆ 
-┆                      ┆  ┆ ╭┈┈╮                 ┆ 
-┆ ╭┈┈╮                 ┆  ┆ ╰┈┈╯                 ┆ 
-┆ ╰┈┈╯                 ┆  ┆                      ┆ 
-╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯  ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯ 
+╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮  ╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮
+┆ ╭┈┈╮╭┈┈╮╭┈┈╮╭┈┈╮╭┈┈╮ ┆  ┆                      ┆
+┆ ╰┈┈╯╰┈┈╯╰┈┈╯╰┈┈╯╰┈┈╯ ┆  ┆ ╭┈┈╮╭┈┈╮╭┈┈╮╭┈┈╮╭┈┈╮ ┆
+┆                      ┆  ┆ ╰┈┈╯╰┈┈╯╰┈┈╯╰┈┈╯╰┈┈╯ ┆
+┆                      ┆  ┆                      ┆
+┆                      ┆  ┆ ╭┈┈╮                 ┆
+┆ ╭┈┈╮                 ┆  ┆ ╰┈┈╯                 ┆
+┆ ╰┈┈╯                 ┆  ┆                      ┆
+╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯  ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯
 ```
 
 ### order
@@ -961,7 +961,7 @@ CSS Flexbox 技巧
 .container {
   display: flex;
   /* 垂直的 */
-  align-items: center; 
+  align-items: center;
   /* 水平的 */
   justify-content: center;
 }
@@ -1115,7 +1115,7 @@ grid-row-gap: length;
 ```css
 .grid {
   display: grid;
-  grid-template-columns: 100px minmax(100px, 500px) 100px; 
+  grid-template-columns: 100px minmax(100px, 500px) 100px;
 }
 ```
 <!--rehype:className=wrap-text -->
@@ -1242,19 +1242,19 @@ counter-reset: my-counter;
 ```css
 body { counter-reset: section; }
 h3::before {
-  counter-increment: section; 
+  counter-increment: section;
   content: "Section." counter(section);
 }
 ```
 
 ```css
 ol {
-  counter-reset: section;   
+  counter-reset: section;
   list-style-type: none;
 }
 li::before {
   counter-increment: section;
-  content: counters(section, ".") " "; 
+  content: counters(section, ".") " ";
 }
 ```
 
@@ -1564,7 +1564,7 @@ textarea {
 
 ```css
 div {
-  aspect-ratio: 1/1 
+  aspect-ratio: 1/1
 }
 ```
 
@@ -1710,7 +1710,7 @@ body {
 
 ```css
 div {
-  -webkit-user-modify: 
+  -webkit-user-modify:
     read-write-plaintext-only;
 }
 ```
@@ -1757,7 +1757,7 @@ a[href]:not([class]) {
 在根元素设置基本字体大小后 (`html { font-size: 100%; }`), 使用 em 设置文本元素的字体大小:
 
 ```css
-h2 { 
+h2 {
   font-size: 2em;
 }
 p {

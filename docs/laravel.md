@@ -1,7 +1,7 @@
-Laravel 8 备忘清单
+Laravel 8 速查表
 ===
 
-Laravel 8 备忘清单是最好的 Laravel 代码段和备忘清单参考
+Laravel 8 速查表是最好的 Laravel 代码段和速查表参考
 
 入门
 ----
@@ -368,7 +368,7 @@ File::cleanDirectory('directory');
 
 ```php
 SSH::run(array $commands);
-SSH::into($remote)->run(array $commands); 
+SSH::into($remote)->run(array $commands);
 // 指定远程，否则假定默认
 SSH::run(array $commands, function($line)
 {
@@ -968,7 +968,7 @@ DB::table('name')->get();
 DB::table('users')->chunk(100, function($users)
 {
   foreach ($users as $user)
-  {  
+  {
 //
 }
 });

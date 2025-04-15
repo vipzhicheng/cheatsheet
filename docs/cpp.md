@@ -1,7 +1,7 @@
-C++ 备忘清单
+C++ 速查表
 ===
 
-提供基本语法和方法的 [C++](https://zh.cppreference.com/) 快速参考备忘单
+提供基本语法和方法的 [C++](https://zh.cppreference.com/) 快速参考速查表
 
 入门
 --------
@@ -614,13 +614,13 @@ auto func = []() -> return_type { };
       ```cpp
       int val1 = 123, val2 = 456;
       string str1("123"), str2(456);
-    
+
       auto func1 = [=, &str1]() -> int
           {
               return   val1 == std::stoi(str1)
                     ? val1 : val2;
           };
-    
+
       auto func2 = [&, val1]() -> string
           {
               return   str1 == std::to_string(val1)
@@ -750,7 +750,7 @@ struct Node {
     std::shared_ptr<Node> next;
     // 使用weak_ptr避免循环引用
     std::weak_ptr<Node> parent;
-    
+
     Node(const std::string& n) : name(n) {}
     ~Node() { std::cout << "销毁: " << name << std::endl; }
 };
@@ -759,10 +759,10 @@ struct Node {
 void createCycle() {
     auto node1 = std::make_shared<Node>("Node1");
     auto node2 = std::make_shared<Node>("Node2");
-    
+
     node1->next = node2;
     node2->parent = node1; // 使用weak_ptr避免循环引用
-    
+
     // 函数结束时，node1和node2会被正确销毁
     // 如果parent也是shared_ptr，则会造成内存泄漏
 }
@@ -1103,10 +1103,10 @@ void threadFunction() {
 int main() {
   // 创建线程并开始执行线程函数
   std::thread t(threadFunction);
-  
+
   // 等待线程执行完毕
   t.join();
-  
+
   return 0;
 }
 ```
@@ -1175,10 +1175,10 @@ int taskFunction() {
 int main() {
   // 启动异步任务
   std::future<int> fut = std::async(std::launch::async, taskFunction);
-  
+
   // 获取异步任务的结果
   int result = fut.get();
-  
+
   std::cout << "Result: " << result << std::endl;
   return 0;
 }

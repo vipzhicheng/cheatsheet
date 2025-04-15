@@ -2,14 +2,15 @@ name: 🐞 错误报告
 description: 当出现问题时提交报告以便修复！
 title: '🐞 错误报告: xxx.md'
 labels: ['request']
-assignees: jaywcjlove
+assignees: vipzhicheng
 body:
   - type: markdown
     attributes:
       value: |
-        🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧   
-        注意：请求太多，请按照下面内容提供错误报告  
-        🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧   
+        🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
+        注意：https://github.com/jaywcjlove/reference 是源头项目，提交错误建议去那里提交。
+        如果您坚持在这里提交，我有时间也会处理，如果您的贡献有价值，我也会考虑 PR 给源项目。
+        🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
 
   - type: input
     id: error-list
@@ -36,7 +37,7 @@ body:
     id: description
     attributes:
       label: 📖 错误说明
-      description: 您可以在这里简单的提供一些资料，方便我们在 Quick Reference 中添加您想添加的备忘清单(速查表)。
+      description: 您可以在这里简单的提供一些资料，方便我们在 Quick Reference 中添加您想添加的速查表(速查表)。
       placeholder: 请您在这里详细介绍具体错误问题
     validations:
       required: true

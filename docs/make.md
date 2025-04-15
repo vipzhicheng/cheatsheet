@@ -1,7 +1,7 @@
-make 备忘清单
+make 速查表
 ===
 
-包含 最重要概念、函数、方法等的 make 备忘单。 初学者的完整快速参考。
+包含 最重要概念、函数、方法等的 make 速查表。 初学者的完整快速参考。
 
 Makefile 入门
 ---
@@ -255,7 +255,7 @@ a.md: b.md c.md
 
 ```makefile
 a.md: b.md c.md
-    cp b.md a.md 
+    cp b.md a.md
 ```
 
 #### `$^`
@@ -515,8 +515,8 @@ all:
 如果我们只希望显示命令，而不希望执行命令，可以使用 `-n` 或者 `--just-print`
 
 ```bash
-$ make all --just-print 
-$ make all -n 
+$ make all --just-print
+$ make all -n
 ```
 
 #### 禁止命令
@@ -524,7 +524,7 @@ $ make all -n
 `-s` 或 `--silent` 或 `--quiet` 与 `@` 一样，用于禁止回声
 
 ```bash
-$ make all -s 
+$ make all -s
 ```
 
 <!--rehype:className=auto-wrap-->
@@ -757,7 +757,7 @@ $(filter <pattern...>,<text>)
 sources := foo.c bar.c baz.s ugh.h
 foo: $(sources)
     cc $(filter %.c %.s,$(sources)) -o foo
-$(filter %.c %.s,$(sources)) 
+$(filter %.c %.s,$(sources))
 # 返回的值是 foo.c bar.c baz.s
 ```
 
@@ -774,7 +774,7 @@ $(filter-out <pattern...>,<text>)
 ```makefile
 objects=main1.o foo.o main2.o bar.o
 mains=main1.o main2.o
-$(filter-out $(mains),$(objects)) 
+$(filter-out $(mains),$(objects))
 # 返回值是 foo.o bar.o 。
 ```
 
@@ -843,7 +843,7 @@ $(dir <names...>)
 ---
 
 ```makefile
-$(dir src/foo.c hacks) 
+$(dir src/foo.c hacks)
 #返回值是 src/ ./
 ```
 
@@ -888,7 +888,7 @@ $(basename <names...>)
 ---
 
 ```makefile
-$(basename src/foo.c src-1.0/bar.c hacks) 
+$(basename src/foo.c src-1.0/bar.c hacks)
 # 返回值是 src/foo src-1.0/bar hacks
 ```
 
@@ -904,7 +904,7 @@ $(addsuffix <suffix>,<names...>)
 
 ```makefile
 $(addsuffix .c,foo bar)
-# 返回值是 foo.c bar.c 
+# 返回值是 foo.c bar.c
 ```
 
 #### 加前缀函数(`addprefix`)

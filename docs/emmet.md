@@ -1,4 +1,4 @@
-Emmet 备忘清单
+Emmet 速查表
 ====
 
 [Emmet](https://emmet.io/) 是一个用于提升 [HTML](./html.md) 和 CSS 代码编写的 Web 开发人员工具包，它允许您使用著名的 CSS 选择器以光速编写大型 HTML 代码块。
@@ -272,7 +272,7 @@ HTML
     <title>Document</title>
 </head>
 <body>
-    
+
 </body>
 </html>
 ```
@@ -1075,7 +1075,7 @@ doc 别名 html>(head>meta[charset=${charset}]+title{${1:Document}})+body
     <title>Document</title>
 </head>
 <body>
-    
+
 </body>
 </html>
 ```
@@ -1090,7 +1090,7 @@ doc4 别名 html>(head>meta[http-equiv="Content-Type" content="text/html;charset
     <title>Document</title>
 </head>
 <body>
-    
+
 </body>
 </html>
 ```
@@ -1136,7 +1136,7 @@ html:4t 别名 !!!4t+doc4[lang=${lang}]
     <title>Document</title>
 </head>
 <body>
-    
+
 </body>
 </html>
 ```
@@ -1152,7 +1152,7 @@ html:4s 别名 !!!4s+doc4[lang=${lang}]
     <title>Document</title>
 </head>
 <body>
-    
+
 </body>
 </html>
 ```
@@ -1169,7 +1169,7 @@ html:xt 别名 !!!xt+doc4[xmlns=<http://www.w3.org/1999/xhtml> xml:lang=${lang}]
     <title>Document</title>
 </head>
 <body>
-    
+
 </body>
 </html>
 ```
@@ -1185,7 +1185,7 @@ html:xs 别名 !!!xs+doc4[xmlns=<http://www.w3.org/1999/xhtml> xml:lang=${lang}]
     <title>Document</title>
 </head>
 <body>
-    
+
 </body>
 </html>
 ```
@@ -1201,7 +1201,7 @@ html:xxs 别名 !!!xxs+doc4[xmlns=<http://www.w3.org/1999/xhtml> xml:lang=${lang
     <title>Document</title>
 </head>
 <body>
-    
+
 </body>
 </html>
 ```
@@ -1217,7 +1217,7 @@ html:5 别名 !!!+doc[lang=${lang}]
     <title>Document</title>
 </head>
 <body>
-    
+
 </body>
 </html>
 ```
@@ -1996,7 +1996,7 @@ CSS
 
 ```css
 @media screen {
-    
+
 }
 ```
 

@@ -1,7 +1,7 @@
-Rust 备忘清单
+Rust 速查表
 ====
 
-Rust 快速参考备忘单，旨在为编写基本语法和方法提供帮助。
+Rust 快速参考速查表，旨在为编写基本语法和方法提供帮助。
 
 入门
 ---
@@ -340,8 +340,8 @@ Rust 字符串
 ### 字符串字面量
 
 ```rust
-let cs:&str = "备忘清单";
-// => 为开发者分享备忘单
+let cs:&str = "速查表";
+// => 为开发者分享速查表
 println!("为开发者分享 {cs}");
 ```
 
@@ -353,7 +353,7 @@ let my_string = String::new;
 // 转换为字符串对象
 let S_string = a_string.to_string()
 // 创建一个初始化的字符串对象
-let lang = String::from("Rust");  
+let lang = String::from("Rust");
 println!("First language is {lang}");
 ```
 
@@ -518,7 +518,7 @@ fn main() {
   // 查询Yellow对应的值，若不存在则插入默认值
   let v: &mut i32 =
     map.entry("Yellow".to_string()).or_insert(5);
-  let v: &mut i32 = 
+  let v: &mut i32 =
     map.entry("Yellow".to_string()).or_insert(50); // 不会修改值
 }
 ```
@@ -795,7 +795,7 @@ let bitwise_and = g & h;  // => 0
 let bitwise_or = g | h;   // => 3
 let bitwise_xor = g ^ h;  // => 3
 let right_shift = g >> 2; // => 0
-let left_shift = h << 4;  // => 32 
+let left_shift = h << 4;  // => 32
 ```
 
 ### 逻辑运算符
@@ -1363,7 +1363,7 @@ println!("{a_number}");
 另见
 --------
 
-- [Cargo 备忘清单](./cargo.md) _(jaywcjlove.github.io)_
+- [Cargo 速查表](./cargo.md) _(jaywcjlove.github.io)_
 - [The Rust Document](https://doc.rust-lang.org/book/ch00-00-introduction.html) _(doc.rust-lang.org)_
 - [The Rust Reference](https://doc.rust-lang.org/reference/introduction.html) _(doc.rust-lang.org)_
 - [Rust Cheatsheet](https://phaiax.github.io/rust-cheatsheet/) _(phaiax.github.io)_

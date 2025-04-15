@@ -1,7 +1,7 @@
-LaTeX 备忘清单
+LaTeX 速查表
 ===
 
-本备忘单总结了 [LaTeX](https://www.latex-project.org/) 常用显示数学符号的参考列表和一些 [KaTeX](https://katex.org/) 的应用示例。
+本速查表总结了 [LaTeX](https://www.latex-project.org/) 常用显示数学符号的参考列表和一些 [KaTeX](https://katex.org/) 的应用示例。
 
 入门
 ---

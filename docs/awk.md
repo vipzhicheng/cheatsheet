@@ -1,7 +1,7 @@
-Awk 备忘清单
+Awk 速查表
 ===
 
-这是 [GNU awk](https://www.gnu.org/software/gawk/manual/gawk.html) 的单页快速参考备忘单，其中涵盖了常用的 `awk` 表达式和命令。
+这是 [GNU awk](https://www.gnu.org/software/gawk/manual/gawk.html) 的单页快速参考速查表，其中涵盖了常用的 `awk` 表达式和命令。
 
 入门
 ------
@@ -28,9 +28,9 @@ $ awk -F: '{print $1, $NF}' /etc/passwd
 ### Awk 程序
 
 ```bash
-BEGIN          {<初始化>} 
-   <pattern 1> {<计划动作>} 
-   <pattern 2> {<计划动作>} 
+BEGIN          {<初始化>}
+   <pattern 1> {<计划动作>}
+   <pattern 2> {<计划动作>}
    ...
 END            {< 最后的动作 >}
 ```
@@ -50,7 +50,7 @@ awk '
 
 ```bash
           $1      $2/$(NF-1)    $3/$NF
-           ▼          ▼           ▼ 
+           ▼          ▼           ▼
         ┌──────┬──────────────┬───────┐
 $0/NR ▶ │  ID  │  WEBSITE     │  URI  │
         ├──────┼──────────────┼───────┤
@@ -82,9 +82,9 @@ awk -F: '{print $1 "=" $6}' /etc/passwd
 awk 'BEGIN {print "hello world"}'        # 打印 "hello world"
 awk -F: '{print $1}' /etc/passwd         # -F: 指定字段分隔符
 # /pattern/ 仅对匹配的模式执行操作
-awk -F: '/root/ {print $1}' /etc/passwd                     
+awk -F: '/root/ {print $1}' /etc/passwd
 # BEGIN 块在开始时执行一次
-awk -F: 'BEGIN { print "uid"} { print $1 }' /etc/passwd     
+awk -F: 'BEGIN { print "uid"} { print $1 }' /etc/passwd
 # END 块在最后执行一次
 awk -F: '{print $1} END { print "-done-"}' /etc/passwd
 ```
@@ -287,10 +287,10 @@ Awk 运算符
 #### 算术运算
 
 - `+`
-- `-`  
-- `*`  
-- `/`  
-- `%`  
+- `-`
+- `*`
+- `/`
+- `%`
 - `++`
 - `--`
 <!--rehype:className=cols-3 style-none-->
@@ -386,7 +386,7 @@ awk '
     function main(num1, num2){
        result = find_min(num1, num2)
        print "Minimum =", result
-      
+
        result = find_max(num1, num2)
        print "Maximum =", result
     }
@@ -465,7 +465,7 @@ awk 'BEGIN {
     array[2,3]=5;
     for (comb in array) {
         split(comb,sep,SUBSEP);
-        print sep[1], sep[2], 
+        print sep[1], sep[2],
         array[sep[1],sep[2]]
     }
 }'

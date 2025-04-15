@@ -1,7 +1,7 @@
-ftp 备忘清单
+ftp 速查表
 ===
 
-此 ftp 备忘清单包含命令和使用 ftp 脚本实现自动化的技巧示例。
+此 ftp 速查表包含命令和使用 ftp 脚本实现自动化的技巧示例。
 
 入门
 ----
@@ -80,7 +80,7 @@ ftp 会启动交互式命令行
 ```bash
 Connected to <host> (<ip address>).
 220 (vsFTPd 3.*)
-# 需要手动输入 anonymous 
+# 需要手动输入 anonymous
 Name (192.168.10.10:root): anonymous
 331 Please specify the password.
 Password: # 匿名模式下直接回车

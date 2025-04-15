@@ -1,4 +1,4 @@
-Express 备忘清单
+Express 速查表
 ===
 
 [![NPM version](https://img.shields.io/npm/v/express.svg?style=flat)](https://npmjs.org/package/express)
@@ -63,7 +63,7 @@ Options:
       --pug           添加 pug 引擎支持
   -H, --hogan         添加 hogan.js 引擎支持
       --no-view       无视图引擎生成
-  -v, --view <engine> 添加视图 <engine> 支持 (ejs|hbs|hjs|jade|pug|twig|vash) (默认jade) 
+  -v, --view <engine> 添加视图 <engine> 支持 (ejs|hbs|hjs|jade|pug|twig|vash) (默认jade)
   -c, --css <engine>  添加样式表 <engine> 支持 (less|stylus|compass|sass) (默认css)
       --git           添加 .gitignore
   -f, --force         强制非空目录

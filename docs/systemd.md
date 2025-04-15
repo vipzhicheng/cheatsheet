@@ -1,7 +1,7 @@
-Systemd 备忘清单
+Systemd 速查表
 ===
 
-最常用的 [Systemd](https://systemd.io/) 命令备忘单快速参考
+最常用的 [Systemd](https://systemd.io/) 命令速查表快速参考
 
 命令
 ----

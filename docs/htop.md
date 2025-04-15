@@ -1,7 +1,7 @@
-htop 备忘清单
+htop 速查表
 ===
 
-htop 是一个交互式流程查看器，此 htop 备忘清单包含 htop 命令
+htop 是一个交互式流程查看器，此 htop 速查表包含 htop 命令
 
 入门
 ----

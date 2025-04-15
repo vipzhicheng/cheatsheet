@@ -1,4 +1,4 @@
-Taskset 备忘清单
+Taskset 速查表
 ===
 
 `Taskset` 命令用于设置或检索给定pid的运行进程的CPU相关性，或启动具有给定CPU相关性的新命令

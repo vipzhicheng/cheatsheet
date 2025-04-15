@@ -1,7 +1,7 @@
-Conda备忘清单
+Conda速查表
 ===
 
-这是开始使用 `conda` 命令的快速参考备忘单，初次学习可参考[这里](https://anaconda.org.cn/anaconda/user-guide/getting-started/#open-nav-win)
+这是开始使用 `conda` 命令的快速参考速查表，初次学习可参考[这里](https://anaconda.org.cn/anaconda/user-guide/getting-started/#open-nav-win)
 
 入门
 -----
@@ -110,7 +110,7 @@ conda COMMAND --help  # 获得任何命令的帮助
 conda search PKGNAME --info
 # 运行没有用户提示的命令，例如，安装多个包
 conda COMMAND ARG --yes
-conda install PKG1 PKG2 --yes 
+conda install PKG1 PKG2 --yes
 conda clean --all  # 删除所有未使用的文件
 conda config --show  # 检查 conda 配置
 ```

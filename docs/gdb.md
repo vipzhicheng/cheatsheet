@@ -1,4 +1,4 @@
-GDB 备忘清单
+GDB 速查表
 ===
 
 本清单提供了对 [GDB](https://en.wikipedia.org/wiki/GNU_Debugger) 的入门简要概述，以及 `GDB` 常用示例，完整文档参阅 [Debugging with gdb](https://www.eecs.umich.edu/courses/eecs373/readings/Debugger.pdf)，该文档最后有 `GDB index`，可以快速查找命令。

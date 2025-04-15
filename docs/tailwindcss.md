@@ -1,7 +1,7 @@
-Tailwind CSS 备忘清单
+Tailwind CSS 速查表
 ===
 
-使用此交互式备忘单快速查找所有类名和 CSS 属性
+使用此交互式速查表快速查找所有类名和 CSS 属性
 
 Layout
 ---

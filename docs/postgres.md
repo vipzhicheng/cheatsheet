@@ -1,7 +1,7 @@
-PostgreSQL 备忘清单
+PostgreSQL 速查表
 ===
 
-[PostgreSQL](https://www.postgresql.org/docs/current/) 备忘清单为您提供了常用的 PostgreSQL 命令和语句。
+[PostgreSQL](https://www.postgresql.org/docs/current/) 速查表为您提供了常用的 PostgreSQL 命令和语句。
 
 入门
 ---------------

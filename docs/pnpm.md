@@ -1,7 +1,7 @@
-pnpm 备忘清单
+pnpm 速查表
 ===
 
-这是一份 [`pnpm`](https://pnpm.io/) 软件包管理器备忘单，其中列出了 `pnpm` 常用命令使用清单。
+这是一份 [`pnpm`](https://pnpm.io/) 软件包管理器速查表，其中列出了 `pnpm` 常用命令使用清单。
 
 入门
 ---
@@ -18,7 +18,7 @@ npm | pnpm | 说明
 `npm update` | `pnpm update` | 更新包
 `npm cache clean` | `pnpm cache clean` | 清理缓存
 
-参考 [npm](./npm.md) 备忘清单
+参考 [npm](./npm.md) 速查表
 
 ### pnpm list
 
@@ -178,7 +178,7 @@ Monorepo
   ```bash
   pnpm init -w
   ```
-  
+
 - 将在项目的根目录中创建一个 `pnpm-workspace.yaml` 文件，内容如下：
 
   ```yaml

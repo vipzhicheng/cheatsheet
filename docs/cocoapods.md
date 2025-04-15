@@ -1,7 +1,7 @@
-CocoaPods 备忘清单
+CocoaPods 速查表
 ===
 
-[CocoaPods](https://en.wikipedia.org/wiki/Cron) 是 [Swift](./swift.md) 和 Objective-C Cocoa 项目的依赖管理器，此快速参考备忘单显示了它的常用命令使用清单。
+[CocoaPods](https://en.wikipedia.org/wiki/Cron) 是 [Swift](./swift.md) 和 Objective-C Cocoa 项目的依赖管理器，此快速参考速查表显示了它的常用命令使用清单。
 
 入门
 ---
@@ -12,7 +12,7 @@ CocoaPods 备忘清单
 ```bash
 $ sudo gem install cocoapods
 # OR
-$ brew install cocoapods 
+$ brew install cocoapods
 ```
 
 无 Sudo 安装，不想为此过程授予 `RubyGems` 管理员权限
@@ -184,7 +184,7 @@ inhibit_all_warnings!
 
 target 'MyApp' do
   pod 'GoogleAnalytics', '~> 3.1'
-  
+
   # 拥有自己的 OCMock 副本
   # 并且可以通过应用访问 GoogleAnalytics
   # 承载测试目标

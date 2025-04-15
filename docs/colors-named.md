@@ -1,4 +1,4 @@
-Colors Named 备忘清单
+Colors Named 速查表
 ===
 
 CSS 定义了一大组[命名颜色](https://www.w3.org/TR/css-color-4/#named-colors)，以便可以更轻松地编写和阅读[常用颜色](https://www.w3.org/TR/css-color-4/#named-colors)，这里列出了它的颜色名称/Hex rgb/十进制 rgb 数据
@@ -1598,5 +1598,5 @@ HSL 颜色示例
 另见
 ----
 
-- [CSS 备忘清单](./css.md)
+- [CSS 速查表](./css.md)
 - [Named Colors](https://www.w3.org/TR/css-color-4/#named-colors) _(w3.org)_

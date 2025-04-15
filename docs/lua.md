@@ -1,7 +1,7 @@
-Lua 备忘清单
+Lua 速查表
 ===
 
-包含最重要概念、函数、方法等的 [Lua](http://www.lua.org) 备忘单。 初学者的完整快速参考。
+包含最重要概念、函数、方法等的 [Lua](http://www.lua.org) 速查表。 初学者的完整快速参考。
 
 入门
 ---
@@ -601,7 +601,7 @@ string.sub("referference", 5, 6) -- rf
 
 ```lua
 string.match(
-  "I have 2 questions for you.", 
+  "I have 2 questions for you.",
   "(%d+) (%a+) "
 )  -- 2       questions
 ```
@@ -721,7 +721,7 @@ table
 初始化一个空数组
 
 ```lua
-local array = {} 
+local array = {}
 ```
 
 ---

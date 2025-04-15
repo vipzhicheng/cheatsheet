@@ -1,8 +1,8 @@
-Pytorch  备忘清单
+Pytorch  速查表
 ===
 
-Pytorch 是一种开源机器学习框架，可加速从研究原型设计到生产部署的过程，备忘单是  官网
-备忘清单为您提供了 [Pytorch](https://pytorch.org/) 基本语法和初步应用参考
+Pytorch 是一种开源机器学习框架，可加速从研究原型设计到生产部署的过程，速查表是  官网
+速查表为您提供了 [Pytorch](https://pytorch.org/) 基本语法和初步应用参考
 
 入门
 -----
@@ -10,7 +10,7 @@ Pytorch 是一种开源机器学习框架，可加速从研究原型设计到生
 ### 介绍
 
 - [Pytorch 官网](https://pytorch.org/) _(pytorch.org)_
-- [Pytorch 官方备忘清单](https://pytorch.org/tutorials/beginner/ptcheat.html) _(pytorch.org)_
+- [Pytorch 官方速查表](https://pytorch.org/tutorials/beginner/ptcheat.html) _(pytorch.org)_
 
 ### 认识 Pytorch
 <!--rehype:wrap-class=row-span-2-->
@@ -205,9 +205,9 @@ torch.Size([1, 2, 1, 28])
 ```python
 >>> x = torch.rand(2, 28)
 # unsqueeze必须加参数，    _ 2 _ 28 _
->>> x.unsqueeze(0).shape  
+>>> x.unsqueeze(0).shape
 # 参数代表在哪里添加维度    0   1    2
-torch.Size([1, 2, 28])        
+torch.Size([1, 2, 28])
 # 既可以是函数，也可以是方法
 >>> torch.unsqueeze(x, -1).shape
 torch.Size([2, 28, 1])
@@ -369,4 +369,4 @@ from torch.multiprocessing import Process
 ---
 
 - [Pytorch 官网](https://pytorch.org/) _(pytorch.org)_
-- [Pytorch 官方备忘清单](https://pytorch.org/tutorials/beginner/ptcheat.html) _(pytorch.org)_
+- [Pytorch 官方速查表](https://pytorch.org/tutorials/beginner/ptcheat.html) _(pytorch.org)_

@@ -1,7 +1,7 @@
-Swift 备忘清单
+Swift 速查表
 ===
 
-该备忘单提供了使用 [Swift](https://www.swift.org) 的示例，涵盖 Swift 基础知识、控制流、类型、结构/类、运算符、函数方法等。
+该速查表提供了使用 [Swift](https://www.swift.org) 的示例，涵盖 Swift 基础知识、控制流、类型、结构/类、运算符、函数方法等。
 
 入门
 ---
@@ -305,11 +305,11 @@ distance = 10
 ### if 语句
 
 ```swift
-var halloween = true 
+var halloween = true
 if halloween {
   print("不给糖就捣蛋！")
 }
-// 打印: 不给糖就捣蛋！ 
+// 打印: 不给糖就捣蛋！
 if 5 > 3 {
   print("5 大于 3")
 } else {
@@ -350,8 +350,8 @@ if weather == "sunny" {
 ### 比较运算符
 
 ```swift
-5 > 1          // true 
-6 < 10         // true 
+5 > 1          // true
+6 < 10         // true
 2 >= 3         // false
 3 <= 5         // true
 "A" == "a"     // false
@@ -371,8 +371,8 @@ if weather == "sunny" {
 ```swift
 var driverLicense = true
 
-driverLicense 
-    ? print("驾驶座") : print("乘客座位") 
+driverLicense
+    ? print("驾驶座") : print("乘客座位")
 // 打印: 驾驶座
 ```
 
@@ -405,7 +405,7 @@ switch year {
     artPeriod = "印象派"
   case 1886...1910:
     artPeriod = "后印象派"
-  default:  
+  default:
     artPeriod = "未知"
 }
 // 打印: 后印象派
@@ -423,7 +423,7 @@ switch service {
     print("餐厅送餐")
   case "Instacart", "FreshDirect":
     print("杂货配送")
-  default: 
+  default:
     print("未知服务")
 }
 // 打印: 餐厅外卖
@@ -457,8 +457,8 @@ switch num {
 
 ```swift
 true && true    // true
-true && false   // false 
-false && true   // false 
+true && false   // false
+false && true   // false
 false && false  // false
 ```
 
@@ -467,7 +467,7 @@ false && false  // false
 ```swift
 true || true    // true
 true || false   // true
-false || true   // true 
+false || true   // true
 false || false  // false
 ```
 
@@ -490,11 +490,11 @@ false || true && false  // false
 ```swift
 // 没有括号：
 true || true && false || false
-// ---->  true 
+// ---->  true
 
 // 带括号：
 (true || true) && (false || false)
-// ---->  false 
+// ---->  false
 ```
 
 ### 简单的 guard
@@ -751,7 +751,7 @@ var paintingsInMOMA: Set = [
 var team = Set<String>()
 
 print(team)
-// 打印: [] 
+// 打印: []
 ```
 
 ### 填充集合
@@ -844,7 +844,7 @@ var setA: Set = ["A", "B", "C", "D"]
 var setB: Set = ["C", "D", "E", "F"]
 
 var setC = setA.union(setB)
-print(setC) 
+print(setC)
 // 打印: ["B", "A", "D", "F", "C", "E"]
 ```
 
@@ -855,7 +855,7 @@ var setA: Set = ["A", "B", "C", "D"]
 var setB: Set = ["C", "D", "E", "F"]
 
 var setC = setA.symmetricDifference(setB)
-print(setC) 
+print(setC)
 // 打印: ["B", "E", "F", "A"]
 ```
 
@@ -866,7 +866,7 @@ var setA: Set = ["A", "B", "C", "D"]
 var setB: Set = ["C", "D"]
 
 var setC = setA.subtracting(setB)
-print(setC) 
+print(setC)
 // 打印: ["B", "A"]
 ```
 
@@ -1090,10 +1090,10 @@ print(findAge()) // 打印: 26
 ```swift
 func convertFracToDec(numerator: Double, denominator: Double) -> Double {
   return numerator / denominator
-} 
+}
 
-let decimal = convertFracToDec(numerator: 1.0, denominator: 2.0) 
-print(decimal) // 打印:  0.5 
+let decimal = convertFracToDec(numerator: 1.0, denominator: 2.0)
+print(decimal) // 打印:  0.5
 ```
 
 ### 省略参数标签
@@ -1126,7 +1126,7 @@ print(phone.yearReleased) // 打印: 2017
 ```swift
 func findSquarePerimet(side: Int) -> Int {
   return side * 4
-} 
+}
 
 let perimeter = findSquarePerimet(side: 5)
 print(perimeter) // 打印: 20
@@ -1160,22 +1160,22 @@ greet(person: "Aliya") // Hello Aliya
 <!--rehype:wrap-class=row-span-2-->
 
 ```swift
-var currentSeason = "冬天" 
+var currentSeason = "冬天"
 
 func season(month:Int, name:inout String) {
   switch month {
     case 1...2:
-      name = "冬天 ⛄️" 
+      name = "冬天 ⛄️"
     case 3...6:
       name = "春天 🌱"
     case 7...9:
       name = "夏天 ⛱"
-    case 10...11: 
+    case 10...11:
       name = "秋天 🍂"
-    default: 
+    default:
       name = "未知"
-  } 
-} 
+  }
+}
 
 season(monthNum: 4, name: &currentSeason)
 
@@ -1319,7 +1319,7 @@ var morty = Person(name: "张三", age: 14)
 struct TV {
   var size: Int
   var type: String
-  
+
   init(size: Int, type: String) {
     self.size = size
     self.type = type
@@ -1357,7 +1357,7 @@ struct Menu {
 ```swift
 var dinerMenu = Menu()
 dinerMenu.addToMenu(dish: "Toast")
-print(dinerMenu.menuItems) 
+print(dinerMenu.menuItems)
 // 打印: ["Fries", "Burgers", "Toast"]
 ```
 
@@ -1413,7 +1413,7 @@ var sonny = Person()
 
 ```swift
 class Fruit {
-  var hasSeeds = true 
+  var hasSeeds = true
   var color: String
 
   init(color: String) {
@@ -1561,7 +1561,7 @@ let custom: Dessert = .cake(flavor: "红色")
 switch custom {
   case let .cake(flavor):
     print("你点了一个 \(flavor) 蛋糕")
-  case .brownie: 
+  case .brownie:
     print("你点了一块巧克力蛋糕")
 }
 // 打印: "你点了一个红色天鹅绒蛋糕"
@@ -1777,11 +1777,11 @@ extension CGRect {
     init(center: CGPoint, size: CGSize) {
         let x: CGFloat = center.x - size.width * 0.5
         let y: CGFloat = center.y - size.height * 0.5
-        self.init(origin: CGPoint(x: x, y: y), 
+        self.init(origin: CGPoint(x: x, y: y),
                   size: size)
     }
 }
-let frame = CGRect(center: CGPoint(x: 100, y: 100), 
+let frame = CGRect(center: CGPoint(x: 100, y: 100),
                    size: CGSize(width: 50, height: 50))
 print("Origin is \(frame.origin)")
 ```
@@ -1838,7 +1838,7 @@ square.draw()  // 打印: 画一个正方形
 extension String {
     func deletingPrefix(_ prefix: String) -> String {
         guard self.hasPrefix(prefix) else {
-          return self 
+          return self
         }
         return String(self.dropFirst(prefix.count))
     }
@@ -1851,7 +1851,7 @@ print("Hello World".deletingPrefix("He"))
 <!--rehype:wrap-class=col-span-2-->
 
 ```swift
-// 但可以通过 objc_getAssociatedObject/objc_setAssociatedObject 实现添加存储属性 
+// 但可以通过 objc_getAssociatedObject/objc_setAssociatedObject 实现添加存储属性
 private var fuchsiaKey = "fuchsiaKey"
 extension UIColor {
     var fuchsia: UIColor? {
@@ -2007,7 +2007,7 @@ class SimpleStorage<T>: Storage {
 
 let intStorage = SimpleStorage<Int>()
 intStorage.store(item: 42)
-print(intStorage.retrieve() ?? "Empty")  
+print(intStorage.retrieve() ?? "Empty")
 // 打印: 42
 ```
 

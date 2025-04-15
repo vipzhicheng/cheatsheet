@@ -1,4 +1,4 @@
-Koajs 备忘清单
+Koajs 速查表
 ===
 
 [![NPM version](https://img.shields.io/npm/v/koa.svg?style=flat)](https://npmjs.org/package/koa)

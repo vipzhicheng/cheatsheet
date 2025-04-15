@@ -1,4 +1,4 @@
-Erlang 备忘清单
+Erlang 速查表
 ===
 
 [Erlang](https://www.erlang.org/) 是一种用于构建并发、分布式和容错系统的编程语言。以下是一些常用的命令和操作。

@@ -1,4 +1,4 @@
-PM2 备忘清单
+PM2 速查表
 ===
 
 [![NPM version](https://img.shields.io/npm/v/pm2.svg?style=flat)](https://npmjs.org/package/pm2)

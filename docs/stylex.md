@@ -1,7 +1,7 @@
-StyleX 备忘清单
+StyleX 速查表
 ====
 
-这是 [StyleX](https://github.com/facebook/stylex) 用户界面的样式系统的快速参考指南备忘单
+这是 [StyleX](https://github.com/facebook/stylex) 用户界面的样式系统的快速参考指南速查表
 
 入门 StyleX
 ---

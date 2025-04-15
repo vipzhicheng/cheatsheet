@@ -1,7 +1,7 @@
-Docker 备忘清单
+Docker 速查表
 ===
 
-这是 [Docker](https://docs.docker.com/get-started/) 的快速参考备忘单。 你可以在这里找到最常见的 Docker 命令。
+这是 [Docker](https://docs.docker.com/get-started/) 的快速参考速查表。 你可以在这里找到最常见的 Docker 命令。
 
 入门
 ----
@@ -101,7 +101,7 @@ docker create [options] IMAGE
   -t, --tty                  # 伪终端 pseudo-tty
       --name NAME            # 命名你的镜像
   -p, --publish 5000:5000    # 端口映射（主机:容器）
-      --expose 5432          # 向容器公开端口 
+      --expose 5432          # 向容器公开端口
   -P, --publish-all          # 发布所有端口
       --link container:alias # 链接 linking
   -v, --volume `pwd`:/app    # mount（需要绝对路径）
@@ -496,7 +496,7 @@ $ docker volume prune # 清理未使用的卷
 -D, --debug             # 启用调试模式
 -H, --host list         # 要连接的守护进程套接字
 -l, --log-level string  # 设置日志级别
-        # （默认“info”） ("debug"|"info"|"warn"|"error"|"fatal") 
+        # （默认“info”） ("debug"|"info"|"warn"|"error"|"fatal")
     --tls               # 使用 TLS； 由 --tlsverify 暗示
     --tlscacert string  # 仅由该 CA 签署的信任证书
         #（默认为“~/.docker/ca.pem”）
@@ -533,7 +533,7 @@ $ docker volume prune # 清理未使用的卷
     --cgroupns string          # 要使用的 Cgroup 命名空间（主机|私有）
                                #  'host':    在 Docker 主机的 cgroup 命名空间中运行容器
                                #  'private': 在自己的私有 cgroup 命名空间中运行容器
-                               #  '':        使用由守护进程上的 
+                               #  '':        使用由守护进程上的
                                #        default-cgroupns-mode 选项配置的 cgroup 命名空间（默认）
     --cidfile string           # 将容器 ID 写入文件
     --cpu-period int           # 限制 CPU CFS（完全公平调度器）周期
@@ -1063,7 +1063,7 @@ docker run -itd -p 15672:15672 --name RabbitMQ \
 -e RABBITMQ_DEFAULT_VHOST=rmq-test \
 -e RABBITMQ_DEFAULT_USER=admin \
 -e RABBITMQ_DEFAULT_PASS=abc123 \
-rabbitmq:3-management 
+rabbitmq:3-management
 ```
 
 #### 参数解释
@@ -1165,7 +1165,7 @@ $ docker run -d --name gitlab \
 另见
 ----
 
-- [Dockerfile 备忘清单](./dockerfile.md) *(github.io)*
+- [Dockerfile 速查表](./dockerfile.md) *(github.io)*
 - [Docker 官方入门教程](https://docs.docker.com/get-started/) *(docker.com)*
 - [Docker入门学习笔记](https://jaywcjlove.github.io/docker-tutorial) *(github.io)*
 - [快速安装Docker及配置及Docker配置、Docker常用命令](https://www.loganjin.cn/article/docker-install/)

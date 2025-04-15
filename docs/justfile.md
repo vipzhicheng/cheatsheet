@@ -1,4 +1,4 @@
-Justfile 备忘清单
+Justfile 速查表
 ===
 
 [![Repo Dependents](https://badgen.net/github/dependents-repo/casey/just)](https://github.com/casey/just/network/dependents)
@@ -117,10 +117,10 @@ hello $name:
 ### 设置
 
 ```bash
-set shell := ["zsh", "-cu"] 
+set shell := ["zsh", "-cu"]
 
 set dotenv-load := true
-serv: 
+serv:
    echo "$DATABASE_ADDRESS from .env"
 
 set positional-arguments := true

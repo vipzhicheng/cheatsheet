@@ -1,7 +1,7 @@
-npm 备忘清单
+npm 速查表
 ===
 
-这个 [npm](https://www.npmjs.com/) 快速参考备忘单显示了它的常用命令使用清单
+这个 [npm](https://www.npmjs.com/) 快速参考速查表显示了它的常用命令使用清单
 
 常用命令
 ----
@@ -151,9 +151,9 @@ $ npm publish --access public --tag previous
 ```bash
 $ npm install -g nrm # 安装 nrm 包
 # 查看 registry 列表
-$ nrm ls             
+$ nrm ls
 # 将注册表切换到 cnpm
-$ nrm use cnpm       
+$ nrm use cnpm
 ```
 
 ### init

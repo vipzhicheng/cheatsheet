@@ -1,7 +1,7 @@
-Hook 备忘清单
+Hook 速查表
 ===
 
-Hook 备忘单是 [Hook](https://github.com/hook-lang/hook/) 编程语言的一页参考表。
+Hook 速查表是 [Hook](https://github.com/hook-lang/hook/) 编程语言的一页参考表。
 
 ## 入门
 

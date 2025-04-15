@@ -1,7 +1,7 @@
-Cargo 备忘清单
+Cargo 速查表
 ===
 
-此快速参考备忘清单 [Cargo](https://conan.io/) 提供了编译 [Rust](./rust.md) 常用命令和示例
+此快速参考速查表 [Cargo](https://conan.io/) 提供了编译 [Rust](./rust.md) 常用命令和示例
 
 入门
 --------

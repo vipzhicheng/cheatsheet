@@ -1,7 +1,7 @@
-TOML 备忘清单
+TOML 速查表
 ===
 
-这是 TOML 格式配置文件语法的快速参考备忘清单。
+这是 TOML 格式配置文件语法的快速参考速查表。
 
 入门
 ----
@@ -106,7 +106,7 @@ array3 = [8001, 8001, 8002]
 array1 = [ "Don't mix", "different", "types" ]
 array2 = [ [ 1.2, 2.4 ], ["all", 'strings', """are the same""", '''type'''] ]
 array3 = [
-  "Whitespace", "is", 
+  "Whitespace", "is",
   "ignored"
 ]
 ```
@@ -241,7 +241,7 @@ infinite3 = -inf # 负无穷
 ```toml
 not1 = nan
 not2 = +nan
-not3 = -nan 
+not3 = -nan
 ```
 
 TOML 日期与时刻
@@ -393,5 +393,5 @@ animal = { type.name = "pug" }
 - [Learn X in Y minutes](https://learnxinyminutes.com/docs/toml/) _(learnxinyminutes.com)_
 - [Better TOML VSCode 插件](https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml) _(visualstudio.com)_
 
-- [INI 格式配置文件备忘清单](./ini.md) _(jaywcjlove.github.io)_
-- [YAML 格式配置文件备忘清单](./yaml.md) _(jaywcjlove.github.io)_
+- [INI 格式配置文件速查表](./ini.md) _(jaywcjlove.github.io)_
+- [YAML 格式配置文件速查表](./yaml.md) _(jaywcjlove.github.io)_

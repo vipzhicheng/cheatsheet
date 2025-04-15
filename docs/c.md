@@ -1,7 +1,7 @@
-C 备忘清单
+C 速查表
 ===
 
-提供基本语法和方法的 C 快速参考备忘单。
+提供基本语法和方法的 C 快速参考速查表。
 
 入门
 ----
@@ -119,7 +119,7 @@ const int BIRTHYEAR = 1980;
 // 这是一个单行注释
 printf("Hello World!"); // 行内注释
 
-/* 
+/*
    多行注释：
    用于注释跨多行的内容
    注意：多行注释不能嵌套，否则会导致编译错误
@@ -202,10 +202,10 @@ printf("%-9d %-9d %-9d\n", d1, d2, d3);
 输出结果
 
 ```bash
-20        345       700  
+20        345       700
 56720     9999      20098
-233       205       1    
-34        0         23   
+233       205       1
+34        0         23
 ```
 
 解释：`%-9d`：`d` 表示十进制输出，`9` 表示最少占 9 个字符宽度，`-` 表示左对齐，不使用 `-` 则默认右对齐。
@@ -224,7 +224,7 @@ printf("%md", a);
 对于浮点型数据：
 
 ```c
-float a = 1.2345; 
+float a = 1.2345;
 printf("%m.nf", a);
 // m -- 整个数据宽度，n -- 小数位数
 ```
@@ -322,14 +322,14 @@ if (time > 8) {
 - 条件为真时的结果
 - 条件为假时的结果
 
-基本语法：`(条件) ? 表达式1 : 表达式2;`  
+基本语法：`(条件) ? 表达式1 : 表达式2;`
 如果 `条件` 为真，则返回 `表达式1`，否则返回 `表达式2`。
 
 #### 示例
 
 ```c
 int time = 20;
-(time < 18) ? printf("再会！") 
+(time < 18) ? printf("再会！")
             : printf("晚上好！");
 // 输出 -> "晚上好！"
 ```
@@ -338,8 +338,8 @@ int time = 20;
 
 ```c
 int time = 22;
-printf((time < 10) ? "早上好！" 
-          : (time < 20) ? "再会！" 
+printf((time < 10) ? "早上好！"
+          : (time < 20) ? "再会！"
                         : "晚上好！");
 // 输出 -> "晚上好！"
 ```
@@ -377,7 +377,7 @@ switch (day) {
 int day = 3;
 
 switch (day) {
-  case 3: printf("周三"); 
+  case 3: printf("周三");
   case 4: printf("周四"); break;
   default: printf("期待周末");
 }
@@ -818,11 +818,11 @@ printf("%d", x > y);
 <!--rehype:wrap-class=row-span-2-->
 
 ```c
-unsigned int a = 60; /* 60 = 0011 1100 */  
+unsigned int a = 60; /* 60 = 0011 1100 */
 unsigned int b = 13; /* 13 = 0000 1101 */
-int c = 0;           
+int c = 0;
 
-c = a & b;      /* 12 = 0000 1100 */ 
+c = a & b;      /* 12 = 0000 1100 */
 printf("Line 1 - c 的值是 %d\n", c );
 
 c = a | b;      /* 61 = 0011 1101 */
@@ -1049,7 +1049,7 @@ int main(void){
 
 int main(void) {
     printf("信息如下: %s\n", \
-        MESSAGE);  
+        MESSAGE);
     return 0;
 }
 ```
@@ -1076,7 +1076,7 @@ int square(int x) {
 
 int main(void) {
     printf("20 到 10 之间的最大值是 %d\n", \
-        MAX(10, 20));  
+        MAX(10, 20));
     return 0;
 }
 ```
@@ -1092,13 +1092,13 @@ int main(void) {
 
 #### **常见警告示例**
 
-未使用的变量  
+未使用的变量
 
 ```c
 int x; printf("%d", x);
 ```
 
-类型隐式转换（可能导致数据丢失）  
+类型隐式转换（可能导致数据丢失）
 
 ```c
 int x = 3.14; // 浮点数被隐式转换
@@ -1522,14 +1522,14 @@ main() {
   fp = fopen("file.txt", "w"); // 打开文件
   // 将数据写入文件
   fprintf(fp, "fprintf 的 Hello 文件..\n");
-  fclose(fp); // 关闭文件  
-}  
+  fclose(fp); // 关闭文件
+}
 ```
 
 ### 读取文件：fscanf()
 
 ```c {6}
-#include <stdio.h>  
+#include <stdio.h>
 main(){
   FILE *fp;
   char buff[255]; // 创建char数组存储文件数据

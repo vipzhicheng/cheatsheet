@@ -1,7 +1,7 @@
-Curl 备忘清单
+Curl 速查表
 ===
 
-此 [Curl](https://github.com/curl/curl) 备忘清单包含命令和一些常见的 Curl 技巧示例。
+此 [Curl](https://github.com/curl/curl) 速查表包含命令和一些常见的 Curl 技巧示例。
 
 入门
 ----

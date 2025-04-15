@@ -1,7 +1,7 @@
-Dockerfile 备忘清单
+Dockerfile 速查表
 ===
 
-这是 [Dockerfile](https://docs.docker.com/engine/reference/builder/) 的快速参考备忘单。包含用户可以在命令行上调用以组装镜像的所有命令。
+这是 [Dockerfile](https://docs.docker.com/engine/reference/builder/) 的快速参考速查表。包含用户可以在命令行上调用以组装镜像的所有命令。
 
 参考
 ----
@@ -10,7 +10,7 @@ Dockerfile 备忘清单
 
 默认 `Dockerfile` 位于上下文的根目录中。
 
-- [Docker 备忘清单](./docker.md) _(github.io)_
+- [Docker 速查表](./docker.md) _(github.io)_
 
 ```shell
 docker build -f /path/to/a/Dockerfile .
@@ -254,5 +254,5 @@ CMD ["./app"]
 ## 也可以看看
 
 - [Dockerfile reference](https://docs.docker.com/engine/reference/builder/) _(docker.com)_
-- [Docker 备忘清单](./docker.md) _(github.io)_
+- [Docker 速查表](./docker.md) _(github.io)_
 - [Docker入门学习笔记](https://jaywcjlove.github.io/docker-tutorial) _(github.io)_

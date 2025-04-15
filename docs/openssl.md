@@ -1,7 +1,7 @@
-OpenSSL 备忘清单
+OpenSSL 速查表
 ===
 
-这个 [OpenSSL](https://www.openssl.org/) 快速参考备忘单展示了它的常用命令使用清单
+这个 [OpenSSL](https://www.openssl.org/) 快速参考速查表展示了它的常用命令使用清单
 
 入门
 ---
@@ -997,7 +997,7 @@ $ openssl verify -CAfile root.pem -untrusted <(cat intermediate1.pem intermediat
 实例
 
 ```bash
-$ openssl verify -CAfile letsencrypt-root-cert/isrgrootx1.pem.txt -untrusted letsencrypt-intermediate-cert/letsencryptauthorityx3.pem.txt /etc/letsencrypt/live/sitename.tld/cert.pem 
+$ openssl verify -CAfile letsencrypt-root-cert/isrgrootx1.pem.txt -untrusted letsencrypt-intermediate-cert/letsencryptauthorityx3.pem.txt /etc/letsencrypt/live/sitename.tld/cert.pem
 /etc/letsencrypt/live/sitename.tld/cert.pem: OK
 ```
 <!--rehype:className=wrap-text-->
@@ -1014,7 +1014,7 @@ $ openssl x509 -enddate -noout -in file.pem
 这是我的 bash 命令行，用于按过期顺序列出多个证书，最近过期的证书最先过期。
 
 ```bash
-for pem in /etc/ssl/certs/*.pem; do 
+for pem in /etc/ssl/certs/*.pem; do
     printf '%s: %s\n' \
       "$(date --date="$(openssl x509 -enddate -noout -in "$pem"|cut -d= -f 2)" --iso-8601)" \
       "$pem"
@@ -1183,7 +1183,7 @@ Java Key store
 <!--rehype:wrap-class=col-span-3-->
 
 ```bash
-$ keytool -importcert -file certificate.cer -keystore keystore.jks -alias "Alias" 
+$ keytool -importcert -file certificate.cer -keystore keystore.jks -alias "Alias"
 $ ..\..\bin\keytool -import -trustcacerts -keystore cacerts -storepass changeit -noprompt -alias yourAliasName -file path\to\certificate.cer
 $ keytool -import -alias joe -file mycert.cer -keystore mycerts -storepass changeit
 ```

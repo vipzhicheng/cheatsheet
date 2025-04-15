@@ -1,4 +1,4 @@
-Flask 备忘清单
+Flask 速查表
 ===
 
 本清单对 Flask 的入门进行了简要的概述，以及其常用示例。需要有 `HTML` 和 `Python` 基础。
@@ -11,7 +11,7 @@ Flask 备忘清单
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) _(developer.mozilla.org)_
 - [Python](https://www.python.org/) _(python.org)_
 - [Flask](https://flask.palletsprojects.com/) _(flask.palletsprojects.com)_
-- [Python 备忘清单](./python.md) _(jaywcjlove.github.io)_
+- [Python 速查表](./python.md) _(jaywcjlove.github.io)_
 
 ### Hello World
 <!--rehype:wrap-class=row-span-2-->

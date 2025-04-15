@@ -1,7 +1,7 @@
-Subversion 备忘清单
+Subversion 速查表
 ===
 
-本备忘单总结了常用的 [SVN](https://git-scm.com/) 命令行指令，以供快速参考。
+本速查表总结了常用的 [SVN](https://git-scm.com/) 命令行指令，以供快速参考。
 
 入门
 ---

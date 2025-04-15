@@ -1,7 +1,7 @@
-Vimium 备忘清单
+Vimium 速查表
 ===
 
-这是开始使用 [Vimium](https://github.com/philc/vimium) 浏览器扩展的快速参考备忘单，可以帮助用户更高效地浏览网页
+这是开始使用 [Vimium](https://github.com/philc/vimium) 浏览器扩展的快速参考速查表，可以帮助用户更高效地浏览网页
 
 入门
 ----

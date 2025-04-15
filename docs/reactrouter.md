@@ -1,4 +1,4 @@
-React Router 备忘清单
+React Router 速查表
 ===
 
 [![NPM version](https://img.shields.io/npm/v/react-router-dom.svg?style=flat)](https://npmjs.org/package/react-router-dom)
@@ -6,7 +6,7 @@ React Router 备忘清单
 [![Repo Dependents](https://badgen.net/github/dependents-repo/remix-run/react-router)](https://github.com/remix-run/react-router/network/dependents)
 [![Github repo](https://badgen.net/badge/icon/Github?icon=github&label)](https://github.com/remix-run/react-router)
 
-适合初学者的综合 [React Router 6.x](https://reactrouter.com/en/main/start/overview) 备忘清单
+适合初学者的综合 [React Router 6.x](https://reactrouter.com/en/main/start/overview) 速查表
 <!--rehype:style=padding-top: 12px;-->
 
 入门

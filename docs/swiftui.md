@@ -1,7 +1,7 @@
-SwiftUI 2.0 备忘清单
+SwiftUI 2.0 速查表
 ===
 
-该备忘单提供了使用 [SwiftUI](https://developer.apple.com/xcode/swiftui/) 的标签的一些示例等
+该速查表提供了使用 [SwiftUI](https://developer.apple.com/xcode/swiftui/) 的标签的一些示例等
 
 入门
 ---
@@ -11,8 +11,8 @@ SwiftUI 2.0 备忘清单
 [SwiftUI](https://developer.apple.com/xcode/swiftui/) 提供用于声明应用程序用户界面的视图、控件和布局结构
 
 - [SwiftUI Document](https://developer.apple.com/xcode/swiftui/) _(apple.com)_
-- [SwiftUI 2.0 备忘清单](https://wangchujiang.com/swiftui-example/cheat-sheet.html) _(swiftui-example)_
-- [Swift 备忘清单](./swift.md) _(jaywcjlove.github.io)_
+- [SwiftUI 2.0 速查表](https://wangchujiang.com/swiftui-example/cheat-sheet.html) _(swiftui-example)_
+- [Swift 速查表](./swift.md) _(jaywcjlove.github.io)_
 
 ```swift
 import SwiftUI
@@ -20,7 +20,7 @@ import SwiftUI
 struct AlbumDetail: View {
   var album: Album
   var body: some View {
-    List(album.songs) { song in 
+    List(album.songs) { song in
       HStack {
         Image(album.cover)
         VStack(alignment: .leading) {
@@ -219,11 +219,11 @@ struct PinItem: Identifiable {
     let coordinate: CLLocationCoordinate2D
 }
 
-Map(coordinateRegion: $region, 
-    interactionModes: [], 
-    showsUserLocation: true, 
-    userTrackingMode: nil, 
-    annotationItems: [PinItem(coordinate: .init(latitude: 37.334722, longitude: -122.008889))]) { item in                    
+Map(coordinateRegion: $region,
+    interactionModes: [],
+    showsUserLocation: true,
+    userTrackingMode: nil,
+    annotationItems: [PinItem(coordinate: .init(latitude: 37.334722, longitude: -122.008889))]) { item in
     MapMarker(coordinate: item.coordinate)
 }
 ```
@@ -301,7 +301,7 @@ ScrollView {
 容器视图，将其子视图排列在`垂直`增长的网格中，仅在需要时创建项目
 
 ```swift
-var columns: [GridItem] = 
+var columns: [GridItem] =
   Array(
     repeating: .init(.fixed(20)), count: 5
   )
@@ -450,7 +450,7 @@ Button(action: {
 显示可编辑文本界面的控件。
 
 ```swift
-@State var name: String = "John"    
+@State var name: String = "John"
 var body: some View {
     TextField("Name's placeholder", text: $name)
         .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -489,7 +489,7 @@ struct ContentView: View {
 用户安全地输入私人文本的控件。
 
 ```swift
-@State var password: String = "1234"    
+@State var password: String = "1234"
 var body: some View {
   SecureField($password)
     .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -1095,7 +1095,7 @@ var body: some View {
         self.error = AlertError(reason: "Reason")
     }.alert(item: $error, content: { error in
         alert(reason: error.reason)
-    })    
+    })
 }
 
 func alert(reason: String) -> Alert {
@@ -1109,7 +1109,7 @@ struct AlertError: Identifiable {
     var id: String {
         return reason
     }
-    
+
     let reason: String
 }
 ```
@@ -1128,10 +1128,10 @@ var actionSheet: ActionSheet {
     message: Text("Description"),
     buttons: [
       .default(Text("OK"), action: {
-          
+
       }),
       .destructive(Text("Delete"), action: {
-          
+
       })
     ]
   )
@@ -1163,10 +1163,10 @@ func sheet(detail: String) -> ActionSheet {
                 message: Text(detail),
                 buttons: [
                     .default(Text("OK"), action: {
-                        
+
                     }),
                     .destructive(Text("Delete"), action: {
-                        
+
                     })
                 ]
     )
@@ -1227,11 +1227,11 @@ class Person {
 ```swift
 @Model
 class Person {
-    @Attribute(.unique) 
+    @Attribute(.unique)
     var id: String
     var name: String
     var age: Int
-    // @Relationship(deleteRule: .cascade) 
+    // @Relationship(deleteRule: .cascade)
     // 使得Person在数据库里被删除时
     // 删除掉所有关联的students
     @Relationship(deleteRule: .cascade)
@@ -1249,7 +1249,7 @@ class Person {
 ```swift
 @Model
 class Person {
-    @Attribute(.unique) 
+    @Attribute(.unique)
     var id: String
     var name: String
     // @Transient表示不要持久化这个属性
@@ -1275,7 +1275,7 @@ struct ContentView: View  {
     var body: some View {
        NavigationStack() {
           List {
-             ForEach(trips) { trip in 
+             ForEach(trips) { trip in
                  // ...
              }
           }
@@ -1313,7 +1313,7 @@ struct SwiftDataDemoApp: App {
 // 在配置Model Container完成后
 // 通过Environment 来访问到 modelContext
 struct ContextView : View {
-    @Environment(\.modelContext) 
+    @Environment(\.modelContext)
     private var context
 }
 // 或者直接获取共享的主Actor context
@@ -1352,5 +1352,5 @@ let persons = try? context.fetch(descriptor)
 ---
 
 - [SwiftUI 2.0 Cheat Sheet](https://github.com/SimpleBoilerplates/SwiftUI-Cheat-Sheet) _(github.com)_
-- [SwiftUI 2.0 备忘清单](https://wangchujiang.com/swiftui-example/cheat-sheet.html) _(swiftui-example)_
-- [Swift 备忘清单](./swift.md) _(jaywcjlove.github.io)_
+- [SwiftUI 2.0 速查表](https://wangchujiang.com/swiftui-example/cheat-sheet.html) _(swiftui-example)_
+- [Swift 速查表](./swift.md) _(jaywcjlove.github.io)_

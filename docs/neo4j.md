@@ -1,7 +1,7 @@
-Neo4j 备忘清单
+Neo4j 速查表
 ===
 
-这个 [neo4j](https://neo4j.com/docs/) 快速参考备忘单显示了它的常用命令
+这个 [neo4j](https://neo4j.com/docs/) 快速参考速查表显示了它的常用命令
 
 入门
 ---
@@ -59,7 +59,7 @@ Neo4j 语法
 //  (传递结果并进行排序、跳过或限制)
 [WITH [ORDER BY] [SKIP] [LIMIT]]
 // (返回结果并进行排序、跳过或限制)
-RETURN [ORDER BY] [SKIP] [LIMIT] 
+RETURN [ORDER BY] [SKIP] [LIMIT]
 ```
 
 ### 仅写入查询结构
@@ -68,9 +68,9 @@ RETURN [ORDER BY] [SKIP] [LIMIT]
 [USE] // (使用)
 (CREATE | MERGE)* // (创建或合并节点和关系)
 // (设置、删除、移除或循环操作)
-[SET|DELETE|REMOVE|FOREACH]* 
+[SET|DELETE|REMOVE|FOREACH]*
 // (返回结果并进行排序、跳过或限制)
-[RETURN [ORDER BY] [SKIP] [LIMIT] 
+[RETURN [ORDER BY] [SKIP] [LIMIT]
 ```
 
 ### 读取-写入查询结构
@@ -83,9 +83,9 @@ RETURN [ORDER BY] [SKIP] [LIMIT]
 [WITH [ORDER BY] [SKIP] [LIMIT]]
 (CREATE | MERGE)* // (创建或合并节点和关系)
 // (设置、删除、移除或循环操作)
-[SET|DELETE|REMOVE|FOREACH]* 
+[SET|DELETE|REMOVE|FOREACH]*
 // (返回结果并进行排序、跳过或限制)
-[RETURN [ORDER BY] [SKIP] [LIMIT] 
+[RETURN [ORDER BY] [SKIP] [LIMIT]
 ```
 
 Neo4j 读取数据

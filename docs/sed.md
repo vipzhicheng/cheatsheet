@@ -1,7 +1,7 @@
-Sed 备忘清单
+Sed 速查表
 ====
 
-Sed 是一个流编辑器，此 Sed 备忘清单包含 Sed 命令和一些常见的 Sed 技巧。
+Sed 是一个流编辑器，此 Sed 速查表包含 Sed 命令和一些常见的 Sed 技巧。
 
 入门
 ----
@@ -342,4 +342,4 @@ $ sed '/regex/{x;p;x;G;}'
 另见
 ----------
 
-- [sed 备忘单](https://gist.github.com/ssstonebraker/6140154) _(gist.github.com)_
+- [sed 速查表](https://gist.github.com/ssstonebraker/6140154) _(gist.github.com)_

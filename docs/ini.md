@@ -1,7 +1,7 @@
-INI 备忘清单
+INI 速查表
 ====
 
-这是理解和编写 INI 格式配置文件的快速参考备忘单，此清单包含配置的内容，结构和语法等内容。
+这是理解和编写 INI 格式配置文件的快速参考速查表，此清单包含配置的内容，结构和语法等内容。
 
 入门
 ------
@@ -181,5 +181,5 @@ array[]=second value
 ---
 
 - [INI 文件配置](https://en.wikipedia.org/wiki/INI_file) _(wikipedia.org)_
-- [YAML 格式配置文件备忘清单](./yaml.md) _(jaywcjlove.github.io)_
-- [TOML 格式配置文件备忘清单](./toml.md) _(jaywcjlove.github.io)_
+- [YAML 格式配置文件速查表](./yaml.md) _(jaywcjlove.github.io)_
+- [TOML 格式配置文件速查表](./toml.md) _(jaywcjlove.github.io)_

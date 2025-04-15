@@ -1,7 +1,7 @@
-PHP 备忘清单
+PHP 速查表
 ===
 
-这份 [PHP](https://www.php.net/manual/zh/index.php) 备忘单为快速查找最常用代码的正确语法提供了参考
+这份 [PHP](https://www.php.net/manual/zh/index.php) 速查表为快速查找最常用代码的正确语法提供了参考
 
 入门
 ------
@@ -133,7 +133,7 @@ const MY_CONST = "hello";
 echo MY_CONST;   # => hello
 
 # => MY_CONST is: hello
-echo 'MY_CONST is: ' . MY_CONST; 
+echo 'MY_CONST is: ' . MY_CONST;
 ```
 
 ### 类 Classes
@@ -235,7 +235,7 @@ function gen(): iterable {
 }
 foreach (bar() as $value) {
   echo $value;   # => 123
-} 
+}
 ```
 
 PHP 字符串
@@ -322,7 +322,7 @@ $array = [
 ### 多阵列
 
 ```php
-$multiArray = [ 
+$multiArray = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9],
@@ -348,7 +348,7 @@ $array = array(
 # => string(3) "bar"
 var_dump($array["foo"]);
 # => int(24)
-var_dump($array[42]);    
+var_dump($array[42]);
 # =>  string(3) "foo"
 var_dump($array["multi"]["dim"]["a"]);
 ```
@@ -530,7 +530,7 @@ $x = 0;
 switch ($x) {
     case '0':
         print "it's zero";
-        break; 
+        break;
     case 'two':
     case 'three':
         // do something
@@ -756,7 +756,7 @@ echo coffee("espresso");
 
 ```php
 $y = 1;
- 
+
 $fn1 = fn($x) => $x + $y;
 // 相当于按值使用 $y：
 $fn2 = function ($x) use ($y) {
@@ -817,7 +817,7 @@ class MyClass
     // 类和子类
     protected $var6        = 'pro';
     // 仅限类
-    private $var7          = 'pri';  
+    private $var7          = 'pri';
 }
 ```
 
@@ -849,7 +849,7 @@ class MyClass
 ### 接口
 
 ```php
-interface Foo 
+interface Foo
 {
     public function doSomething();
 }
@@ -857,7 +857,7 @@ interface Bar
 {
     public function doSomethingElse();
 }
-class Cls implements Foo, Bar 
+class Cls implements Foo, Bar
 {
     public function doSomething() {}
     public function doSomethingElse() {}
@@ -962,7 +962,7 @@ define("CURRENT_DATE", date('Y-m-d'));
 // 一种可能的表示
 echo CURRENT_DATE;   # => 2021-01-05
 # => CURRENT_DATE is: 2021-01-05
-echo 'CURRENT_DATE is: ' . CURRENT_DATE; 
+echo 'CURRENT_DATE is: ' . CURRENT_DATE;
 ```
 
 另见

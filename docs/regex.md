@@ -1,4 +1,4 @@
-RegEX 备忘清单
+RegEX 速查表
 ===
 
 正则表达式 (regex) 的快速参考，包括符号、范围、分组、断言和一些示例模式，以帮助您入门。
@@ -8,19 +8,19 @@ RegEX 备忘清单
 
 ### 介绍
 
-这是开始使用正则表达式(Regex)的快速备忘单。
+这是开始使用正则表达式(Regex)的快速速查表。
 
-- [Python 中的 Regex](#python-中的正则表达式)  
+- [Python 中的 Regex](#python-中的正则表达式)
     _(速查手册)_
-- [JavaScript 中的 Regex](#javascript-中的正则表达式)  
+- [JavaScript 中的 Regex](#javascript-中的正则表达式)
     _(速查手册)_
-- [PHP 中的 Regex](#php中的正则表达式)  
+- [PHP 中的 Regex](#php中的正则表达式)
     _(速查手册)_
-- [Java 中的 Regex](#java-中的正则表达式)  
+- [Java 中的 Regex](#java-中的正则表达式)
     _(速查手册)_
-- [MySQL 中的 Regex](#mysql中的正则表达式)  
+- [MySQL 中的 Regex](#mysql中的正则表达式)
     _(速查手册)_
-- [Vim 中的 Regex](./vim#vim-搜索和替换)  
+- [Vim 中的 Regex](./vim#vim-搜索和替换)
     _(速查手册)_
 - [在线 Regex 测试器](https://regex101.com/) _(regex101.com)_
 - [轻松学习 Regex](https://github.com/ziishaned/learn-regex/blob/master/translations/README-cn.md) _(github.com)_
@@ -804,7 +804,7 @@ JavaScript 中的正则表达式
 let textA = 'I like APPles very much';
 let textB = 'I like APPles';
 let regex = /apples$/i
- 
+
 console.log(regex.test(textA)); // false
 console.log(regex.test(textB)); // true
 ```
@@ -836,7 +836,7 @@ console.log(regex.exec(text).input);
 ```javascript
 let text = 'Here are apples and apPleS';
 let regex = /apples/gi;
- 
+
 // Output: [ "apples", "apPleS" ]
 console.log(text.match(regex));
 ```
@@ -847,8 +847,8 @@ console.log(text.match(regex));
 ```javascript
 let text = 'This 593 string will be brok294en at places where d1gits are.';
 let regex = /\d+/g
- 
-// Output: [ "This ", " string will be brok", "en at places where d", "gits are." ] 
+
+// Output: [ "This ", " string will be brok", "en at places where d", "gits are." ]
 console.log(text.split(regex))
 ```
 
@@ -869,7 +869,7 @@ console.log(array[1]);
 ```javascript
 let text = 'Do you like aPPles?';
 let regex = /apples/i
- 
+
 // Output: Do you like mangoes?
 let result = text.replace(regex, 'mangoes');
 console.log(result);
@@ -927,7 +927,7 @@ $str = "Visit Microsoft!";
 $regex = "/microsoft/i";
 
 // Output: Visit QuickRef!
-echo preg_replace($regex, "QuickRef", $str); 
+echo preg_replace($regex, "QuickRef", $str);
 ```
 <!--rehype:className=wrap-text-->
 
@@ -987,22 +987,22 @@ Java 中的正则表达式
 
 ```java
 Pattern p = Pattern.compile(".s", Pattern.CASE_INSENSITIVE);
-Matcher m = p.matcher("aS");  
-boolean s1 = m.matches();  
+Matcher m = p.matcher("aS");
+boolean s1 = m.matches();
 System.out.println(s1);   // Outputs: true
 ```
 
 #### 第二种方式
 
 ```java
-boolean s2 = Pattern.compile("[0-9]+").matcher("123").matches();  
+boolean s2 = Pattern.compile("[0-9]+").matcher("123").matches();
 System.out.println(s2);   // Outputs: true
 ```
 
 #### 第三种方式
 
 ```java
-boolean s3 = Pattern.matches(".s", "XXXX");  
+boolean s3 = Pattern.matches(".s", "XXXX");
 System.out.println(s3);   // Outputs: false
 ```
 
@@ -1089,7 +1089,7 @@ MySQL中的正则表达式
 ### REGEXP
 
 ```sql
-expr REGEXP pat 
+expr REGEXP pat
 ```
 
 #### Examples

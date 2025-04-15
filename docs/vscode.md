@@ -1,7 +1,7 @@
-VSCode 备忘清单
+VSCode 速查表
 ===
 
-这个 VSCode (Visual Studio Code) 快速参考备忘单显示了它的键盘快捷键和命令。
+这个 VSCode (Visual Studio Code) 快速参考速查表显示了它的键盘快捷键和命令。
 
 ## Windows
 

@@ -1,4 +1,4 @@
-Oracle 备忘清单
+Oracle 速查表
 ===
 
 入门
@@ -8,10 +8,10 @@ Oracle 备忘清单
 ### SELECT 语句
 
 ```sql
-SELECT * 
-FROM beverages 
-WHERE field1 = 'Kona' 
-  AND field2 = 'coffee' 
+SELECT *
+FROM beverages
+WHERE field1 = 'Kona'
+  AND field2 = 'coffee'
   AND field3 = 122;
 ```
 <!--rehype:className=wrap-text-->
@@ -19,9 +19,9 @@ WHERE field1 = 'Kona'
 ### SELECT INTO 语句
 
 ```sql
-SELECT name, address, phone_number 
-INTO v_employee_name, v_employee_address, v_employee_phone_number 
-FROM employee 
+SELECT name, address, phone_number
+INTO v_employee_name, v_employee_address, v_employee_phone_number
+FROM employee
 WHERE employee_id = 6;
 ```
 <!--rehype:className=wrap-text-->
@@ -32,10 +32,10 @@ WHERE employee_id = 6;
 使用 VALUES 关键字插入
 
 ```sql
-INSERT INTO table_name 
+INSERT INTO table_name
 VALUES ('Value1', 'Value2', ... );
 
-INSERT INTO table_name (Column1, Column2, ... ) 
+INSERT INTO table_name (Column1, Column2, ... )
 VALUES ( 'Value1', 'Value2', ... );
 ```
 <!--rehype:className=wrap-text-->
@@ -56,10 +56,10 @@ FROM table_name;
 ### DELETE 语句
 
 ```sql
-DELETE FROM table_name 
+DELETE FROM table_name
 WHERE some_column = some_value;
 
-DELETE FROM customer 
+DELETE FROM customer
 WHERE sold = 0;
 ```
 
@@ -429,7 +429,7 @@ CREATE TABLE table_name
     column1 datatype null/not null,
     column2 datatype null/not null,
     ...
-    CONSTRAINT constraint_name 
+    CONSTRAINT constraint_name
     UNIQUE (column1, column2, column_n)
 );
 ```
@@ -452,8 +452,8 @@ CREATE TABLE customer
 
 ```sql
 ALTER TABLE [table name]
-    ADD CONSTRAINT [constraint name] 
-    UNIQUE([column name]) 
+    ADD CONSTRAINT [constraint name]
+    UNIQUE([column name])
     USING INDEX [index name];
 ```
 
@@ -461,8 +461,8 @@ ALTER TABLE [table name]
 
 ```sql
 ALTER TABLE employee
-    ADD CONSTRAINT uniqueEmployeeId 
-    UNIQUE(employeeId) 
+    ADD CONSTRAINT uniqueEmployeeId
+    UNIQUE(employeeId)
     USING INDEX ourcompanyIndx_tbs;
 ```
 
@@ -472,9 +472,9 @@ foregin 约束的语法是：
 
 ```sql
 ALTER TABLE [table name]
-    ADD CONSTRAINT [constraint name] 
-    FOREIGN KEY (column,...) 
-    REFERENCES table [(column,...)] 
+    ADD CONSTRAINT [constraint name]
+    FOREIGN KEY (column,...)
+    REFERENCES table [(column,...)]
     [ON DELETE {CASCADE | SET NULL}];
 ```
 
@@ -482,8 +482,8 @@ ALTER TABLE [table name]
 
 ```sql
 ALTER TABLE employee
-    ADD CONSTRAINT fk_departament 
-    FOREIGN KEY (departmentId) 
+    ADD CONSTRAINT fk_departament
+    FOREIGN KEY (departmentId)
     REFERENCES departments(Id);
 ```
 
@@ -515,7 +515,7 @@ CREATE [UNIQUE] INDEX index_name
     ON table_name (
         column1,
         column2,
-        . 
+        .
         column_n
     )
     [ COMPUTE STATISTICS ];
@@ -715,7 +715,7 @@ WHERE SUBSTR(PRODUCT, 1, 6) = 'Oracle';
 ### 查看数据库的创建日期和归档方式
 
 ```sql
-SELECT created, Log_Mode, Log_Mode 
+SELECT created, Log_Mode, Log_Mode
 FROM v$Database;
 ```
 

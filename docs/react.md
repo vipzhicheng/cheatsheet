@@ -1,4 +1,4 @@
-React 备忘清单
+React 速查表
 ===
 
 [![NPM version](https://img.shields.io/npm/v/react.svg?style=flat)](https://npmjs.org/package/react)
@@ -6,7 +6,7 @@ React 备忘清单
 [![Repo Dependents](https://badgen.net/github/dependents-repo/facebook/react)](https://github.com/facebook/react/network/dependents)
 [![Github repo](https://badgen.net/badge/icon/Github?icon=github&label)](https://github.com/facebook/react)
 
-适合初学者的综合 React 备忘清单
+适合初学者的综合 React 速查表
 <!--rehype:style=padding-top: 12px;-->
 
 入门
@@ -17,8 +17,8 @@ React 备忘清单
 React 是一个用于构建用户界面的 JavaScript 库
 
 - [React 官方文档](https://react.dev) _(react.dev)_
-- [Styled Components 备忘清单](./styled-components.md) _(jaywcjlove.github.io)_
-- [TypeScript JSX 备忘清单](./typescript.md#jsx) _(jaywcjlove.github.io)_
+- [Styled Components 速查表](./styled-components.md) _(jaywcjlove.github.io)_
+- [TypeScript JSX 速查表](./typescript.md#jsx) _(jaywcjlove.github.io)_
 
 ```js
 import {createRoot} from 'react-dom/client'
@@ -863,8 +863,8 @@ React 中使用 [Web Components](https://developer.mozilla.org/zh-CN/docs/Web/We
 import React from "react";
 
 function formatName(user) {
-  return user.firstName 
-    + ' ' 
+  return user.firstName
+    + ' '
     + user.lastName;
 }
 
@@ -963,7 +963,7 @@ const UserName = () => <h1>Kenny</h1>;
 export default function UserProfile() {
   return (
     <div className="UserProfile">
-      <div>Hello</div>  
+      <div>Hello</div>
       <UserName />
     </div>
   );
@@ -1626,7 +1626,7 @@ MyComponent.propTypes = {
       // 它在验证失败时应返回一个 Error 对象
       return new Error(
         '无效的prop `'
-        ` \`${propName}\` 提供给` + 
+        ` \`${propName}\` 提供给` +
         ` \`${compName}\`。验证失败。`
       );
 

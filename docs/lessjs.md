@@ -1,4 +1,4 @@
-Less 备忘清单
+Less 速查表
 ===
 
 [![NPM version](https://img.shields.io/npm/v/less.svg?style=flat)](https://npmjs.org/package/less)
@@ -6,7 +6,7 @@ Less 备忘清单
 [![Repo Dependents](https://badgen.net/github/dependents-repo/nestjs/nest)](https://github.com/less/less.js/network/dependents)
 [![Github repo](https://badgen.net/badge/icon/Github?icon=github&label)](https://github.com/less/less.js)
 
-本备忘单旨在快速理解 [Less](https://github.com/less/less.js) 所涉及的主要概念，显示了它的常用方法使用清单
+本速查表旨在快速理解 [Less](https://github.com/less/less.js) 所涉及的主要概念，显示了它的常用方法使用清单
 <!--rehype:style=padding-top: 12px;-->
 
 入门
@@ -16,7 +16,7 @@ Less 备忘清单
 
 Less(Leaner Style Sheets 的缩写)是一门向后兼容的 [`CSS`](./css.md) 扩展语言
 
-- [CSS 备忘清单](./css.md) _(jaywcjlove.github.io)_
+- [CSS 速查表](./css.md) _(jaywcjlove.github.io)_
 - [在线编译预览](http://lesscss.org/less-preview/#eyJjb2RlIjoiI2xpYigpIHtcbiAgICAuY29sb3JzKCkge1xuICAgICAgQHByaW1hcnk6IGJsdWU7XG4gICAgICBAc2Vjb25kYXJ5OiBncmVlbjtcbiAgICB9XG4gICAgLnJ1bGVzKEBzaXplKSB7XG4gICAgICBib3JkZXI6IEBzaXplIHNvbGlkIHdoaXRlO1xuICAgIH1cbiAgfVxuICBcbiAgLmJveCB3aGVuICgjbGliLmNvbG9yc1tAcHJpbWFyeV0gPSBibHVlKSB7XG4gICAgd2lkdGg6IDEwMHB4O1xuICAgIGhlaWdodDogKCR3aWR0aCAvIDIpO1xuICB9XG4gIFxuICAuYmFyOmV4dGVuZCguYm94KSB7XG4gICAgQG1lZGlhIChtaW4td2lkdGg6IDYwMHB4KSB7XG4gICAgICB3aWR0aDogMjAwcHg7XG4gICAgICAjbGliLnJ1bGVzKDFweCk7XG4gICAgfVxuICB9IiwiYWN0aXZlVmVyc2lvbiI6IjQueCJ9) _(lesscss.org)_
 
 在 Node.js 环境中使用 `Less`
@@ -254,7 +254,7 @@ width: calc(50% + (@var - 20px));
 .class {
   width: percentage(@width); // 返回 `50%`
   color: saturate(@base, 5%);
-  background-color: 
+  background-color:
       spin(lighten(@base, 25%), 8);
 }
 ```
@@ -398,7 +398,7 @@ nav ul {
 @bg-light: boolean(luma(@bg) > 50%);
 
 div {
-  background: @bg; 
+  background: @bg;
   color: if(@bg-light, black, white);
 }
 ```
@@ -424,7 +424,7 @@ div {
 ```less
 escape('a=1') // 输出 a%3D1
 
-@mscode: "ms:alwaysHasItsOwnSyntax.For.Stuff()" 
+@mscode: "ms:alwaysHasItsOwnSyntax.For.Stuff()"
 filter: e(@mscode);
 // 输出 filter: ms:alwaysHasItsOwnSyntax.For.Stuff();
 
@@ -719,6 +719,6 @@ each(range(4), {
 ---
 
 - [Less.js 官网](http://lesscss.org) _(lesscss.org)_
-- [CSS 备忘清单](./css.md) _(jaywcjlove.github.io)_
-- [Stylus 备忘清单](./stylus.md) _(jaywcjlove.github.io)_
+- [CSS 速查表](./css.md) _(jaywcjlove.github.io)_
+- [Stylus 速查表](./stylus.md) _(jaywcjlove.github.io)_
 - [在线编译预览](http://lesscss.org/less-preview/#eyJjb2RlIjoiI2xpYigpIHtcbiAgICAuY29sb3JzKCkge1xuICAgICAgQHByaW1hcnk6IGJsdWU7XG4gICAgICBAc2Vjb25kYXJ5OiBncmVlbjtcbiAgICB9XG4gICAgLnJ1bGVzKEBzaXplKSB7XG4gICAgICBib3JkZXI6IEBzaXplIHNvbGlkIHdoaXRlO1xuICAgIH1cbiAgfVxuICBcbiAgLmJveCB3aGVuICgjbGliLmNvbG9yc1tAcHJpbWFyeV0gPSBibHVlKSB7XG4gICAgd2lkdGg6IDEwMHB4O1xuICAgIGhlaWdodDogKCR3aWR0aCAvIDIpO1xuICB9XG4gIFxuICAuYmFyOmV4dGVuZCguYm94KSB7XG4gICAgQG1lZGlhIChtaW4td2lkdGg6IDYwMHB4KSB7XG4gICAgICB3aWR0aDogMjAwcHg7XG4gICAgICAjbGliLnJ1bGVzKDFweCk7XG4gICAgfVxuICB9IiwiYWN0aXZlVmVyc2lvbiI6IjQueCJ9) _(lesscss.org)_

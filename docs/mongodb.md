@@ -1,7 +1,7 @@
-MongoDB 备忘清单
+MongoDB 速查表
 ===
 
-[MongoDB](https://www.mongodb.com/developer/products/mongodb/cheat-sheet/#connect-mongodb-shell) 此备忘单包含一些方便的提示、命令和快速参考，可让您立即连接并进行 CRUD
+[MongoDB](https://www.mongodb.com/developer/products/mongodb/cheat-sheet/#connect-mongodb-shell) 此速查表包含一些方便的提示、命令和快速参考，可让您立即连接并进行 CRUD
 
 入门
 ---
@@ -89,7 +89,7 @@ db.coll.find({name: "Max", age: 32}) // 隐式逻辑“与”。
 db.coll.find({date: ISODate("2020-09-25T13:57:17.180Z")})
 
 // 或“queryPlanner”或“allPlansExecution”
-db.coll.find({name: "Max", age: 32}).explain("executionStats") 
+db.coll.find({name: "Max", age: 32}).explain("executionStats")
 db.coll.distinct("name")
 
 // 数数
@@ -220,9 +220,9 @@ db.coll.findOneAndDelete({"name": "Max"})
 
 ```mongodb
 // 删除集合及其索引定义
-db.coll.drop()    
+db.coll.drop()
 // 仔细检查你*不*在 PROD 集群上......:-)
-db.dropDatabase() 
+db.dropDatabase()
 ```
 
 ### 创建集合

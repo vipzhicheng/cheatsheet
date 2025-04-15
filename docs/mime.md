@@ -1,7 +1,7 @@
-MIME 类型 备忘清单
+MIME 类型 速查表
 ===
 
-此备忘单列出了一些常见的 Web MIME 类型。 您可以查看包含所有已注册 MIME 类型的 [IANA/MIME 媒体类型注册表](https://www.iana.org/assignments/media-types/media-types.xhtml)。
+此速查表列出了一些常见的 Web MIME 类型。 您可以查看包含所有已注册 MIME 类型的 [IANA/MIME 媒体类型注册表](https://www.iana.org/assignments/media-types/media-types.xhtml)。
 
 入门
 ----

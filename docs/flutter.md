@@ -1,4 +1,4 @@
-Flutter 备忘清单
+Flutter 速查表
 ===
 
 包含 Flutter 常用的组件、布局、方法等。初学者的完整快速参考
@@ -21,7 +21,7 @@ $ sudo softwareupdate --install-rosetta --agree-to-license
 
 - 安装包来获取最新的 stable Flutter SDK：
   - Intel [`flutter_macos_3.22.2-stable.zip`](https://storage.flutter-io.cn/flutter_infra_release/releases/stable/macos/flutter_macos_3.22.2-stable.zip)
-  - Apple 芯片 [`flutter_macos_arm64_3.22.2-stable.zip`](https://storage.flutter-io.cn/flutter_infra_release/releases/stable/macos/flutter_macos_arm64_3.22.2-stable.zip)  
+  - Apple 芯片 [`flutter_macos_arm64_3.22.2-stable.zip`](https://storage.flutter-io.cn/flutter_infra_release/releases/stable/macos/flutter_macos_arm64_3.22.2-stable.zip)
 
     想要获取到其他版本的安装包，请参阅 [SDK 版本列表](https://docs.flutter.cn/release/archive) 页面
 - 将文件解压到目标路径, 比如:
@@ -88,7 +88,7 @@ Text("Hello world",
   style: TextStyle(
     color: Colors.blue,
     fontSize: 18.0,
-    height: 1.2,  
+    height: 1.2,
     fontFamily: "Courier",
     background: Paint()..color=Colors.yellow,
     decoration:TextDecoration.underline,
@@ -110,19 +110,19 @@ Text.rich(TextSpan(
        text: "https://flutter.dev",
        style: TextStyle(
          color: Colors.blue
-       ),  
+       ),
        recognizer: _tapRecognizer
      ),
     ]
 ))
 ```
 
-### DefaultTextStyle 文本默认样式  
+### DefaultTextStyle 文本默认样式
 <!--rehype:wrap-class=row-span-4-->
 
 ```dart
 DefaultTextStyle(
-  // 1.设置文本默认样式  
+  // 1.设置文本默认样式
   style: TextStyle(
     color:Colors.red,
     fontSize: 20.0,
@@ -313,7 +313,7 @@ const Image({
 Switch(
   value: true,//当前状态
   onChanged:(value){
-    // 重新构建页面  
+    // 重新构建页面
   },
 ),
 ```
@@ -361,7 +361,7 @@ LinearProgressIndicator(
 LinearProgressIndicator(
   backgroundColor: Colors.grey[200],
   valueColor: AlwaysStoppedAnimation(Colors.blue),
-  value: .5, 
+  value: .5,
 )
 ```
 <!--rehype:className=wrap-text-->
@@ -496,7 +496,7 @@ Wrap(
     FlutterLogo(),
     FlutterLogo(),
     FlutterLogo(),
-    FlutterLogo(),  
+    FlutterLogo(),
     FlutterLogo(),
   ],
 ),
@@ -583,7 +583,7 @@ Container(
   child: Align(
     alignment: Alignment.center,
     child: ElevatedButton(
-      onPressed: () {}, 
+      onPressed: () {},
       child: Text('Center'),
     ),
   ),
@@ -602,7 +602,7 @@ Container(
   color: Colors.green,
   child: Center(
     child: ElevatedButton(
-      onPressed: () {}, 
+      onPressed: () {},
       child: Text('Center'),
     ),
   ),
@@ -936,7 +936,7 @@ class _HomeState extends State<HomeState>{
                 width: press ? 200 : 300,
                 height: 200,
                 color:Colors.yellow,
-                  transform: press ? Matrix4.translationValues(0, 0, 0) : 
+                  transform: press ? Matrix4.translationValues(0, 0, 0) :
                                     Matrix4.translationValues(100, 100, 0)
               ),
             )
@@ -1265,7 +1265,7 @@ class _HomeState extends State<HomeState> with SingleTickerProviderStateMixin {
 另见
 ---
 
-- [Dart 备忘清单](./dart.md) _(jaywcjlove.github.io)_
+- [Dart 速查表](./dart.md) _(jaywcjlove.github.io)_
 - [flutter 官网](https://flutter.dev) _(flutter.dev)_
 - [flutter 中文社区官网](https://flutter.cn) _(flutter.cn)_
 - [flutter 中文开发者社区](https://flutterchina.club/) _(flutterchina.club)_

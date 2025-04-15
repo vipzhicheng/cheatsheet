@@ -1,4 +1,4 @@
-Ruby 备忘清单
+Ruby 速查表
 ===
 
 入门
@@ -11,7 +11,7 @@ Ruby 备忘清单
 # Debian, Ubuntu
 $ sudo apt-get install ruby-full
 # Windows
-$ winget install RubyInstallerTeam.Ruby 
+$ winget install RubyInstallerTeam.Ruby
 $ brew install ruby # macOS
 $ docker run -it --rm ruby:latest # Docker
 $ docker run -it --rm ruby:2.7
@@ -545,7 +545,7 @@ Method name | Output
 
 ```ruby
 num = 2
-puts 'two' if num == 2 
+puts 'two' if num == 2
 ```
 
 如果条件为真，则执行代码
@@ -1224,7 +1224,7 @@ array = []
 ### 包含不同类型的对象的数组
 
 ```ruby
-array = [1, "two", 3.0] 
+array = [1, "two", 3.0]
 #=> [1, "two", 3.0]
 ```
 
@@ -1232,11 +1232,11 @@ array = [1, "two", 3.0]
 <!--rehype:wrap-class=row-span-2-->
 
 ```ruby
-numbers = Array.new(3)       
+numbers = Array.new(3)
 #=> [nil, nil, nil]
-numbers = Array.new(3, 7)    
+numbers = Array.new(3, 7)
 #=> [7, 7, 7]
-numbers = Array.new(3, true) 
+numbers = Array.new(3, true)
 #=> [true, true, true]
 numbers = []
 numbers.fill(7, 0..2)   #=> [7, 7, 7]
@@ -1339,9 +1339,9 @@ arr.drop(3)   #=> [4, 5, 6]
 
 ```ruby
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-numbers.push(11)          
+numbers.push(11)
 #=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-numbers.push(12, 13, 14)  
+numbers.push(12, 13, 14)
 #=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 ```
 
@@ -1359,9 +1359,9 @@ num_array
 
 ```ruby
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-numbers.unshift(0)          
+numbers.unshift(0)
 #=> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-numbers.unshift(-3, -2, -1) 
+numbers.unshift(-3, -2, -1)
 #=> [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
@@ -1379,7 +1379,7 @@ numbers
 ```ruby
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 numbers.delete_at(2) #=> 4
-numbers             
+numbers
 #=> [2, 3, 5, 6, 7, 8, 9, 10]
 ```
 
@@ -1396,14 +1396,14 @@ numbers           #=> [3, 5, 6, 7, 8, 9, 10]
 
 ```ruby
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-numbers.insert(0, 0)           
+numbers.insert(0, 0)
 #=> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-numbers.insert(0, -3, -2, -1)  
+numbers.insert(0, -3, -2, -1)
 #=> [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-numbers.insert(-1, 12, 13, 14) 
+numbers.insert(-1, 12, 13, 14)
 #=> [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14]
-numbers.insert(-4, 11)         
+numbers.insert(-4, 11)
 #=> [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 ```
 <!--rehype:className=wrap-text-->
@@ -1411,7 +1411,7 @@ numbers.insert(-4, 11)
 ### 一个块来填充数组的值
 
 ```ruby
-numbers = Array.new(10) { |n| n = n * 2 } 
+numbers = Array.new(10) { |n| n = n * 2 }
 #=> [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
 ```
 
@@ -1422,7 +1422,7 @@ numbers = Array(100..110)
 #=> [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
 
 # 或者我们可以将范围转换为数组
-(100..110).to_a 
+(100..110).to_a
 #=> [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
 ```
 <!--rehype:className=wrap-text-->
@@ -2016,7 +2016,7 @@ p str #=> "sixth fifth fourth third second first "
 ### 布尔可枚举方法
 <!--rehype:wrap-class=row-span-2-->
 
-Name     | When to use  
+Name     | When to use
 :-------- | --
 `all?`     | 当您想检查所有元素是否满足您的条件时
 `any?`     | 当您想检查至少一项是否满足您的条件时
@@ -2111,22 +2111,22 @@ a # => [0, 1, 2, 3]
 ### -
 
 ```ruby
-[0, 1, 1, 2, 1, 1, 3, 1, 1] - [1] 
+[0, 1, 1, 2, 1, 1, 3, 1, 1] - [1]
 # => [0, 2, 3]
-[0, 1, 2, 3] - [3, 0] 
+[0, 1, 2, 3] - [3, 0]
 # => [1, 2]
-[0, 1, 2] - [4] 
+[0, 1, 2] - [4]
 # => [0, 1, 2]
 ```
 
 ### union
 
 ```ruby
-[0, 1, 2, 3].union([4, 5], [6, 7]) 
+[0, 1, 2, 3].union([4, 5], [6, 7])
 # => [0, 1, 2, 3, 4, 5, 6, 7]
-[0, 1, 1].union([2, 1], [3, 1]) 
+[0, 1, 1].union([2, 1], [3, 1])
 # => [0, 1, 2, 3]
-[0, 1, 2, 3].union([3, 2], [1, 0]) 
+[0, 1, 2, 3].union([3, 2], [1, 0])
 # => [0, 1, 2, 3]
 ```
 

@@ -1,7 +1,7 @@
-Golang 备忘清单
+Golang 速查表
 ===
 
-该备忘单提供了帮助您使用 [Golang](https://golang.org) 的基本语法和方法。
+该速查表提供了帮助您使用 [Golang](https://golang.org) 的基本语法和方法。
 
 入门
 --------
@@ -34,7 +34,7 @@ s1 = "Learn Go!"
 var b, c int = 1, 2
 var d = true
 // 匿名赋值
-_ , e = 10, 20 
+_ , e = 10, 20
 ```
 
 简短声明
@@ -116,7 +116,7 @@ var p float32 = 22.7  // 32-bit float
 x := 5
 x++
 fmt.Println("x + 4 =", x + 4)
-fmt.Println("x * 4 =", x * 4) 
+fmt.Println("x * 4 =", x * 4)
 ```
 
 参见：[更多操作符](#运算符和标点符号)
@@ -131,7 +131,7 @@ isFalse  := false
 #### 操作符
 
 ```go
-fmt.Println(true && true)   // true 
+fmt.Println(true && true)   // true
 fmt.Println(true && false)  // false
 fmt.Println(true || true)   // true
 fmt.Println(true || false)  // true
@@ -215,8 +215,8 @@ func main(){
   p = &a   //或者直接写 p := &a
   //上面的p是一个指针，通过 *p 的方式同样可以访问 变量a指向 的内存
 
-  /*当你动态申请内存的时候，指针的存在意义之一就被体现出来了*/ 
-  ptr := new(int)   
+  /*当你动态申请内存的时候，指针的存在意义之一就被体现出来了*/
+  ptr := new(int)
   //申请了一块内存空间，没有办法指定别名，new()返回内存地址，用指针接收
   //此时并没有变量能直接指向这块内存，所以只能通过内存地址来访问
 }
@@ -884,11 +884,11 @@ func main() {
 
     // 创建带值的 context
     ctx = context.WithValue(context.Background(), "key", "value")
-    
+
     // 从 context 获取值
     value := ctx.Value("key")
     fmt.Println(value)
-    
+
     // 检查 context 是否已取消
     select {
     case <-ctx.Done():
@@ -1008,17 +1008,17 @@ func (t *T) Set(i int){
 //值调用会自动转换，表达式调用则不会，例如：
 type Data struct{}
 func (Data) TestValue () {}
-func (*Data) TestPointer () {} 
+func (*Data) TestPointer () {}
 //声明一个类型变量a
 var a Data= struct{}{}
 //表达式调用编译器不会进行自动转换
-Data.TestValue(a) 
-//Data.TestValue(&a) 
-(*Data).TestPointer (&a) 
-//Data.TestPointer(&a) //type Data has no method TestPointer 
+Data.TestValue(a)
+//Data.TestValue(&a)
+(*Data).TestPointer (&a)
+//Data.TestPointer(&a) //type Data has no method TestPointer
 //值调用编译器会进行自动转换
 y : = (&a).TestValue //编译器帮助转换a.TestValue
-g : = a.TestPointer //会转换为(&a).TestPointer 
+g : = a.TestPointer //会转换为(&a).TestPointer
 ```
 
 #### 组合结构的方法集
@@ -1026,13 +1026,13 @@ g : = a.TestPointer //会转换为(&a).TestPointer
 内嵌字段的访问不需要使用全路径，只要保证命名是唯一的就可以，尽量避免同名。如果外层字段和内层字段有相同的方法，则使用简化模式访问外层方法会覆盖内层的方法。
 
 ```go
-x : = X{a: 1} 
-y : = Y{ 
-    X : x , 
-    b : 2 , 
+x : = X{a: 1}
+y : = Y{
+    X : x ,
+    b : 2 ,
 }
-z : = z { 
-    Y : y , 
+z : = z {
+    Y : y ,
     c : 3 ,
 }//组合结构，内嵌字段
 ```
@@ -1199,7 +1199,7 @@ Golang 泛型 (Go version >= 1.18)
 
 ```text
 type S[T int|float32|float64 ] []T
-       ┬  ────────┬──────── 
+       ┬  ────────┬────────
        ┆          ╰─── 2. 类型约束
        ╰────────────── 1. 类型形参
 ```
@@ -1247,7 +1247,7 @@ type WowStruct[T int | float32, S []T] struct {
     MinValue T
 }
 
-var ws WowStruct[int, []int]  
+var ws WowStruct[int, []int]
 ```
 <!--rehype:className=wrap-text -->
 
@@ -1255,8 +1255,8 @@ var ws WowStruct[int, []int]
 
 ``` go
 func F[T1 any]() {
-    type x struct{} 
-    type y = x      
+    type x struct{}
+    type y = x
 }
 ```
 
@@ -1267,7 +1267,7 @@ func F[T1 any]() {
 
 ``` go
 type Addable interface{
-    type int, int8, int16, int32, int64, uint, uint8, uint16, uint32, uint64, uintptr, float32, float64, complex64, complex128, string 
+    type int, int8, int16, int32, int64, uint, uint8, uint16, uint32, uint64, uintptr, float32, float64, complex64, complex128, string
 }
 
 func Add[T Addable](a,b T) T {
@@ -1290,7 +1290,7 @@ type Float interface {
     ~float32 | ~float64
 }
 
-type Slice[T Int | Uint | Float] []T 
+type Slice[T Int | Uint | Float] []T
 
 var s Slice[int] // 正确
 

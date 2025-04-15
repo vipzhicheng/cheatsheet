@@ -1,4 +1,4 @@
-Finder 备忘清单
+Finder 速查表
 ===
 
 Finder 中 55 个键盘快捷键的可视化小抄。此应用程序是 macOS 的一部分。

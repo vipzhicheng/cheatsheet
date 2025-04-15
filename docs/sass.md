@@ -6,7 +6,7 @@ Sass
 [![Repo Dependents](https://badgen.net/github/dependents-repo/sass/dart-sass)](https://github.com/sass/dart-sass/network/dependents)
 [![Github repo](https://badgen.net/badge/icon/Github?icon=github&label)](https://github.com/sass/dart-sass)
 
-这是一份快速参考备忘单，列出了 [SASS](https://sass-lang.com) 最有用的功能
+这是一份快速参考速查表，列出了 [SASS](https://sass-lang.com) 最有用的功能
 <!--rehype:style=padding-top: 12px;-->
 
 Sass 基础

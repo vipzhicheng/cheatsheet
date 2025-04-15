@@ -1,4 +1,4 @@
-FastAPI 备忘清单
+FastAPI 速查表
 ===
 
 一个用于构建 API 的现代、快速（高性能）的 web 框架，使用 Python 3.6+ 并基于标准的 Python 类型提示
@@ -127,13 +127,13 @@ async def read_item(item_id: str, q: Union[str, None] = None):
 
 ```python
 # http://127.0.0.1:8000/users/1/items/2
-# or 
+# or
 # http://127.0.0.1:8000/users/1/items/2?q=query&short=true
 @app.get("/users/{user_id}/items/{item_id}")
 async def read_user_item(
-    user_id: int, 
-    item_id: str, 
-    q: Union[str, None] = None, 
+    user_id: int,
+    item_id: str,
+    q: Union[str, None] = None,
     short: bool = False
 ):
     item = {"item_id": item_id, "owner_id": user_id}
@@ -436,9 +436,9 @@ fake_items_db = [{"item_name": "Foo"}, {"item_name": "Bar"}]
 
 class CommonQueryParams:
     def __init__(
-        self, 
-        q: Union[str, None] = None, 
-        skip: int = 0, 
+        self,
+        q: Union[str, None] = None,
+        skip: int = 0,
         limit: int = 100
     ):
         self.q = q
@@ -676,5 +676,5 @@ FastAPI 默认支持 HTTPS，你只需要提供证书和私钥即可。
 参考
 ---
 
-- [Python 备忘清单](./python.md) _(jaywcjlove.github.io)_
+- [Python 速查表](./python.md) _(jaywcjlove.github.io)_
 - [FastAPI 官方文档](https://fastapi.tiangolo.com/zh/tutorial/) _(fastapi.tiangolo.com)_

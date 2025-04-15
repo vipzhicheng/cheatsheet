@@ -1,4 +1,4 @@
-Vue 3 备忘清单
+Vue 3 速查表
 ===
 
 [![NPM version](https://img.shields.io/npm/v/vue.svg?style=flat)](https://npmjs.org/package/vue)
@@ -6,7 +6,7 @@ Vue 3 备忘清单
 [![Repo Dependents](https://badgen.net/github/dependents-repo/vuejs/core)](https://github.com/vuejs/core/network/dependents)
 [![Github repo](https://badgen.net/badge/icon/Github?icon=github&label)](https://github.com/vuejs/core)
 
-渐进式 JavaScript 框架 [Vue 3](https://cn.vuejs.org/) 备忘清单的快速参考列表，包含常用 API 和示例
+渐进式 JavaScript 框架 [Vue 3](https://cn.vuejs.org/) 速查表的快速参考列表，包含常用 API 和示例
 <!--rehype:style=padding-top: 12px;-->
 
 入门
@@ -18,7 +18,7 @@ Vue 是一套用于构建用户界面的渐进式框架
 
 - [Vue 3.x 官方文档](https://cn.vuejs.org/) _(cn.vuejs.org)_
 - [Vue Router 4.x 官方文档](https://router.vuejs.org/zh/) _(router.vuejs.org)_
-- [Vue 2 备忘清单](./vue2.md)
+- [Vue 2 速查表](./vue2.md)
 <!--rehype:className=style-round-->
 
 注意：Vue 3.x 版本对应 Vue Router 4.x 路由版本
@@ -453,7 +453,7 @@ const open = ref(false);
 
 <template>
   <button @click="open = !open">Toggle</button>
-  <div>Hello Vue!</div>  
+  <div>Hello Vue!</div>
 </template>
 
 <style scope>
@@ -523,10 +523,10 @@ watch(count, function() {
 
 <script setup>
   import { watch, ref } from 'vue';
-  
+
   const count1 = ref(0)
   const count2 = ref(0)
-  
+
   watch(
     // 监听的表达式或函数
     () => ({
@@ -661,7 +661,7 @@ defineExpose({ onSearch })
 
 ```html
 <script setup>
-import { ref } from 'vue'  
+import { ref } from 'vue'
 
 const childrenRef = ref(null)
 const onSearch = function() {
@@ -846,8 +846,8 @@ export default router
     <ul class="list">
         <!-- to的对象写法 -->
         <li v-for="item of data" :key="item.id">
-            <router-link 
-                class="link" 
+            <router-link
+                class="link"
                 :to="{
                     path:'/home/message/mes',
                     query: { id:item.id, title:item.mes }
@@ -891,8 +891,8 @@ export default {
 
 ```html
 <li v-for="item of data" :key="item.id">
-    <router-link 
-        class="link" 
+    <router-link
+        class="link"
         :to="`/home/message/mes?id=${item.id}&title=${item.mes}`"
     >
       {{item.mes}}
@@ -910,7 +910,7 @@ routes:[
         component:HomeBody,
         children:[
             { path:'news', component:HomeChild },
-            { 
+            {
               path:'message',
               component:HomeChild1,
               //多级路由
@@ -926,12 +926,12 @@ routes:[
 使用
 
 ```html
-<router-link :to="{ 
+<router-link :to="{
   name:'',
   path:'/home/message/mes',
 ​  query:{ id:item.id,title:item.mes }
 }">
-```  
+```
 
 ### 5.params参数的使用
 
@@ -951,8 +951,8 @@ children:[
 
 ```html
 <li v-for="item of data" :key="item.id">
-    <router-link 
-      class="link" 
+    <router-link
+      class="link"
       :to="`/home/message/mes/${item.id}/${item.mes}`"
       >{{item.mes}}
     </router-link>
@@ -1283,7 +1283,7 @@ onMounted(() => {
 import { ref } from 'vue'
 
 const isContentShown = ref(false)
-const open = 
+const open =
       () => (isContentShown.value = true)
 
 defineExpose({
@@ -1529,7 +1529,7 @@ declare module 'vue' {
       from: Route,
       next: () => void
     ): void
-  
+
 }
 ```
 

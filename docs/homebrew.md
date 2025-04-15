@@ -1,7 +1,7 @@
-Homebrew 备忘清单
+Homebrew 速查表
 ===
 
-Homebrew 是 macOS(或Linux)缺少的包管理器，备忘清单包含 [brew](https://github.com/Homebrew/brew) 命令的使用与安装
+Homebrew 是 macOS(或Linux)缺少的包管理器，速查表包含 [brew](https://github.com/Homebrew/brew) 命令的使用与安装
 
 Homebrew
 ---

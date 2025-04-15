@@ -1,4 +1,4 @@
-TypeScript 备忘清单
+TypeScript 速查表
 ===
 
 [![NPM version](https://img.shields.io/npm/v/typescript.svg?style=flat)](https://www.npmjs.com/package/typescript)
@@ -6,7 +6,7 @@ TypeScript 备忘清单
 [![Repo Dependents](https://badgen.net/github/dependents-repo/Microsoft/TypeScript)](https://github.com/Microsoft/TypeScript/network/dependents)
 [![Github repo](https://badgen.net/badge/icon/Github?icon=github&label)](https://github.com/Microsoft/TypeScript)
 
-包含最重要基础、泛型、方法、class 等 TypeScript 强类型编程语言语法的快速参考备忘单。初学者的完整快速参考
+包含最重要基础、泛型、方法、class 等 TypeScript 强类型编程语言语法的快速参考速查表。初学者的完整快速参考
 <!--rehype:style=padding-top: 12px;-->
 
 入门 Interface
@@ -16,7 +16,7 @@ TypeScript 备忘清单
 
 TypeScript 是具有类型语法的 JavaScript。Interface 是为了匹配它们的运行时行为而构建的。
 
-- [JavaScript 备忘清单](./javascript.md) _(jaywcjlove.github.io)_
+- [JavaScript 速查表](./javascript.md) _(jaywcjlove.github.io)_
 - [TypeScript 官网](https://www.typescriptlang.org/)  _(typescriptlang.org)_
 
 ### 内置类型基元
@@ -282,7 +282,7 @@ type JSONResponse = {
 }
 ```
 
-用于节省空间的 Terser，请参阅 Interface 备忘清单了解更多信息，除了“static”匹配之外的所有内容。
+用于节省空间的 Terser，请参阅 Interface 速查表了解更多信息，除了“static”匹配之外的所有内容。
 
 ### 映射类型
 
@@ -292,11 +292,11 @@ type Artist = {
 }
 
 type Subscriber<Type> = {
-  [Property in keyof Type]: 
+  [Property in keyof Type]:
       (newValue: Type[Property]) => void
 }
 type ArtistSub = Subscriber<Artist>
-// { name: (nv: string) => 
+// { name: (nv: string) =>
 //    void, bio: (nv: string) => void }
 ```
 
@@ -404,7 +404,7 @@ const data2 = {
 
 ```ts
 const response = getResponse()
-const isSuccessResponse = 
+const isSuccessResponse =
     res instanceof SuccessResponse
 
 if (isSuccessResponse) {
@@ -726,9 +726,9 @@ interface Props {
   b?: string;
 }
 
-const obj: Props = { a: 5 }; 
+const obj: Props = { a: 5 };
 const obj2: Required<Props> = { a: 5 };
-// ❌ 类型“{ a: number;”中缺少属性“b” }' 
+// ❌ 类型“{ a: number;”中缺少属性“b” }'
 // 但在 'Required<Props>' 类型中是必需的。
 ```
 
@@ -790,7 +790,7 @@ const cats: Record<CatName, CatInfo> = {
   boris: {age:5, breed: "Maine Coon" },
 };
 
-cats.boris; 
+cats.boris;
 // 👉 const cats: Record<CatName, CatInfo>
 ```
 
@@ -874,14 +874,14 @@ interface Todo {
   completed: boolean;
   createdAt: number;
 }
- 
+
 type TodoPreview = Omit<Todo, "name">;
 
 const todo: TodoPreview = {
   completed: false,
   createdAt: 1615544252770,
 };
- 
+
 todo;
  // 👉 const todo: TodoPreview
 ```
@@ -1032,7 +1032,7 @@ type ObjectDescriptor<D, M> = {
   // 方法中“this”的类型是 D & M
   methods?: M & ThisType<D & M>;
 };
- 
+
 function makeObject<D, M>(
   desc: ObjectDescriptor<D, M>
 ): D & M {
@@ -1040,7 +1040,7 @@ function makeObject<D, M>(
   let methods: object = desc.methods || {};
   return { ...data, ...methods } as D & M;
 }
- 
+
 let obj = makeObject({
   data: { x: 0, y: 0 },
   methods: {
@@ -1050,7 +1050,7 @@ let obj = makeObject({
     },
   },
 });
- 
+
 obj.x = 10;
 obj.y = 20;
 obj.moveBy(5, 5);
@@ -1081,7 +1081,7 @@ type T2 = InstanceType<never>;
 function toHex(this: Number) {
   return this.toString(16);
 }
- 
+
 function numberToString(
   n: ThisParameterType<typeof toHex>
 ) {
@@ -1189,15 +1189,15 @@ const Button = (prop: { value: string }, context: { color: string }) => (
 interface CeProps {
   children: JSX.Element[] | JSX.Element;
 }
- 
+
 interface HomeProps extends CeProps {
   home: JSX.Element;
 }
- 
+
 interface SideProps extends CeProps {
   side: JSX.Element | string;
 }
- 
+
 function Dog(prop:HomeProps): JSX.Element;
 function Dog(prop:SideProps): JSX.Element;
 function Dog(prop:CeProps): JSX.Element {
@@ -1345,7 +1345,7 @@ const Row = (props: RowProps) => {
     <props.element className="h-8 w-8" />
   );
 };
- 
+
 <Row element={"div"} />;
 <Row element={UserIcon} />;
 ```
@@ -1374,14 +1374,14 @@ type SomeBigInt = "100" extends `${infer U extends bigint}` ? U : never;
 
 ```ts
 interface Point { x: number; y: number; }
- 
+
 // type keys = "x" | "y"
 type keys = keyof Point;
 
 type Arrayish = {
     [n: number]: unknown;
 };
-type A = keyof Arrayish; 
+type A = keyof Arrayish;
 // type A = number
 ```
 
@@ -1396,8 +1396,8 @@ type Colors = {
   [key in (typeof named)[number]]: (typeof hex)[number];
 };
 // Colors = {
-//   aqua: "#00FFFF" | "#7FFFD4" | "#F0FFFF"; 
-//   .... 
+//   aqua: "#00FFFF" | "#7FFFD4" | "#F0FFFF";
+//   ....
 // }
 ```
 
@@ -1474,7 +1474,7 @@ const redComponent = palette.red.at(0)
 不使用的情况下：
 
 ```ts
-const errorMap: Map<string, Error> 
+const errorMap: Map<string, Error>
         = new Map()
 // 或者使用 type 定义别名
 type ErrorMapType = Map<string, Error>
@@ -1504,7 +1504,7 @@ function makeHammerBox(hammer: Hammer) {
   return makeBox(hammer);
 }
 // or...
-const makeWrenchBox: (wrench: Wrench) 
+const makeWrenchBox: (wrench: Wrench)
     => Box<Wrench> = makeBox;
 ```
 
@@ -1536,7 +1536,7 @@ const MyArray = [
   { name: "Bob", age: 23 },
   { name: "Eve", age: 38 },
 ];
- 
+
 type Person = typeof MyArray[number];
 // type Person = {
 //   name: string;
@@ -1565,7 +1565,7 @@ const f = c(true); // const d: true
 这里t的类型用了一个展开运算
 
 ```ts
-const g = 
+const g =
       <T extends string[]>(t: [...T]) => t;
 ```
 
@@ -1685,9 +1685,9 @@ declare namespace myLib {
   // 我们可以通过 'let c = new myLib.Cat(42)' 创建一些类或参考例如 '函数 f(c: myLib.Cat) { ... }
   class Cat {
     constructor(n: number);
-    // 我们可以从 'Cat' 实例中读取 'c.age' 
+    // 我们可以从 'Cat' 实例中读取 'c.age'
     readonly age: number;
-    // 我们可以从 'Cat' 实例调用 'c.purr()' 
+    // 我们可以从 'Cat' 实例调用 'c.purr()'
     purr(): void;
   }
   // 我们可以将变量声明为
@@ -1901,7 +1901,7 @@ function stringsStrings(p1, p2, p3, p4) {
  * @return {PromiseLike<string>}
  */
 function ps() {}
- 
+
 /**
  * @returns {{ a: string, b: number }} - 可以使用“@returns”和“@return”
  */
@@ -1920,7 +1920,7 @@ function ab() {}
  * @prop {number} [prop4] - SpecialType 的可选数字属性
  * @prop {number} [prop5=42] - 具有默认值的 SpecialType 的可选数字属性
  */
- 
+
 /** @type {SpecialType} */
 var specialTypeObject;
 specialTypeObject.prop3;
@@ -1935,7 +1935,7 @@ specialTypeObject.prop3;
  * @property {number} prop2 - SpecialType 的数字属性
  * @property {number=} prop3 - SpecialType 的可选数字属性
  */
- 
+
 /** @type {SpecialType1} */
 var specialTypeObject1;
 ```
@@ -1965,7 +1965,7 @@ function special(options) {
  * @param {number} [index]
  * @returns {boolean}
  */
- 
+
 /** @type {Predicate} */
 const ok = (s) => !(s.length % 2);
 ```
@@ -1990,7 +1990,7 @@ const ok = (s) => !(s.length % 2);
 function id(x) {
   return x;
 }
- 
+
 const a = id("string");
 const b = id(123);
 const c = id({});
@@ -2375,5 +2375,5 @@ TSConfig Ref
 另见
 ----
 
-- [JavaScript 备忘清单](./javascript.md)
+- [JavaScript 速查表](./javascript.md)
 - [TypeScript 官网](https://www.typescriptlang.org/) _(typescriptlang.org)_

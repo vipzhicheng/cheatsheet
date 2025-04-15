@@ -1,7 +1,7 @@
-Pacman 备忘清单
+Pacman 速查表
 ===
 
-这个是 Arch Linux 软件包管理器 Pacman 快速参考备忘单显示了它的常用命令使用清单。
+这个是 Arch Linux 软件包管理器 Pacman 快速参考速查表显示了它的常用命令使用清单。
 
 PACMAN 清单查询
 ---

@@ -1,7 +1,7 @@
-SSH 备忘清单
+SSH 速查表
 ====
 
-此快速参考备忘单提供了使用 SSH 的各种方法。
+此快速参考速查表提供了使用 SSH 的各种方法。
 
 入门
 ----
@@ -113,7 +113,7 @@ scp `-p`      | 保留时间和模式
 ### 配置示例
 
 ```toml
-Host server1 
+Host server1
     HostName 192.168.1.5
     User root
     Port 22
@@ -173,7 +173,7 @@ SSH keygen
 <!--rehype:wrap-class=col-span-2-->
 
 ```shell
-$ ssh-keygen -t rsa -b 4096 -C "your@mail.com" 
+$ ssh-keygen -t rsa -b 4096 -C "your@mail.com"
 ```
 
 ----

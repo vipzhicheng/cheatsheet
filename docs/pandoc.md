@@ -1,7 +1,7 @@
-Pandoc 备忘清单
+Pandoc 速查表
 ===
 
-Pandoc 是一个文档转换器，这个 [pandoc](https://pandoc.org/) 备忘单包含 pandoc 命令和一些常见的 pandoc 技巧
+Pandoc 是一个文档转换器，这个 [pandoc](https://pandoc.org/) 速查表包含 pandoc 命令和一些常见的 pandoc 技巧
 
 入门
 ---

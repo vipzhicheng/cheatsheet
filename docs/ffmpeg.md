@@ -1,7 +1,7 @@
-FFmpeg 备忘清单
+FFmpeg 速查表
 ===
 
-本备忘清单是 [FFmpeg](https://ffmpeg.org/) 中常见视频处理操作的备忘清单
+本速查表是 [FFmpeg](https://ffmpeg.org/) 中常见视频处理操作的速查表
 
 FFmpeg 参考
 ---
@@ -198,7 +198,7 @@ $ ffmpeg -i in.mp4 -filter:v scale="538:trunc(ow/a/2)*2" -c:a copy out.mp4
 ### 提取音频流
 
 ```bash
-$ ffmpeg -i file.mp4 -vn -c copy output.aac 
+$ ffmpeg -i file.mp4 -vn -c copy output.aac
 ```
 <!--rehype:className=wrap-text -->
 
@@ -455,7 +455,7 @@ $ ffmpeg -i input.mov -codec:v copy -filter:a 'volume=2' output.mov
 ### 将图像文件转换为其他格式
 
 ```bash
-$ ffmpeg -i foo012­2.png foo.tiff 
+$ ffmpeg -i foo012­2.png foo.tiff
 ```
 
 pgm, ppm, pam, pgmyuv, jpeg, gif, png, tiff, sgi
@@ -663,7 +663,7 @@ ffmpeg -i 1.mp4 -acodec copy -b:v 548k -vf "movie=logo.png[watermark];[in][water
 
 ```bash
 # 顺时针旋转 90
-$ ffmpeg -i input.avi -vf "rotate=90*PI/180" out.mp4 
+$ ffmpeg -i input.avi -vf "rotate=90*PI/180" out.mp4
 # 顺时针旋转 180，翻转 90
 $ ffmpeg -i input.mp4 -vf "rotate=PI" out.mp4
 ```
@@ -672,7 +672,7 @@ $ ffmpeg -i input.mp4 -vf "rotate=PI" out.mp4
 
 ```bash
 # 加速 2 倍
-$ ffmpeg -i input.mkv -vf "setpts=0.5*PTS" output.mkv 
+$ ffmpeg -i input.mkv -vf "setpts=0.5*PTS" output.mkv
 # 减速 2 倍
 $ ffmpeg -i input.mp4 -vf "setpts=2*PTS" output.mp4
 ```
@@ -701,7 +701,7 @@ $ ffmpeg -i test.mp4 -af "volumn=1.5" out.mp4
 <!--rehype:wrap-class=row-span-2-->
 
 ```bash
-$ ffmpeg -i input.wav -af "atempo=0.75" output.wav 
+$ ffmpeg -i input.wav -af "atempo=0.75" output.wav
 # 加速 4 倍
 $ ffmpeg -i input.mp3 -af "atempo=2.0,atempo=2.0" ouutput.mp3
 ```

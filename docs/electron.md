@@ -1,4 +1,4 @@
-Electron 备忘清单
+Electron 速查表
 ====
 
 [![NPM version](https://img.shields.io/npm/v/electron.svg?style=flat)](https://www.npmjs.com/package/electron)
@@ -6,7 +6,7 @@ Electron 备忘清单
 [![Repo Dependents](https://badgen.net/github/dependents-repo/electron/electron)](https://github.com/electron/electron/network/dependents)
 [![Github repo](https://badgen.net/badge/icon/Github?icon=github&label)](https://github.com/electron/electron)
 
-此快速参考备忘单提供了 Electron v21 API 说明和使用示例
+此快速参考速查表提供了 Electron v21 API 说明和使用示例
 <!--rehype:style=padding-top: 12px;-->
 
 入门
@@ -84,7 +84,7 @@ Electron 备忘清单
     app,
     BrowserWindow
   } = require('electron');
-  
+
   const createWindow = () => {
     const win = new BrowserWindow({
       width: 800,
@@ -177,11 +177,11 @@ const { contextBridge } = require('electron')
 contextBridge.exposeInMainWorld(
   'versions', {
     // 能暴露的不仅仅是函数，我们还可以暴露变量
-    node: 
+    node:
       () => process.versions.node,
-    chrome: 
+    chrome:
       () => process.versions.chrome,
-    electron: 
+    electron:
       () => process.versions.electron,
   }
 );
@@ -752,4 +752,4 @@ win.loadURL('https://github.com')
 另见
 ---
 
-- [Electron 备忘清单](https://simulatedgreg.github.io/electron-cheatsheet/) _(simulatedgreg.github.io)_
+- [Electron 速查表](https://simulatedgreg.github.io/electron-cheatsheet/) _(simulatedgreg.github.io)_

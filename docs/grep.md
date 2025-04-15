@@ -1,7 +1,7 @@
-Grep 备忘清单
+Grep 速查表
 ===
 
-本备忘单旨在快速提醒使用命令行程序 grep 所涉及的主要概念，并假设您已经了解其用法。
+本速查表旨在快速提醒使用命令行程序 grep 所涉及的主要概念，并假设您已经了解其用法。
 
 入门
 ------
@@ -57,7 +57,7 @@ Grep 正则表达式
 - [Regex syntax](./regex.md) _(jaywcjlove.github.io)_
 - [Regex examples](./regex.md#正则表达式示例) _(jaywcjlove.github.io)_
 
-有关更复杂的要求，请参阅完整版的正则表达式备忘单。
+有关更复杂的要求，请参阅完整版的正则表达式速查表。
 
 ### 通配符(Wildcards)
 

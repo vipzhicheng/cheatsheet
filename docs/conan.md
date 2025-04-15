@@ -1,7 +1,7 @@
-Conan 备忘清单
+Conan 速查表
 ===
 
-这个 [Conan](https://conan.io/) 快速参考备忘清单显示了它的常用命令使用清单
+这个 [Conan](https://conan.io/) 快速参考速查表显示了它的常用命令使用清单
 
 入门
 ---
@@ -108,7 +108,7 @@ $ conan info <path_or_reference>
 
 ```bash
 # 列出本地缓存中的包名称
-$ conan search 
+$ conan search
 $ conan search <package>/<revision>@<user>/<channel>  # 输出取决于给出了多少包引用。
                                           # 支持通配符
                [--table=file.html]        # 将输出保存在 HTML 文件中

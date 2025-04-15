@@ -1,7 +1,7 @@
-GitLab CI/CD 备忘清单
+GitLab CI/CD 速查表
 ===
 
-本备忘单总结了 [GitLab CI/CD](https://docs.gitlab.com/ee/ci/yaml/#default) 常用的配置说明，以供快速参考
+本速查表总结了 [GitLab CI/CD](https://docs.gitlab.com/ee/ci/yaml/#default) 常用的配置说明，以供快速参考
 
 入门
 ---
@@ -674,7 +674,7 @@ job:
     DATABASE_PASSWORD:
       # 转换为秘密：`ops/data/production/db`
       # 字段：`password`
-      vault: 
+      vault:
         engine:
           name: kv-v2
           path: ops

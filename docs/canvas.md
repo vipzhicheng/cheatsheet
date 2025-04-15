@@ -1,7 +1,7 @@
-HTML Canvas 备忘清单
+HTML Canvas 速查表
 ===
 
-这份 HTML Canvas 快速参考备忘单列出了常见的 HTML5 Canvas 设计标签，以易读的格式呈现。
+这份 HTML Canvas 快速参考速查表列出了常见的 HTML5 Canvas 设计标签，以易读的格式呈现。
 
 入门
 ---
@@ -94,7 +94,7 @@ ctx.stroke();
 ctx.beginPath();
 ctx.moveTo(50, 250);
 // cpX, cpY, 终点X, 终点Y
-ctx.quadraticCurveTo(200, 100, 400, 250); 
+ctx.quadraticCurveTo(200, 100, 400, 250);
 ctx.stroke();
 ```
 
@@ -104,7 +104,7 @@ ctx.stroke();
 ctx.beginPath();
 ctx.moveTo(50, 300);
 // cp1X, cp1Y, cp2X, cp2Y, 终点X, 终点Y
-ctx.bezierCurveTo(150, 100, 350, 500, 450, 300); 
+ctx.bezierCurveTo(150, 100, 350, 500, 450, 300);
 ctx.stroke();
 ```
 
@@ -114,9 +114,9 @@ ctx.stroke();
 ctx.font = "30px Arial";
 ctx.fillStyle = "black";
 // 文本, x, y
-ctx.fillText("Hello Canvas", 10, 50); 
+ctx.fillText("Hello Canvas", 10, 50);
 // 文本, x, y
-ctx.strokeText("Hello Canvas", 10, 100); 
+ctx.strokeText("Hello Canvas", 10, 100);
 ```
 
 ### 图像

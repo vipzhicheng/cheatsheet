@@ -1,4 +1,4 @@
-ES2015+ 备忘清单
+ES2015+ 速查表
 ===
 
 快速浏览 ES2015、ES2016、ES2017、ES2018 及以后的 JavaScript 新特性
@@ -75,7 +75,7 @@ const byte = 2 ** 8
 "hello".includes("ll")
 "hello".startsWith("he")
 "hello".padStart(8) // "   hello"
-"hello".padEnd(8) // "hello   " 
+"hello".padEnd(8) // "hello   "
 "hello".padEnd(8, '!') // hello!!!
 "\u1E9B\u0323".normalize("NFC")
 ```
@@ -166,7 +166,7 @@ class Dog {
 }
 
 const dog = new Dog("putty")
-//console.log(this.#name) 
+//console.log(this.#name)
 //Private identifiers are not allowed outside class bodies.
 dog.printName()
 ```
@@ -719,7 +719,7 @@ import json from "./package.json" assert {type: "json"}
 #### 动态导入
 
 ```js
-const json = 
+const json =
      await import("./package.json", { assert: { type: "json" } })
 ```
 

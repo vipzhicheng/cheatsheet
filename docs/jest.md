@@ -1,4 +1,4 @@
-Jest 备忘清单
+Jest 速查表
 ===
 
 [![NPM version](https://img.shields.io/npm/v/jest.svg?style=flat)](https://www.npmjs.com/package/jest)
@@ -62,7 +62,7 @@ $ jest --findRelatedTests fileA.js fileB.js
 # 仅运行匹配特定名称的测试用例
 $ jest -t name-of-spec
 # 运行监视模式默认执行 jest -o 监视有改动的测试
-$ jest --watch 
+$ jest --watch
 $ jest --watchAll # 监视所有测试
 ```
 
@@ -328,7 +328,7 @@ expect('coffee').toMatch(/ff/)
 expect('pizza').not.toMatch('coffee')
 expect(['pizza', 'coffee']).toEqual(
   [
-    expect.stringContaining('zz'), 
+    expect.stringContaining('zz'),
     expect.stringMatching(/ff/)
   ]
 )
@@ -519,7 +519,7 @@ expect(fn).toThrowErrorMatchingSnapshot()
 ```js
 test('async test', () => {
   // 在测试期间恰好调用了三个断言
-  expect.assertions(3) 
+  expect.assertions(3)
   // 或者 - 在测试期间至少调用一个断言
   expect.hasAssertions()
   // 你的异步测试
@@ -554,7 +554,7 @@ test('async test', (done) => {
   expect.assertions(1)
 
   runAsyncOperation()
-  
+
   setTimeout(() => {
     try {
       const res = getAsyncOperatResult()
@@ -595,7 +595,7 @@ test('call the callback', () => {
   expect(callback).toBeCalled()
   expect(callback.mock.calls[0][1].baz)
     .toBe('pizza') // 第一次调用的第二个参数
-  
+
   // 匹配第一个和最后一个参数，但忽略第二个参数
   expect(callback)
     .toHaveBeenLastCalledWith(
@@ -745,7 +745,7 @@ jest.useFakeTimers()
 test('kill the time', () => {
   const callback = jest.fn()
   // 运行使用 setTimeout或setInterval 的代码
-  const actual 
+  const actual
     = someFunctionThatUseTimers(callback)
   // 快进直到所有定时器都执行完毕
   jest.runAllTimers()
@@ -762,7 +762,7 @@ jest.useFakeTimers()
 test('kill the time', () => {
   const callback = jest.fn()
   // 运行使用 setTimeout或setInterval 的代码
-  const actual 
+  const actual
     = someFunctionThatUseTimers(callback)
   // 快进 250 毫秒
   jest.advanceTimersByTime(250)
@@ -816,7 +816,7 @@ fn.mockRestore()
 > 注意：`mockRestore` 仅适用于由`jest.spyOn` 创建的模拟。对于所有模拟：
 
 ```js
-// 清除所有 mock 的 
+// 清除所有 mock 的
 // mock.calls、mock.instances、
 // mock.contexts 和 mock.results 属性。
 jest.clearAllMocks()

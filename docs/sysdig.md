@@ -1,7 +1,7 @@
-Sysdig 备忘清单
+Sysdig 速查表
 ===
 
-该备忘单提供了使用 [Sysdig](https://sysdig.com/) 的常用命令参数和使用案例清单
+该速查表提供了使用 [Sysdig](https://sysdig.com/) 的常用命令参数和使用案例清单
 
 入门
 ----
@@ -10,7 +10,7 @@ Sysdig 备忘清单
 <!--rehype:wrap-class=col-span-2-->
 
 ```shell
-sudo rpm --import https://download.sysdig.com/DRAIOS-GPG-KEY.public  
+sudo rpm --import https://download.sysdig.com/DRAIOS-GPG-KEY.public
 sudo curl -s -o /etc/yum.repos.d/draios.repo https://download.sysdig.com/stable/rpm/draios.repo
 sudo yum -y install sysdig
 ```

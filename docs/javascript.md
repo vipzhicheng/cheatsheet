@@ -1,7 +1,7 @@
-JavaScript 备忘清单
+JavaScript 速查表
 ===
 
-包含最重要概念、函数、方法等的 JavaScript 备忘单。 初学者的完整快速参考。
+包含最重要概念、函数、方法等的 JavaScript 速查表。 初学者的完整快速参考。
 
 入门
 ----
@@ -10,9 +10,9 @@ JavaScript 备忘清单
 
 JavaScript 是一种轻量级的解释型编程语言。
 
-- [JSON 备忘清单](json.md)
+- [JSON 速查表](json.md)
 - [JavaScript 中的正则表达式](./regex.md#javascript-中的正则表达式)
-- [TypeScript 备忘清单](./typescript.md)
+- [TypeScript 速查表](./typescript.md)
 
 ### 打印调试
 
@@ -49,7 +49,7 @@ let m = 0644;   // 八进制数字 420
 ### let 关键字
 
 ```javascript
-let count; 
+let count;
 console.log(count); // => undefined
 count = 10;
 console.log(count); // => 10
@@ -98,7 +98,7 @@ console.log(single.length);
 
 ```javascript
 // 此行将表示注释
-/* 
+/*
 多行配置
 部署前必须更改
 以下配置。
@@ -112,7 +112,7 @@ let number = 100;
 // 两个语句都会加 10
 number = number + 10;
 number += 10;
-console.log(number); 
+console.log(number);
 // => 120
 ```
 
@@ -168,25 +168,25 @@ abc.endsWith("wxy", abc.length - 1);
 
 ```js
 var pi = 3.141;
-pi.toFixed(0);    // 返回 3             
+pi.toFixed(0);    // 返回 3
 pi.toFixed(2);    // 返回 3.14 - 使用金钱
 pi.toPrecision(2) // 返回 3.1
 pi.valueOf();     // 返回号码
 Number(true);     // 转换为数字
 // 自 1970 年以来的毫秒数
-Number(new Date())          
+Number(new Date())
 // 返回第一个数字：3
-parseInt("3 months");       
+parseInt("3 months");
 // 返回 3.5
-parseFloat("3.5 days");     
+parseFloat("3.5 days");
 // 最大可能的 JS 数
-Number.MAX_VALUE            
+Number.MAX_VALUE
 // 最小可能的 JS 编号
-Number.MIN_VALUE            
+Number.MIN_VALUE
 // -无穷
-Number.NEGATIVE_INFINITY    
+Number.NEGATIVE_INFINITY
 // 无穷
-Number.POSITIVE_INFINITY    
+Number.POSITIVE_INFINITY
 ```
 
 #### Math
@@ -195,28 +195,28 @@ Number.POSITIVE_INFINITY
 const pi = Math.PI; // 3.141592653589793
 Math.round(4.4); // = 4 - 数字四舍五入
 Math.round(4.5); // = 5
-Math.pow(2,8);   // = 256 - 2 的 8 次方    
+Math.pow(2,8);   // = 256 - 2 的 8 次方
 Math.sqrt(49);   // = 7 - 平方根
 Math.abs(-3.14); // = 3.14 - 绝对，正值
 Math.ceil(3.14); // = 4 - 返回 >= 最小整数
 // = 3 - 返回 <= 最大整数
-Math.floor(3.99);       
+Math.floor(3.99);
 // = 0 - 正弦
-Math.sin(0);            
+Math.sin(0);
 // OTHERS: tan,atan,asin,acos,余弦值
-Math.cos(Math.PI);      
+Math.cos(Math.PI);
 // = -2 - 最低值
-Math.min(0, 3, -2, 2);  
+Math.min(0, 3, -2, 2);
 // = 3 - 最高值
-Math.max(0, 3, -2, 2);  
+Math.max(0, 3, -2, 2);
 // = 0 自然对数
-Math.log(1);            
+Math.log(1);
 // = 2.7182pow(E,x) 自然对数的底数
-Math.exp(1);            
+Math.exp(1);
 // 0 到 1 之间的随机数
-Math.random();          
+Math.random();
 // 随机整数，从 1
-Math.floor(Math.random() * 5) + 1;  
+Math.floor(Math.random() * 5) + 1;
 ```
 
 ### 全局函数
@@ -224,29 +224,29 @@ Math.floor(Math.random() * 5) + 1;
 
 ```js
 // 像脚本代码一样执行字符串
-eval();                     
+eval();
 // 从数字返回字符串
-String(23);                 
+String(23);
 // 从数字返回字符串
-(23).toString();            
+(23).toString();
 // 从字符串返回数字
-Number("23");               
+Number("23");
 // 解码 URI。 结果：“my page.asp”
-decodeURI(enc);             
+decodeURI(enc);
 // 编码 URI。 结果：“my%20page.asp”
-encodeURI(uri);             
+encodeURI(uri);
 // 解码 URI 组件
-decodeURIComponent(enc);    
+decodeURIComponent(enc);
 // 对 URI 组件进行编码
-encodeURIComponent(uri);    
+encodeURIComponent(uri);
 // 是一个有限的合法数
-isFinite();                 
+isFinite();
 // 是一个非法数字
-isNaN();                    
+isNaN();
 // 返回字符串的浮点数
-parseFloat();               
+parseFloat();
 // 解析一个字符串并返回一个整数
-parseInt();                 
+parseInt();
 ```
 
 JavaScript 条件
@@ -288,7 +288,7 @@ true && false;       // false
 let lateToWork = true;
 let oppositeValue = !lateToWork;
 // => false
-console.log(oppositeValue); 
+console.log(oppositeValue);
 ```
 
 #### 空值合并运算符 ??
@@ -411,36 +411,36 @@ const rocketToMars = function() {
 #### 有两个参数
 
 ```javascript
-const sum = (param1, param2) => { 
-  return param1 + param2; 
-}; 
-console.log(sum(2,5)); // => 7 
+const sum = (param1, param2) => {
+  return param1 + param2;
+};
+console.log(sum(2,5)); // => 7
 ```
 
 #### 没有参数
 
 ```javascript
-const printHello = () => { 
-  console.log('hello'); 
-}; 
+const printHello = () => {
+  console.log('hello');
+};
 printHello(); // => hello
 ```
 
 #### 只有一个参数
 
 ```javascript
-const checkWeight = weight => { 
-  console.log(`Weight : ${weight}`); 
-}; 
-checkWeight(25); // => Weight : 25 
+const checkWeight = weight => {
+  console.log(`Weight : ${weight}`);
+};
+checkWeight(25); // => Weight : 25
 ```
 
 #### 简洁箭头函数
 
 ```javascript
-const multiply = (a, b) => a * b; 
-// => 60 
-console.log(multiply(2, 30)); 
+const multiply = (a, b) => a * b;
+// => 60
+console.log(multiply(2, 30));
 ```
 
 从 ES2015 开始提供[箭头函数](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
@@ -513,7 +513,7 @@ JavaScript 范围
 function myFunction() {
   var pizzaName = "Margarita";
   // 这里的代码可以使用 PizzaName
-  
+
 }
 // ❌ PizzaName 不能在这里使用
 ```
@@ -598,7 +598,7 @@ for (var i = 0; i < 3; i++) {
 
 ```javascript
 // 按预期打印 0、1 和 2。
-for (let j = 0; j < 3; j++) { 
+for (let j = 0; j < 3; j++) {
   setTimeout(_ => console.log(j), 10);
 }
 ```
@@ -690,7 +690,7 @@ console.log(myArray[1]); // 200
 ```javascript
 // 添加单个元素：
 const cart = ['apple', 'orange'];
-cart.push('pear'); 
+cart.push('pear');
 // 添加多个元素：
 const numbers = [1, 2];
 numbers.push(3, 4, 5);
@@ -735,10 +735,10 @@ console.log(array.some(even));
 ```javascript
 const numbers = [3, 2, 1]
 const newFirstNumber = 4
-    
+
 // => [ 4, 3, 2, 1 ]
 [newFirstNumber].concat(numbers)
-    
+
 // => [ 3, 2, 1, 4 ]
 numbers.concat(newFirstNumber)
 ```
@@ -793,7 +793,7 @@ while (condition) {
   // 要执行的代码块
 }
 let i = 0;
-while (i < 5) {        
+while (i < 5) {
   console.log(i);
   i++;
 }
@@ -960,7 +960,7 @@ JavaScript 迭代器(Iterators)
 
 ```javascript
 let plusFive = (number) => {
-  return number + 5;  
+  return number + 5;
 };
 // f 被赋值为 plusFive
 let f = plusFive;
@@ -980,7 +980,7 @@ let printMsg = (evenFunc, num) => {
   console.log(`${num} is an even number: ${isNumEven}.`)
 }
 // Pass in isEven as the callback function
-printMsg(isEven, 4); 
+printMsg(isEven, 4);
 // => The number 4 is an even number: True.
 ```
 
@@ -988,7 +988,7 @@ printMsg(isEven, 4);
 
 ```javascript
 const numbers = [1, 2, 3, 4];
-const sum = numbers.reduce((accumulator, curVal) => {  
+const sum = numbers.reduce((accumulator, curVal) => {
   return accumulator + curVal;
 });
 console.log(sum); // 10
@@ -1008,16 +1008,16 @@ console.log(announcements);
 
 ```javascript
 const numbers = [28, 77, 45, 99, 27];
-numbers.forEach(number => {  
+numbers.forEach(number => {
   console.log(number);
-}); 
+});
 ```
 
 ### 数组方法 .filter()
 
 ```javascript
 const randomNumbers = [4, 11, 42, 14, 39];
-const filteredArray = randomNumbers.filter(n => {  
+const filteredArray = randomNumbers.filter(n => {
   return n > 5;
 });
 ```
@@ -1029,7 +1029,7 @@ JavaScript 对象(Objects)
 ### 访问属性
 
 ```javascript
-const apple = { 
+const apple = {
   color: 'Green',
   price: { bulk: '$3/kg', smallQty: '$4/kg' }
 };
@@ -1043,7 +1043,7 @@ console.log(apple.price.bulk); // => $3/kg
 // 无效键名示例
 const trainSchedule = {
   // 由于单词之间的空格而无效。
-  platform num: 10, 
+  platform num: 10,
   // 表达式不能是键。
   40 - 10 + 2: 30,
   // 除非用引号括起来，否则 + 号无效。
@@ -1137,7 +1137,7 @@ const dogFactory = (name, age, breed) => {
     age: age,
     breed: breed,
     bark() {
-      console.log('Woof!');  
+      console.log('Woof!');
     }
   };
 };
@@ -1158,7 +1158,7 @@ const cat = {
   name: 'Pipey',
   age: 8,
   whatName() {
-    return this.name  
+    return this.name
   }
 };
 console.log(cat.whatName()); // => Pipey
@@ -1171,7 +1171,7 @@ const engine = {
   // 方法简写，有一个参数
   start(adverb) {
     console.log(`The engine starts up ${adverb}...`);
-  },  
+  },
   // 不带参数的匿名箭头函数表达式
   sputter: () => {
     console.log('The engine sputters...');
@@ -1187,10 +1187,10 @@ engine.sputter();
 const myCat = {
   _name: 'Dottie',
   get name() {
-    return this._name;  
+    return this._name;
   },
   set name(newName) {
-    this._name = newName;  
+    this._name = newName;
   }
 };
 // 引用调用 getter
@@ -1375,13 +1375,13 @@ const array = [1, 2, 3];
 array.map(function(value){
   console.log(this.name)
 }, obj)
-// zhangsan x3 
+// zhangsan x3
 ```
 
 其中一些全局对象，如 setTimeout 等，它们和未显示绑定 this 的部分数组方法一样，都会指向全局对象（`Window`）
 
 ```js
-setTimeout(function(){ 
+setTimeout(function(){
   console.log(this)
 }, 1000) // Window
 ```
@@ -1395,16 +1395,16 @@ JavaScript Classes
 ```javascript
 class Dog {
   constructor(name) {
-    this._name = name;  
+    this._name = name;
   }
-  
-  introduce() { 
-    console.log('This is ' + this._name + ' !');  
+
+  introduce() {
+    console.log('This is ' + this._name + ' !');
   }
-  
+
   // 静态方法
   static bark() {
-    console.log('Woof!');  
+    console.log('Woof!');
   }
 
   static {
@@ -1427,7 +1427,7 @@ class ClassStaticField {
 }
 
 console.log(ClassStaticField.staticField)
-// 预期输出值："static field"​ 
+// 预期输出值："static field"​
 ```
 
 ### Class
@@ -1438,7 +1438,7 @@ class Song {
     this.title;
     this.author;
   }
-  
+
   play() {
     console.log('Song playing!');
   }
@@ -1465,9 +1465,9 @@ class Song extends Media {
     this.artist = songData.artist;
   }
 }
-const mySong = new Song({ 
-  artist: 'Queen', 
-  name: 'Bohemian Rhapsody', 
+const mySong = new Song({
+  artist: 'Queen',
+  name: 'Bohemian Rhapsody',
   publishDate: 1975
 });
 ```
@@ -1492,7 +1492,7 @@ class Song {
   play() {
     console.log('Playing!');
   }
-  
+
   stop() {
     console.log('Stopping!');
   }
@@ -1532,7 +1532,7 @@ export {
 ```javascript
 // main.js
 import add, { subtract, multiply, duplicate } from './myMath.js';
-console.log(add(6, 2));      // 8 
+console.log(add(6, 2));      // 8
 console.log(subtract(6, 2))  // 4
 console.log(multiply(6, 2)); // 12
 console.log(duplicate(5))    // 10
@@ -1570,7 +1570,7 @@ module.exports = {
 ```javascript
 // main.js
 const myMath = require('./myMath.js')
-console.log(myMath.add(6, 2));      // 8 
+console.log(myMath.add(6, 2));      // 8
 console.log(myMath.subtract(6, 2))  // 4
 console.log(myMath.multiply(6, 2)); // 12
 console.log(myMath.duplicate(5))    // 10
@@ -1651,7 +1651,7 @@ promise.then(
 ### .then() 方法
 
 ```javascript
-const promise = new Promise((resolve, reject) => {    
+const promise = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve('Result');
   }, 200);
@@ -1668,7 +1668,7 @@ promise.then((res) => {
 
 ```javascript
 const promise = new Promise(
-  (resolve, reject) => {  
+  (resolve, reject) => {
   setTimeout(() => {
     reject(Error('Promise 无条件拒绝。'));
   }, 1000);
@@ -1707,12 +1707,12 @@ Promise.all([promise1, promise2]).then((res) => {
 
 ```javascript
 const promise = new Promise(
-  resolve => 
+  resolve =>
     setTimeout(() => resolve('dAlan'),100)
 );
 
 promise.then(res => {
-  return res === 'Alan' 
+  return res === 'Alan'
     ? Promise.resolve('Hey Alan!')
     : Promise.reject('Who are you?')
 })
@@ -1727,15 +1727,15 @@ promise.then(res => {
 <!--rehype:wrap-class=col-span-2-->
 
 ```javascript
-const promise = new Promise((resolve, reject) => {  
+const promise = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve('*');
   }, 1000);
 });
-const twoStars = (star) => {  
+const twoStars = (star) => {
   return (star + star);
 };
-const oneDot = (star) => {  
+const oneDot = (star) => {
   return (star + '.');
 };
 const print = (val) => {
@@ -1848,11 +1848,11 @@ JavaScript 请求
 const jsonObj = {
   "name": "Rick",
   "id": "11A",
-  "level": 4  
+  "level": 4
 };
 ```
 
-另见：[JSON 备忘单](./json.md)
+另见：[JSON 速查表](./json.md)
 
 ### XMLHttpRequest
 
@@ -1947,7 +1947,7 @@ fetch('https://api-xxx.com/endpoint', {
   body: JSON.stringify({id: "200"})
 }).then(response => {
   if(response.ok){
-    return response.json();  
+    return response.json();
   }
   throw new Error('Request failed!');
 }, networkError => {

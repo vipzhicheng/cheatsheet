@@ -1,4 +1,4 @@
-Stylus 备忘清单
+Stylus 速查表
 ===
 
 [![NPM version](https://img.shields.io/npm/v/stylus.svg?style=flat)](https://npmjs.org/package/stylus)
@@ -6,7 +6,7 @@ Stylus 备忘清单
 [![Repo Dependents](https://badgen.net/github/dependents-repo/stylus/stylus)](https://github.com/stylus/stylus/network/dependents)
 [![Github repo](https://badgen.net/badge/icon/Github?icon=github&label)](https://github.com/stylus/stylus)
 
-本备忘单旨在快速理解 [stylus](https://github.com/stylus/stylus) 所涉及的主要概念，显示了它的常用方法使用清单
+本速查表旨在快速理解 [stylus](https://github.com/stylus/stylus) 所涉及的主要概念，显示了它的常用方法使用清单
 <!--rehype:style=padding-top: 12px;-->
 
 入门
@@ -17,7 +17,7 @@ Stylus 备忘清单
 
 为 Node.js 构建的富有表现力、健壮、功能丰富的 [CSS](./css.md) 语言
 
-- [CSS 备忘清单](./css.md) _(jaywcjlove.github.io)_
+- [CSS 速查表](./css.md) _(jaywcjlove.github.io)_
 - [在线编译预览](https://stylus-lang.com/try.html) _(stylus-lang.com)_
 
 ```bash
@@ -560,6 +560,6 @@ s("rgba(0, 0, 0, %s)", 0.3)
 另见
 ---
 
-- [CSS 备忘清单](./css.md) _(jaywcjlove.github.io)_
+- [CSS 速查表](./css.md) _(jaywcjlove.github.io)_
 - [在线编译预览](https://stylus-lang.com/try.html) _(stylus-lang.com)_
-- [Less.js 备忘清单](./lessjs.md) _(jaywcjlove.github.io)_
+- [Less.js 速查表](./lessjs.md) _(jaywcjlove.github.io)_

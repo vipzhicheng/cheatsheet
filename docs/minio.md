@@ -1,7 +1,7 @@
-MinIO 备忘清单
+MinIO 速查表
 ===
 
-这是 MinIO 语法的快速参考备忘单
+这是 MinIO 语法的快速参考速查表
 
 MinIO 快速参考
 ----
@@ -45,7 +45,7 @@ https://dl.min.io/client/mc/release/windows-amd64/mc.exe
 ```
 
 #### mac
-  
+
 安装
 
 ```bash

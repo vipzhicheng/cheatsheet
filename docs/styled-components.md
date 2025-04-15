@@ -1,4 +1,4 @@
-Styled Components 备忘清单
+Styled Components 速查表
 ====
 
 [![NPM version](https://img.shields.io/npm/v/styled-components.svg?style=flat)](https://npmjs.org/package/styled-components)
@@ -6,7 +6,7 @@ Styled Components 备忘清单
 [![Repo Dependents](https://badgen.net/github/dependents-repo/styled-components/styled-components)](https://github.com/styled-components/styled-components/network/dependents)
 [![Github repo](https://badgen.net/badge/icon/Github?icon=github&label)](https://github.com/styled-components/styled-components)
 
-此快速参考备忘单提供了使用 CSS in JS 工具的各种方法
+此快速参考速查表提供了使用 CSS in JS 工具的各种方法
 <!--rehype:style=padding-top: 12px;-->
 
 入门
@@ -76,11 +76,11 @@ import styled from 'styled-components';
 const Button = styled.button`
   /* 根据主要 props 调整颜色 */
   background: ${
-    props => 
+    props =>
       props.primary ? "blue" : "white"
   };
   color: ${
-    props => 
+    props =>
       props.primary ? "white" : "blue"
   };
   font-size: 1em;
@@ -222,7 +222,7 @@ const Wrapper = ({ message }) => {
 ```jsx {3,4,17}
 const Input = styled.input`
   color: ${
-    props => 
+    props =>
       props.inputColor || "palevioletred"
   };
   background: papayawhip;
@@ -692,7 +692,7 @@ npm install -D \
     @types/styled-components-react-native
 ```
 
-如果对 TypeScript 不熟悉，参考 [TypeScript 备忘清单](./typescript.md)
+如果对 TypeScript 不熟悉，参考 [TypeScript 速查表](./typescript.md)
 
 ### 自定义 Props
 
@@ -705,8 +705,8 @@ interface TitleProps {
 
 const Title = styled.h1<TitleProps>`
   color: ${(props) => (
-    props.isActive 
-      ? props.theme.colors.main 
+    props.isActive
+      ? props.theme.colors.main
       : props.theme.colors.secondary
   )};
 `;
@@ -931,7 +931,7 @@ import { ThemeContext } from 'styled-components'
 
 const MyComponent = () => {
   const themeContext = useContext(ThemeContext)
-  
+
   console.log('Current theme: ', themeContext)
   // ...
 }

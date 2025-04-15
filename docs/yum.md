@@ -1,7 +1,7 @@
-YUM 备忘清单
+YUM 速查表
 ===
 
-这个 YUM 快速参考备忘单显示了它的常用命令使用清单。
+这个 YUM 快速参考速查表显示了它的常用命令使用清单。
 
 YUM 清单查询
 ---
@@ -416,7 +416,7 @@ yum install --downloadonly vsftpd
 ---
 
 - [YUM 官方网站](http://yum.baseurl.org/) _(yum.baseurl.org)_
-- [YUM 备忘清单(适用于红帽 RedHat 企业 Linux)](https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf) _(access.redhat.com)_
+- [YUM 速查表(适用于红帽 RedHat 企业 Linux)](https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf) _(access.redhat.com)_
 - [用 yum 管理软件包](http://prefetch.net/articles/yum.html) _(prefetch.net)_
 - [Fedora 中的 Yum 文档](https://docs.fedoraproject.org/en-US/Fedora/15/html/Deployment_Guide/ch-yum.html) _(fedoraproject.org)_
 - [CentOS 中的 Yum 文档](http://wiki.centos.org/PackageManagement/Yum/) _(wiki.centos.org)_

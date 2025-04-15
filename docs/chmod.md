@@ -1,7 +1,7 @@
-Chmod 备忘清单
+Chmod 速查表
 ===
 
-这份快速参考备忘单提供了文件权限的简要概述，以及 chmod 命令的操作
+这份快速参考速查表提供了文件权限的简要概述，以及 chmod 命令的操作
 
 入门
 --------
@@ -9,7 +9,7 @@ Chmod 备忘清单
 ### 语法
 
 ```shell
-$ chmod [options] <permissions> <file> 
+$ chmod [options] <permissions> <file>
 ```
 
 #### 示例
@@ -74,8 +74,8 @@ drwxr-xr-x  2 root root 2 Jun 30 18:06 dir
 
 ```text
 d  rwx  r-x  r-x
-┬  ─┬─  ─┬─  ─┬─  
-┆   ┆    ┆    ┆  
+┬  ─┬─  ─┬─  ─┬─
+┆   ┆    ┆    ┆
 ┆   ┆    ┆    ╰─ 4. Other｜5 (4+0+1)
 ┆   ┆    ╰────── 3. Group｜5 (4+0+1)
 ┆   ╰─────────── 2. User ｜7 (4+2+1)

@@ -1,7 +1,7 @@
-JSON 备忘清单
+JSON 速查表
 ===
 
-这是理解和编写 JSON 格式配置文件的快速参考备忘单。
+这是理解和编写 JSON 格式配置文件的快速参考速查表。
 
 入门
 ----
@@ -66,7 +66,7 @@ JSON 备忘清单
 {
   "url": "https://jaywcjlove.github.io",
   "msg" : "Hi,\n\"Quick Reference\"",
-  "intro": "为开发人员分享快速参考和备忘单"
+  "intro": "为开发人员分享快速参考和速查表"
 }
 ```
 

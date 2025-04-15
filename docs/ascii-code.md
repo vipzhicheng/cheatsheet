@@ -1,4 +1,4 @@
-ASCII Code 备忘清单
+ASCII Code 速查表
 ===
 
 这份速查表是 ASCII 码表的完整列表，包含了它们的数字和名称

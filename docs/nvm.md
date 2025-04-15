@@ -1,4 +1,4 @@
-nvm 备忘清单
+nvm 速查表
 ===
 
 nvm 是一个用于管理电脑上多个 node.js 版本的程序
@@ -79,7 +79,7 @@ nvm list [available]
 
 ```shell
 # <version> 可选设置 latest/lts/newest
-nvm uninstall <version> 
+nvm uninstall <version>
 ```
 
 启用 `newest` 指定最近安装版本。

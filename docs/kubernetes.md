@@ -1,4 +1,4 @@
-Kubernetes 备忘清单
+Kubernetes 速查表
 ===
 
 查看资源信息
@@ -11,12 +11,12 @@ Kubernetes 备忘清单
 ```bash
 $ kubectl get no          # 显示所有节点信息
 # 显示所有节点的更多信息
-$ kubectl get no -o wide  
+$ kubectl get no -o wide
 $ kubectl describe no     # 显示节点详情
 # 以yaml格式，显示节点详情
-$ kubectl get no -o yaml  
+$ kubectl get no -o yaml
 # 筛选指定标签的节点
-$ kubectl get node --selector=[label_name] 
+$ kubectl get node --selector=[label_name]
 # 输出 jsonpath 表达式定义的字段信息
 $ kubectl get nodes -o jsonpath='{.items[*].status.addresses[?(@.type=="ExternalIP")].address}'
 # 显示节点(CPU/内存/存储)使用情况
@@ -36,9 +36,9 @@ $ kubectl get po --show-labels # 查看容器组的labels
 $ kubectl get po -l app=nginx
 $ kubectl get po -o yaml
 $ kubectl get pod [pod_name] -o yaml --export
-$ kubectl get pod [pod_name] -o yaml --export > nameoffile.yaml 
+$ kubectl get pod [pod_name] -o yaml --export > nameoffile.yaml
 # 以yaml格式导出容器组信息到yaml文件
-$ kubectl get pods --field-selector status.phase=Running     
+$ kubectl get pods --field-selector status.phase=Running
 # 使用字段选择器筛选出容器组信息
 ```
 
@@ -59,7 +59,7 @@ $ kubectl describe ns
 ```bash
 $ kubectl get deploy
 $ kubectl describe deploy
-$ kubectl get deploy -o wide 
+$ kubectl get deploy -o wide
 $ kubectl get deploy -o yaml
 ```
 
@@ -70,7 +70,7 @@ $ kubectl get deploy -o yaml
 ```bash
 $ kubectl get svc
 $ kubectl describe svc
-$ kubectl get svc -o wide 
+$ kubectl get svc -o wide
 $ kubectl get svc -o yaml
 $ kubectl get svc --show-labels
 ```
@@ -92,7 +92,7 @@ $ kubectl get ds [ds_name] -n [ns_name] -o yaml
 资源名称: `events`, 缩写: `ev`
 
 ```bash
-$ kubectl get events 
+$ kubectl get events
 $ kubectl get events -n kube-system
 $ kubectl get events -w
 ```
@@ -127,7 +127,7 @@ $ kubectl logs [pod_name] > pod.log
 ```bash
 $ kubectl get rs
 $ kubectl describe rs
-$ kubectl get rs -o wide 
+$ kubectl get rs -o wide
 $ kubectl get rs -o yaml
 ```
 
@@ -148,7 +148,7 @@ $ kubectl get roles \
 
 ```bash
 $ kubectl get secrets
-$ kubectl get secrets --all-namespaces 
+$ kubectl get secrets --all-namespaces
 $ kubectl get secrets -o yaml
 ```
 
@@ -176,7 +176,7 @@ $ kubectl get ing --all-namespaces
 资源名称: persistentvolumes, 缩写: pv
 
 ```bash
-$ kubectl get pv 
+$ kubectl get pv
 $ kubectl describe pv
 ```
 
@@ -241,7 +241,7 @@ $ kubectl drain [node_name]    # 清空节点
 ### 节点/容器组
 
 ```bash
-$ kubectl delete node [node_name] 
+$ kubectl delete node [node_name]
 $ kubectl delete pod [pod_name]
 $ kubectl edit node [node_name]
 $ kubectl edit pod [pod_name]
@@ -269,7 +269,7 @@ $ kubectl delete svc [svc_name]
 ### 守护进程集
 
 ```bash
-$ kubectl edit ds [ds_name] -n kube-system 
+$ kubectl edit ds [ds_name] -n kube-system
 $ kubectl delete ds [ds_name]
 ```
 
@@ -295,7 +295,7 @@ $ kubectl annotateno [node_name]
 <!--rehype:wrap-class=col-span-2-->
 
 ```bash
-$ kubectl create -f [name_of_file] 
+$ kubectl create -f [name_of_file]
 $ kubectl apply -f [name_of_file]
 $ kubectl run [pod_name] --image=nginx --restart=Never
 $ kubectl run [pod_name] --generator=run-pod/v1 --image=nginx
@@ -312,7 +312,7 @@ $ kubectl create svc nodeport [svc_name] \
 ### 创建无状态应用
 
 ```bash
-$ kubectl create -f [name_of_file] 
+$ kubectl create -f [name_of_file]
 $ kubectl apply -f [name_of_file]
 $ kubectl create deploy [deploy_name] \
       --image=nginx

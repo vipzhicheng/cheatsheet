@@ -1,4 +1,4 @@
-Emacs 备忘清单
+Emacs 速查表
 ====
 
 [Emacs](https://www.gnu.org/software/emacs) 是可扩展的、可定制的、自记录的实时显示文本编辑器。此参考适用于 Emacs 27+
@@ -30,7 +30,7 @@ $ emacs
 `M-<key>` | 表示按 `Esc` 一次，然后按 `<key>`
 <!--rehype:className=shortcuts-->
 
-注意：本备忘单遵循上述规则
+注意：本速查表遵循上述规则
 
 ### 移动
 <!--rehype:wrap-class=row-span-2-->

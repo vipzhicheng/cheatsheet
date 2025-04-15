@@ -1,4 +1,4 @@
-React Native 备忘清单
+React Native 速查表
 ===
 
 [![NPM version](https://img.shields.io/npm/v/react-native.svg?style=flat)](https://npmjs.org/package/react-native)
@@ -6,7 +6,7 @@ React Native 备忘清单
 [![Repo Dependents](https://badgen.net/github/dependents-repo/facebook/react-native)](https://github.com/facebook/react-native/network/dependents)
 [![Github repo](https://badgen.net/badge/icon/Github?icon=github&label)](https://github.com/facebook/react-native)
 
-适合初学者的综合 [React Native](https://reactnative.dev/) 备忘清单，在开始 [React Native](https://reactnative.dev/) 之前需要先掌握 [react](./react.md) 库
+适合初学者的综合 [React Native](https://reactnative.dev/) 速查表，在开始 [React Native](https://reactnative.dev/) 之前需要先掌握 [react](./react.md) 库
 <!--rehype:style=padding-top: 12px;-->
 
 入门
@@ -1350,7 +1350,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   label: {
-    fontSize: 11,   
+    fontSize: 11,
     textTransform: 'uppercase'
   }
 });
@@ -1388,7 +1388,7 @@ const AwesomeBox = () => (
 const AwesomeBox = () => (
   <View style={styles.box} />
 );
- 
+
 const styles = StyleSheet.create({
   box: {
     width: 100,

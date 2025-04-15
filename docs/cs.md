@@ -1,8 +1,8 @@
 
-C# 备忘清单
+C# 速查表
 ===
 
-提供基本语法和方法的 C# 快速参考备忘单
+提供基本语法和方法的 C# 快速参考速查表
 
 入门
 --------
@@ -73,9 +73,9 @@ Console.WriteLine(name); // => John Doe
 ```cs
 // 单行注释
 
-/* 
+/*
  * 多行
- * 注释 - 用于文档 
+ * 注释 - 用于文档
  */
 
 // TODO：
@@ -341,7 +341,7 @@ bool B = false;
 bool Or = A || B; // = A | B
 bool And = A && B; // = A & B
 bool Not = !A;
-// ||,&& 与 |,& 分别为逻辑运算和条件逻辑运算, 两者的区别在于, 
+// ||,&& 与 |,& 分别为逻辑运算和条件逻辑运算, 两者的区别在于,
 // 前者仅在必要时才会计算右侧的值, 后者始终计算右侧的值. 例如:
 bool C = false;
 bool D = true;
@@ -566,13 +566,13 @@ public class MyClass
 public class MyClass
 {
     // 默认构造函数
-    public MyClass() 
+    public MyClass()
     {
         // 初始化代码
     }
 
     // 自定义构造函数
-    public MyClass(int value) 
+    public MyClass(int value)
     {
         // 使用传入的值初始化
     }
@@ -609,7 +609,7 @@ public class MyClass
 public class MyClass
 {
     private string myField;
-    
+
     public string MyProperty
     {
         get { return myField; }
@@ -739,7 +739,7 @@ private class MyClass
 ### 默认情况(默认情况即为内部类)
 
 ```cs
-class MyClass 
+class MyClass
 {
   ...
 }
@@ -942,7 +942,7 @@ HashSet<string> words = new HashSet<string> { "apple", "banana" };
 words.Add("cherry");
 
 // 返回 false，因为"apple"已存在
-bool wasAdded = words.Add("apple"); 
+bool wasAdded = words.Add("apple");
 
 // 删除（Remove）
 words.Remove("banana");
@@ -1003,7 +1003,7 @@ int topNumber = stack.Pop();
 // 修改（Stack不支持直接修改元素，需先Pop再Push）
 int poppedValue = stack.Pop();
 // 替换刚弹出的值
-stack.Push(poppedValue * 2); 
+stack.Push(poppedValue * 2);
 
 // 查询（Peek / Contains） 但不移除栈顶元素
 int peekedValue = stack.Peek();
@@ -1152,8 +1152,8 @@ List<Student> students = new List<Student>
 };
 
 // 使用SELECT创建一个新的匿名类，并输出为集合，一般配合Where使用
-var result1 = students.Select(student => 
-  new 
+var result1 = students.Select(student =>
+  new
     {
       student.Name,
         student.Age
@@ -1225,8 +1225,8 @@ List<Employee> employees = new List<Employee>
 使用 `Join`，将部门和员工相结合，获取部门名称和员工名称的集合
 
 ```cs
-var joinQuery = departments.Join(employees, 
-    department => department.ID, employee => employee.DepartmentID, 
+var joinQuery = departments.Join(employees,
+    department => department.ID, employee => employee.DepartmentID,
     (department, employee) => new { Department = department.Name, Employee = employee.Name }
 );
 ```
@@ -1234,12 +1234,12 @@ var joinQuery = departments.Join(employees,
 使用 `GroupJoin`，将部门和员工相结合，返回所有的部门，并返回每个部门相关联的员工集合(嵌套)
 
 ```cs
-var groupJoinQuery = departments.GroupJoin(employees, 
-    department => department.ID, employee => employee.DepartmentID, 
-    (department, employeeGroup) => new 
-        { 
-            Department = department.Name, 
-            Employees = employeeGroup.Select(e => e.Name).ToList() 
+var groupJoinQuery = departments.GroupJoin(employees,
+    department => department.ID, employee => employee.DepartmentID,
+    (department, employeeGroup) => new
+        {
+            Department = department.Name,
+            Employees = employeeGroup.Select(e => e.Name).ToList()
         }
 );
 ```
@@ -1612,8 +1612,8 @@ int? nums = null;
 if(nums == null)
 {
   result = -1;
-} 
-else 
+}
+else
 {
   result = nums;
 }

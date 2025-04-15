@@ -1,7 +1,7 @@
-Kotlin 备忘清单
+Kotlin 速查表
 ===
 
-Kotlin 备忘清单是 [Kotlin](https://kotlinlang.org) 编程语言的单页参考表
+Kotlin 速查表是 [Kotlin](https://kotlinlang.org) 编程语言的单页参考表
 
 Kotlin 简介
 ----
@@ -24,7 +24,7 @@ println("Greetings, earthling!")
 print("Take me to ")
 print("your leader.")
 
-/* 
+/*
 打印:
 Greetings, earthling!
 Take me to your leader.
@@ -63,7 +63,7 @@ fun main() {
 
 ```kotlin
 var age = 25
-age = 26  
+age = 26
 ```
 
 ### 不可变变量
@@ -78,24 +78,24 @@ val goldenRatio = 1.618
 // 以下变量在双引号内分配了一个文本值
 // 因此推断的类型是 String
 
-var color = "Purple" 
+var color = "Purple"
 ```
 
 ### 字符串连接
 
 ```kotlin
 var streetAddress = "123 Main St."
-var cityState = "Brooklyn, NY" 
+var cityState = "Brooklyn, NY"
 
-println(streetAddress + " " + cityState) 
-// 打印: 123 Main St. Brooklyn, NY 
+println(streetAddress + " " + cityState)
+// 打印: 123 Main St. Brooklyn, NY
 ```
 
 ### 字符串模板
 
 ```kotlin
 var address = "123 Main St."
-println("The address is $address") 
+println("The address is $address")
 // 打印: The address is 123 Main St.
 ```
 
@@ -114,9 +114,9 @@ println(monument.length)
 <!--rehype:wrap-class=row-span-3-->
 
 ```kotlin
-print("\"Excellent!\" I cried. \"Elementary,\" said he.") 
+print("\"Excellent!\" I cried. \"Elementary,\" said he.")
 
-// 打印: "Excellent!" I cried. "Elementary," said he.  
+// 打印: "Excellent!" I cried. "Elementary," said he.
 ```
 <!--rehype:className=wrap-text-->
 
@@ -134,8 +134,8 @@ print("\"Excellent!\" I cried. \"Elementary,\" said he.")
 5 + 7  // 12
 9 - 2  // 7
 8 * 4  // 32
-25 / 5 // 5 
-31 % 2 // 1 
+25 / 5 // 5
+31 % 2 // 1
 ```
 
 `+` 加法、`-` 减法、`*` 乘法、`/` 除法和 `%` 模数
@@ -143,11 +143,11 @@ print("\"Excellent!\" I cried. \"Elementary,\" said he.")
 ### 操作顺序
 
 ```kotlin
-5 + 8 * 2 / 4 - 3 // 6 
+5 + 8 * 2 / 4 - 3 // 6
 3 + (4 + 4) / 2   // 7
 4 * 2 + 1 * 7     // 15
-3 + 18 / 2 * 1    // 12  
-6 - 3 % 2 + 2     // 7   
+3 + 18 / 2 * 1    // 12
+6 - 3 % 2 + 2     // 7
 ```
 
 ### 增强赋值运算符
@@ -157,25 +157,25 @@ print("\"Excellent!\" I cried. \"Elementary,\" said he.")
 var batteryPercentage = 80
 
 // 长语法
-batteryPercentage = batteryPercantage + 10 
+batteryPercentage = batteryPercantage + 10
 
 // 带有增广赋值运算符的短句法
-batteryPercentage += 10 
+batteryPercentage += 10
 ```
 
 ### 递增和递减运算符
 
 ```kotlin
-var year = 2019 
+var year = 2019
 year++ // 2020
-year-- // 2019 
+year-- // 2019
 ```
 
 ### 数学库
 
 ```kotlin
 Math.pow(2.0, 3.0)  // 8.0
-Math.min(6, 9)      // 6 
+Math.min(6, 9)      // 6
 Math.max(10, 12)    // 12
 Math.round(13.7)    // 14
 ```
@@ -310,7 +310,7 @@ println(!full) //  true
 
 !false && true || false // true
 /*
-!false 被评估首先返回 true。 
+!false 被评估首先返回 true。
 然后评估 true && true，返回 true。
 那么，真|| 评估 false 最终返回 true
 */
@@ -377,14 +377,14 @@ Collections
 ### 不可变列表
 
 ```kotlin
-var programmingLanguages = listOf("C#", "Java", "Kotlin", "Ruby") 
+var programmingLanguages = listOf("C#", "Java", "Kotlin", "Ruby")
 ```
 <!--rehype:className=wrap-text-->
 
 ### 可变列表
 
 ```kotlin
-var fruits = mutableListOf("Orange", "Apple", "Banana", "Mango") 
+var fruits = mutableListOf("Orange", "Apple", "Banana", "Mango")
 ```
 <!--rehype:className=wrap-text-->
 
@@ -410,7 +410,7 @@ println(worldContinents.size) // Prints: 7
 <!--rehype:wrap-class=row-span-2-->
 
 ```kotlin
-var seas = listOf("Black Sea", "Caribbean Sea", "North Sea") 
+var seas = listOf("Black Sea", "Caribbean Sea", "North Sea")
 println(seas.contains("North Sea")) // Prints: true
 
 // contains() 函数对任何列表执行读取操作并确定元素是否存在
@@ -517,9 +517,9 @@ fun birthday(name: String, age: Int) {
 }
 
 fun main() {
-  birthday("Oscar", 26) 
+  birthday("Oscar", 26)
   // Prints: Happy birthday Oscar! You turn 25 today!
-  birthday("Amarah", 30) 
+  birthday("Amarah", 30)
   // Prints: Happy birthday Amarah! You turn 30 today!
 }
 ```
@@ -529,14 +529,14 @@ fun main() {
 
 ```kotlin
 fun favoriteLanguage(name: String, language: String = "Kotlin") {
-  println("Hello, $name. Your favorite programming language is $language")  
+  println("Hello, $name. Your favorite programming language is $language")
 }
 
 fun main() {
-  favoriteLanguage("Manon") 
+  favoriteLanguage("Manon")
   // Prints: Hello, Manon. Your favorite programming language is Kotlin
-  
-  favoriteLanguage("Lee", "Java") 
+
+  favoriteLanguage("Lee", "Java")
   // Prints: Hello, Lee. Your favorite programming language is Java
 }
 ```
@@ -584,9 +584,9 @@ fun main() {
 fun fullName(firstName: String, lastName: String) = "$firstName $lastName"
 
 fun main() {
-  println(fullName("Ariana", "Ortega")) 
+  println(fullName("Ariana", "Ortega"))
   // Prints: Ariana Ortega
-  println(fullName("Kai", "Gittens")) 
+  println(fullName("Kai", "Gittens"))
   // Prints: Kai Gittens
 }
 ```
@@ -600,7 +600,7 @@ fun main() {
   var getProduct = fun(num1: Int, num2: Int): Int {
      return num1 * num2
   }
-  println(getProduct(8, 3)) 
+  println(getProduct(8, 3))
   // Prints: 24
 
   // Lambda Expression
@@ -742,7 +742,7 @@ fun main() {
     println(currentDate formatBy "yyyy-MM-dd")
     // Print: 2024-02-08
 
-    (1 until  100).forEach { 
+    (1 until  100).forEach {
         println(it)
         // Print 1 至 99
     }
@@ -764,15 +764,15 @@ class Student {
 }
 
 fun main() {
-  var student = Student()   
+  var student = Student()
   // Instance
-  println(student.name)     
+  println(student.name)
   // Prints: Lucia
-  println(student.semester) 
+  println(student.semester)
   // Prints: Fall
-  println(student.gpa)      
-  // Prints: 3.95  
-} 
+  println(student.gpa)
+  // Prints: 3.95
+}
 ```
 
 ### 主构造函数
@@ -838,7 +838,7 @@ class Student {
 }
 
 // 没有类体的简写语法
-class Student 
+class Student
 ```
 
 ### 成员函数
@@ -865,10 +865,10 @@ class Student(val name: String, val gpa: Double, val semester: String, val estim
 
 // 创建实例并调用函数时，将执行 when 表达式并返回字母等级
 fun main() {
-  var student = Student("Lucia", 3.95, "Fall", 2022) 
-  // Prints: Lucia has 2 years left in college. 
-  println("${student.name}'s letter grade is ${student.calculateLetterGrade()}.") 
-  // Prints: Lucia's letter grade is A. 
+  var student = Student("Lucia", 3.95, "Fall", 2022)
+  // Prints: Lucia has 2 years left in college.
+  println("${student.name}'s letter grade is ${student.calculateLetterGrade()}.")
+  // Prints: Lucia's letter grade is A.
 }
 ```
 <!--rehype:className=wrap-text-->
@@ -884,7 +884,7 @@ class Student(val name: String, val gpa: Double, val semester: String, val estim
 
 fun main() {
   var student = Student("Lucia", 3.95, "Fall", 2022)
-  // Prints: Lucia has 2 years left in college. 
+  // Prints: Lucia has 2 years left in college.
 }
 ```
 <!--rehype:className=wrap-text-->

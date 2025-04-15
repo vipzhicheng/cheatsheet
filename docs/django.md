@@ -1,7 +1,7 @@
-Django 备忘清单
+Django 速查表
 ===
 
-Django 是 Python 的一款 Web 框架，本备忘单旨在快速理解 [Django](https://www.djangoproject.com/) 所涉及的主要概念，提供了最常用的 API 示例参考
+Django 是 Python 的一款 Web 框架，本速查表旨在快速理解 [Django](https://www.djangoproject.com/) 所涉及的主要概念，提供了最常用的 API 示例参考
 
 入门
 ----
@@ -391,7 +391,7 @@ def testing(request):
   <h1>Welcome</h1>
 {% else %}
   <h1>Goodbye</h1>
-{% endif %} 
+{% endif %}
 ```
 
 ### For 循环
@@ -402,7 +402,7 @@ def testing(request):
   <h1>{{ x.brand }}</h1>
   <p>{{ x.model }}</p>
   <p>{{ x.year }}</p>
-{% endfor %} 
+{% endfor %}
 ```
 
 数据 cars 空的展示内容：
@@ -416,7 +416,7 @@ def testing(request):
   {% empty %}
     <li>No members</li>
   {% endfor %}
-</ul> 
+</ul>
 ```
 
 ### 循环变量
@@ -489,7 +489,7 @@ def testing(request):
       {{ x.firstname }}
     </li>
   {% endfor %}
-</ul> 
+</ul>
 ```
 
 将参数值保存在变量中，以便以后使用：
@@ -502,7 +502,7 @@ def testing(request):
       {{ x.firstname }}
     </li>
   {% endfor %}
-</ul> 
+</ul>
 ```
 
 你注意到 `silent` 关键字了吗？ 确保添加这个，否则参数值将在输出中显示两次
@@ -518,7 +518,7 @@ def testing(request):
       {{ x.firstname }}
     </li>
   {% endfor %}
-</ul> 
+</ul>
 ```
 
 您可以使用 `{% resetcycle %}` 标签强制循环重新开始
@@ -547,7 +547,7 @@ What is your name?{% endfilter %}
 ```django
 <h1>Hello</h1>
 <p>此页面包含模板中的页脚</p>
-{% include 'footer.html' %} 
+{% include 'footer.html' %}
 ```
 
 ### 导入模板传入变量
@@ -607,7 +607,7 @@ Keyword | 描述
 `make_list` | 将值转换为列表对象
 `phone2numeric` | 将带字母的电话号码转换为数字电话号码
 `pluralize` | 如果指定的数值不是 `1`，则在值的末尾添加一个 `s`
-`pprint` |  
+`pprint` |
 `random` | 返回对象的随机项
 `rjust` | 根据指定的宽度右对齐值
 `safe` | 标记此文本是安全的，不应进行 `HTML` 转义
@@ -632,9 +632,9 @@ Keyword | 描述
 `wordcount` | 返回文本中的单词数
 `wordwrap` | 以指定的字符数换行
 `yesno` | 将布尔值转换为指定值
-`i18n` |  
-`l10n` |  
-`tz` |  
+`i18n` |
+`l10n` |
+`tz` |
 
 ### 字段查询参考
 

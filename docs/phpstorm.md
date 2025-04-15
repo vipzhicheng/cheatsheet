@@ -1,7 +1,7 @@
 PhpStorm 键盘快捷键
 ===
 
-在 JetBrains PhpStorm 中发现的 96 个键盘快捷键的可视化备忘表
+在 JetBrains PhpStorm 中发现的 96 个键盘快捷键的可视化速查表
 
 键盘快捷键
 ---
