@@ -9,8 +9,10 @@
   "private": false,
   "scripts": {
     "prepare": "husky",
-    "build": "refs-cli",
+    "postinstall": "npm run cpy",
+    "build": "refs-cli && npm run cpy",
     "start": "refs-cli --watch",
+    "cpy": "cpy 'icons/*' dist/icons",
     "prettier": "prettier --write '**/*.{mjs,css,json,prettierrc,lintstagedrc}'",
     "markdownlint": "npx markdownlint-cli --fix ./docs/*.md"
   },
